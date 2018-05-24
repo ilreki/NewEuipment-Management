@@ -29,11 +29,6 @@ namespace Equipment_Management
 
         private void Main_Load(object sender, EventArgs e)
         {
-            panel1.Visible = false;
-            panel3.Visible = false;
-            panel4.Visible = false;
-
-           // panel2.Visible = false;
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -48,8 +43,6 @@ namespace Equipment_Management
 
         private void 用户管理ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            panel1.Visible = true;
-            panel3.Visible = true;
         }
 
         private void 注销ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -66,7 +59,18 @@ namespace Equipment_Management
 
         private void button1_Click(object sender, EventArgs e)
         {
-            panel4.Visible = true;
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void 统计查询ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

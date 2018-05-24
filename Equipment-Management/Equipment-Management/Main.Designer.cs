@@ -62,18 +62,49 @@
             this.经费使用管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.注销ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.WelcomePicture = new System.Windows.Forms.Panel();
+            this.系统管理 = new System.Windows.Forms.Panel();
+            this.用户管理 = new System.Windows.Forms.Panel();
+            this.添加账户ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.重置密码ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.删除账户ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.统计与查询 = new System.Windows.Forms.Panel();
+            this.出入库统计表 = new System.Windows.Forms.Panel();
+            this.装备库存流水统计表 = new System.Windows.Forms.Panel();
+            this.部门人员查询 = new System.Windows.Forms.Panel();
+            this.添加账户 = new System.Windows.Forms.Panel();
+            this.装备经费汇总 = new System.Windows.Forms.Panel();
+            this.添加ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.修改ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.添加ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.修改ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.删除ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.添加ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.修改ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.删除ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.装备库存管理 = new System.Windows.Forms.Panel();
+            this.仓库信息管理 = new System.Windows.Forms.Panel();
+            this.仓库信息删除 = new System.Windows.Forms.Panel();
+            this.仓库信息修改 = new System.Windows.Forms.Panel();
+            this.仓库信息添加 = new System.Windows.Forms.Panel();
+            this.入库信息管理 = new System.Windows.Forms.Panel();
+            this.入库信息添加 = new System.Windows.Forms.Panel();
+            this.入库信息修改 = new System.Windows.Forms.Panel();
+            this.入库信息删除 = new System.Windows.Forms.Panel();
+            this.出库信息管理 = new System.Windows.Forms.Panel();
+            this.出库信息添加 = new System.Windows.Forms.Panel();
+            this.出库信息修改 = new System.Windows.Forms.Panel();
+            this.出库信息删除 = new System.Windows.Forms.Panel();
+            this.装备库存盘点 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.系统管理.SuspendLayout();
+            this.用户管理.SuspendLayout();
+            this.统计与查询.SuspendLayout();
+            this.装备库存管理.SuspendLayout();
+            this.仓库信息管理.SuspendLayout();
+            this.入库信息管理.SuspendLayout();
+            this.出库信息管理.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -108,27 +139,31 @@
             // 
             // 用户管理ToolStripMenuItem
             // 
+            this.用户管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.添加账户ToolStripMenuItem,
+            this.重置密码ToolStripMenuItem,
+            this.删除账户ToolStripMenuItem});
             this.用户管理ToolStripMenuItem.Name = "用户管理ToolStripMenuItem";
-            this.用户管理ToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
+            this.用户管理ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.用户管理ToolStripMenuItem.Text = "用户管理";
             this.用户管理ToolStripMenuItem.Click += new System.EventHandler(this.用户管理ToolStripMenuItem_Click);
             // 
             // 修改密码ToolStripMenuItem
             // 
             this.修改密码ToolStripMenuItem.Name = "修改密码ToolStripMenuItem";
-            this.修改密码ToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
+            this.修改密码ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.修改密码ToolStripMenuItem.Text = "修改密码";
             // 
             // 日志管理ToolStripMenuItem
             // 
             this.日志管理ToolStripMenuItem.Name = "日志管理ToolStripMenuItem";
-            this.日志管理ToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
+            this.日志管理ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.日志管理ToolStripMenuItem.Text = "日志管理";
             // 
             // 退出系统ToolStripMenuItem
             // 
             this.退出系统ToolStripMenuItem.Name = "退出系统ToolStripMenuItem";
-            this.退出系统ToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
+            this.退出系统ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.退出系统ToolStripMenuItem.Text = "退出系统";
             // 
             // 基本信息管理ToolStripMenuItem
@@ -144,20 +179,20 @@
             // 装备信息ToolStripMenuItem
             // 
             this.装备信息ToolStripMenuItem.Name = "装备信息ToolStripMenuItem";
-            this.装备信息ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.装备信息ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.装备信息ToolStripMenuItem.Text = "装备基本信息";
             this.装备信息ToolStripMenuItem.Click += new System.EventHandler(this.装备信息ToolStripMenuItem_Click);
             // 
             // 部门基本信息ToolStripMenuItem
             // 
             this.部门基本信息ToolStripMenuItem.Name = "部门基本信息ToolStripMenuItem";
-            this.部门基本信息ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.部门基本信息ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.部门基本信息ToolStripMenuItem.Text = "部门基本信息";
             // 
             // 人员基本信息ToolStripMenuItem
             // 
             this.人员基本信息ToolStripMenuItem.Name = "人员基本信息ToolStripMenuItem";
-            this.人员基本信息ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.人员基本信息ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.人员基本信息ToolStripMenuItem.Text = "人员基本信息";
             // 
             // 装备库存管理ToolStripMenuItem
@@ -173,26 +208,38 @@
             // 
             // 仓库信息管理ToolStripMenuItem
             // 
+            this.仓库信息管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.添加ToolStripMenuItem,
+            this.修改ToolStripMenuItem,
+            this.删除ToolStripMenuItem});
             this.仓库信息管理ToolStripMenuItem.Name = "仓库信息管理ToolStripMenuItem";
-            this.仓库信息管理ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.仓库信息管理ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.仓库信息管理ToolStripMenuItem.Text = "仓库信息管理";
             // 
             // 入库信息管理ToolStripMenuItem
             // 
+            this.入库信息管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.添加ToolStripMenuItem1,
+            this.修改ToolStripMenuItem1,
+            this.删除ToolStripMenuItem1});
             this.入库信息管理ToolStripMenuItem.Name = "入库信息管理ToolStripMenuItem";
-            this.入库信息管理ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.入库信息管理ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.入库信息管理ToolStripMenuItem.Text = "入库信息管理";
             // 
             // 出库信息管理ToolStripMenuItem
             // 
+            this.出库信息管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.添加ToolStripMenuItem2,
+            this.修改ToolStripMenuItem2,
+            this.删除ToolStripMenuItem2});
             this.出库信息管理ToolStripMenuItem.Name = "出库信息管理ToolStripMenuItem";
-            this.出库信息管理ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.出库信息管理ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.出库信息管理ToolStripMenuItem.Text = "出库信息管理";
             // 
             // 装备库存盘点ToolStripMenuItem
             // 
             this.装备库存盘点ToolStripMenuItem.Name = "装备库存盘点ToolStripMenuItem";
-            this.装备库存盘点ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.装备库存盘点ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.装备库存盘点ToolStripMenuItem.Text = "装备库存盘点";
             // 
             // 装备资料管理ToolStripMenuItem
@@ -209,25 +256,25 @@
             // 资料类型管理ToolStripMenuItem
             // 
             this.资料类型管理ToolStripMenuItem.Name = "资料类型管理ToolStripMenuItem";
-            this.资料类型管理ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.资料类型管理ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.资料类型管理ToolStripMenuItem.Text = "资料类型管理";
             // 
             // 资料信息管理ToolStripMenuItem
             // 
             this.资料信息管理ToolStripMenuItem.Name = "资料信息管理ToolStripMenuItem";
-            this.资料信息管理ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.资料信息管理ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.资料信息管理ToolStripMenuItem.Text = "资料信息管理";
             // 
             // 资料借阅管理ToolStripMenuItem
             // 
             this.资料借阅管理ToolStripMenuItem.Name = "资料借阅管理ToolStripMenuItem";
-            this.资料借阅管理ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.资料借阅管理ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.资料借阅管理ToolStripMenuItem.Text = "资料借阅管理";
             // 
             // 资料归档管理ToolStripMenuItem
             // 
             this.资料归档管理ToolStripMenuItem.Name = "资料归档管理ToolStripMenuItem";
-            this.资料归档管理ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.资料归档管理ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.资料归档管理ToolStripMenuItem.Text = "资料归档管理";
             // 
             // 装备维修与调拨ToolStripMenuItem
@@ -242,13 +289,13 @@
             // 装备维修管理ToolStripMenuItem
             // 
             this.装备维修管理ToolStripMenuItem.Name = "装备维修管理ToolStripMenuItem";
-            this.装备维修管理ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.装备维修管理ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.装备维修管理ToolStripMenuItem.Text = "装备维修管理";
             // 
             // 装备调拨管理ToolStripMenuItem
             // 
             this.装备调拨管理ToolStripMenuItem.Name = "装备调拨管理ToolStripMenuItem";
-            this.装备调拨管理ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.装备调拨管理ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.装备调拨管理ToolStripMenuItem.Text = "装备调拨管理";
             // 
             // 统计查询ToolStripMenuItem
@@ -259,8 +306,9 @@
             this.部门人员查询ToolStripMenuItem,
             this.装备经费汇总ToolStripMenuItem});
             this.统计查询ToolStripMenuItem.Name = "统计查询ToolStripMenuItem";
-            this.统计查询ToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
-            this.统计查询ToolStripMenuItem.Text = "统计查询";
+            this.统计查询ToolStripMenuItem.Size = new System.Drawing.Size(96, 24);
+            this.统计查询ToolStripMenuItem.Text = "统计与查询";
+            this.统计查询ToolStripMenuItem.Click += new System.EventHandler(this.统计查询ToolStripMenuItem_Click);
             // 
             // 出入库统计表ToolStripMenuItem
             // 
@@ -299,19 +347,19 @@
             // 经费明细管理ToolStripMenuItem
             // 
             this.经费明细管理ToolStripMenuItem.Name = "经费明细管理ToolStripMenuItem";
-            this.经费明细管理ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.经费明细管理ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.经费明细管理ToolStripMenuItem.Text = "经费明细管理";
             // 
             // 经费入账管理ToolStripMenuItem
             // 
             this.经费入账管理ToolStripMenuItem.Name = "经费入账管理ToolStripMenuItem";
-            this.经费入账管理ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.经费入账管理ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.经费入账管理ToolStripMenuItem.Text = "经费入账管理";
             // 
             // 经费使用管理ToolStripMenuItem
             // 
             this.经费使用管理ToolStripMenuItem.Name = "经费使用管理ToolStripMenuItem";
-            this.经费使用管理ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.经费使用管理ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.经费使用管理ToolStripMenuItem.Text = "经费使用管理";
             // 
             // 注销ToolStripMenuItem
@@ -328,93 +376,267 @@
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 
-            // panel1
+            // WelcomePicture
             // 
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(209, 563);
-            this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.WelcomePicture.Location = new System.Drawing.Point(0, 31);
+            this.WelcomePicture.Name = "WelcomePicture";
+            this.WelcomePicture.Size = new System.Drawing.Size(1242, 582);
+            this.WelcomePicture.TabIndex = 0;
             // 
-            // button3
+            // 系统管理
             // 
-            this.button3.BackColor = System.Drawing.Color.Red;
-            this.button3.Location = new System.Drawing.Point(39, 355);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(93, 70);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "重置密码";
-            this.button3.UseVisualStyleBackColor = false;
+            this.系统管理.Controls.Add(this.用户管理);
+            this.系统管理.Location = new System.Drawing.Point(0, 31);
+            this.系统管理.Name = "系统管理";
+            this.系统管理.Size = new System.Drawing.Size(1242, 579);
+            this.系统管理.TabIndex = 2;
             // 
-            // button2
+            // 用户管理
             // 
-            this.button2.BackColor = System.Drawing.Color.Red;
-            this.button2.Location = new System.Drawing.Point(39, 215);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(93, 70);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "删除用户";
-            this.button2.UseVisualStyleBackColor = false;
+            this.用户管理.Controls.Add(this.添加账户);
+            this.用户管理.Location = new System.Drawing.Point(3, 3);
+            this.用户管理.Name = "用户管理";
+            this.用户管理.Size = new System.Drawing.Size(1236, 573);
+            this.用户管理.TabIndex = 0;
             // 
-            // button1
+            // 添加账户ToolStripMenuItem
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(39, 83);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 74);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "添加用户";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.添加账户ToolStripMenuItem.Name = "添加账户ToolStripMenuItem";
+            this.添加账户ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.添加账户ToolStripMenuItem.Text = "添加账户";
             // 
-            // panel2
+            // 重置密码ToolStripMenuItem
             // 
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.panel1);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(12, 40);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1218, 563);
-            this.panel2.TabIndex = 2;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.重置密码ToolStripMenuItem.Name = "重置密码ToolStripMenuItem";
+            this.重置密码ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.重置密码ToolStripMenuItem.Text = "重置密码";
             // 
-            // panel3
+            // 删除账户ToolStripMenuItem
             // 
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(215, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1003, 560);
-            this.panel3.TabIndex = 1;
+            this.删除账户ToolStripMenuItem.Name = "删除账户ToolStripMenuItem";
+            this.删除账户ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.删除账户ToolStripMenuItem.Text = "删除账户";
             // 
-            // label2
+            // 统计与查询
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("华文隶书", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(413, 247);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(194, 31);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "基本信息管理";
+            this.统计与查询.Controls.Add(this.装备经费汇总);
+            this.统计与查询.Controls.Add(this.部门人员查询);
+            this.统计与查询.Controls.Add(this.装备库存流水统计表);
+            this.统计与查询.Controls.Add(this.出入库统计表);
+            this.统计与查询.Location = new System.Drawing.Point(0, 34);
+            this.统计与查询.Name = "统计与查询";
+            this.统计与查询.Size = new System.Drawing.Size(1236, 576);
+            this.统计与查询.TabIndex = 0;
             // 
-            // label1
+            // 出入库统计表
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("华文行楷", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(312, 243);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(498, 42);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "欢迎使用部队装备管理系统";
+            this.出入库统计表.Location = new System.Drawing.Point(3, 3);
+            this.出入库统计表.Name = "出入库统计表";
+            this.出入库统计表.Size = new System.Drawing.Size(1230, 570);
+            this.出入库统计表.TabIndex = 0;
+            // 
+            // 装备库存流水统计表
+            // 
+            this.装备库存流水统计表.Location = new System.Drawing.Point(0, 0);
+            this.装备库存流水统计表.Name = "装备库存流水统计表";
+            this.装备库存流水统计表.Size = new System.Drawing.Size(1239, 576);
+            this.装备库存流水统计表.TabIndex = 1;
+            // 
+            // 部门人员查询
+            // 
+            this.部门人员查询.Location = new System.Drawing.Point(0, 0);
+            this.部门人员查询.Name = "部门人员查询";
+            this.部门人员查询.Size = new System.Drawing.Size(1242, 576);
+            this.部门人员查询.TabIndex = 0;
+            // 
+            // 添加账户
+            // 
+            this.添加账户.Location = new System.Drawing.Point(0, 0);
+            this.添加账户.Name = "添加账户";
+            this.添加账户.Size = new System.Drawing.Size(1239, 579);
+            this.添加账户.TabIndex = 0;
+            // 
+            // 装备经费汇总
+            // 
+            this.装备经费汇总.Location = new System.Drawing.Point(0, 0);
+            this.装备经费汇总.Name = "装备经费汇总";
+            this.装备经费汇总.Size = new System.Drawing.Size(1242, 579);
+            this.装备经费汇总.TabIndex = 0;
+            // 
+            // 添加ToolStripMenuItem
+            // 
+            this.添加ToolStripMenuItem.Name = "添加ToolStripMenuItem";
+            this.添加ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.添加ToolStripMenuItem.Text = "添加";
+            // 
+            // 修改ToolStripMenuItem
+            // 
+            this.修改ToolStripMenuItem.Name = "修改ToolStripMenuItem";
+            this.修改ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.修改ToolStripMenuItem.Text = "修改";
+            // 
+            // 删除ToolStripMenuItem
+            // 
+            this.删除ToolStripMenuItem.Name = "删除ToolStripMenuItem";
+            this.删除ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.删除ToolStripMenuItem.Text = "删除";
+            // 
+            // 添加ToolStripMenuItem1
+            // 
+            this.添加ToolStripMenuItem1.Name = "添加ToolStripMenuItem1";
+            this.添加ToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
+            this.添加ToolStripMenuItem1.Text = "添加";
+            // 
+            // 修改ToolStripMenuItem1
+            // 
+            this.修改ToolStripMenuItem1.Name = "修改ToolStripMenuItem1";
+            this.修改ToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
+            this.修改ToolStripMenuItem1.Text = "修改";
+            // 
+            // 删除ToolStripMenuItem1
+            // 
+            this.删除ToolStripMenuItem1.Name = "删除ToolStripMenuItem1";
+            this.删除ToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
+            this.删除ToolStripMenuItem1.Text = "删除";
+            // 
+            // 添加ToolStripMenuItem2
+            // 
+            this.添加ToolStripMenuItem2.Name = "添加ToolStripMenuItem2";
+            this.添加ToolStripMenuItem2.Size = new System.Drawing.Size(216, 26);
+            this.添加ToolStripMenuItem2.Text = "添加";
+            // 
+            // 修改ToolStripMenuItem2
+            // 
+            this.修改ToolStripMenuItem2.Name = "修改ToolStripMenuItem2";
+            this.修改ToolStripMenuItem2.Size = new System.Drawing.Size(216, 26);
+            this.修改ToolStripMenuItem2.Text = "修改";
+            // 
+            // 删除ToolStripMenuItem2
+            // 
+            this.删除ToolStripMenuItem2.Name = "删除ToolStripMenuItem2";
+            this.删除ToolStripMenuItem2.Size = new System.Drawing.Size(216, 26);
+            this.删除ToolStripMenuItem2.Text = "删除";
+            // 
+            // 装备库存管理
+            // 
+            this.装备库存管理.Controls.Add(this.装备库存盘点);
+            this.装备库存管理.Controls.Add(this.出库信息管理);
+            this.装备库存管理.Controls.Add(this.入库信息管理);
+            this.装备库存管理.Controls.Add(this.仓库信息管理);
+            this.装备库存管理.Location = new System.Drawing.Point(0, 31);
+            this.装备库存管理.Name = "装备库存管理";
+            this.装备库存管理.Size = new System.Drawing.Size(1242, 582);
+            this.装备库存管理.TabIndex = 2;
+            // 
+            // 仓库信息管理
+            // 
+            this.仓库信息管理.Controls.Add(this.仓库信息添加);
+            this.仓库信息管理.Controls.Add(this.仓库信息修改);
+            this.仓库信息管理.Controls.Add(this.仓库信息删除);
+            this.仓库信息管理.Location = new System.Drawing.Point(0, 0);
+            this.仓库信息管理.Name = "仓库信息管理";
+            this.仓库信息管理.Size = new System.Drawing.Size(1242, 582);
+            this.仓库信息管理.TabIndex = 0;
+            // 
+            // 仓库信息删除
+            // 
+            this.仓库信息删除.Location = new System.Drawing.Point(0, 0);
+            this.仓库信息删除.Name = "仓库信息删除";
+            this.仓库信息删除.Size = new System.Drawing.Size(1242, 582);
+            this.仓库信息删除.TabIndex = 0;
+            // 
+            // 仓库信息修改
+            // 
+            this.仓库信息修改.Location = new System.Drawing.Point(0, 0);
+            this.仓库信息修改.Name = "仓库信息修改";
+            this.仓库信息修改.Size = new System.Drawing.Size(1242, 582);
+            this.仓库信息修改.TabIndex = 1;
+            // 
+            // 仓库信息添加
+            // 
+            this.仓库信息添加.Location = new System.Drawing.Point(0, 0);
+            this.仓库信息添加.Name = "仓库信息添加";
+            this.仓库信息添加.Size = new System.Drawing.Size(1242, 582);
+            this.仓库信息添加.TabIndex = 2;
+            // 
+            // 入库信息管理
+            // 
+            this.入库信息管理.Controls.Add(this.入库信息删除);
+            this.入库信息管理.Controls.Add(this.入库信息修改);
+            this.入库信息管理.Controls.Add(this.入库信息添加);
+            this.入库信息管理.Location = new System.Drawing.Point(0, 0);
+            this.入库信息管理.Name = "入库信息管理";
+            this.入库信息管理.Size = new System.Drawing.Size(1242, 613);
+            this.入库信息管理.TabIndex = 3;
+            // 
+            // 入库信息添加
+            // 
+            this.入库信息添加.Location = new System.Drawing.Point(0, 0);
+            this.入库信息添加.Name = "入库信息添加";
+            this.入库信息添加.Size = new System.Drawing.Size(1242, 582);
+            this.入库信息添加.TabIndex = 0;
+            // 
+            // 入库信息修改
+            // 
+            this.入库信息修改.Location = new System.Drawing.Point(0, 0);
+            this.入库信息修改.Name = "入库信息修改";
+            this.入库信息修改.Size = new System.Drawing.Size(1242, 582);
+            this.入库信息修改.TabIndex = 1;
+            // 
+            // 入库信息删除
+            // 
+            this.入库信息删除.Location = new System.Drawing.Point(0, 0);
+            this.入库信息删除.Name = "入库信息删除";
+            this.入库信息删除.Size = new System.Drawing.Size(1242, 582);
+            this.入库信息删除.TabIndex = 0;
+            // 
+            // 出库信息管理
+            // 
+            this.出库信息管理.Controls.Add(this.出库信息删除);
+            this.出库信息管理.Controls.Add(this.出库信息修改);
+            this.出库信息管理.Controls.Add(this.出库信息添加);
+            this.出库信息管理.Location = new System.Drawing.Point(0, 0);
+            this.出库信息管理.Name = "出库信息管理";
+            this.出库信息管理.Size = new System.Drawing.Size(1242, 582);
+            this.出库信息管理.TabIndex = 4;
+            // 
+            // 出库信息添加
+            // 
+            this.出库信息添加.Location = new System.Drawing.Point(0, 0);
+            this.出库信息添加.Name = "出库信息添加";
+            this.出库信息添加.Size = new System.Drawing.Size(1242, 582);
+            this.出库信息添加.TabIndex = 0;
+            // 
+            // 出库信息修改
+            // 
+            this.出库信息修改.Location = new System.Drawing.Point(0, 0);
+            this.出库信息修改.Name = "出库信息修改";
+            this.出库信息修改.Size = new System.Drawing.Size(1242, 582);
+            this.出库信息修改.TabIndex = 0;
+            // 
+            // 出库信息删除
+            // 
+            this.出库信息删除.Location = new System.Drawing.Point(0, 0);
+            this.出库信息删除.Name = "出库信息删除";
+            this.出库信息删除.Size = new System.Drawing.Size(1242, 582);
+            this.出库信息删除.TabIndex = 0;
+            // 
+            // 装备库存盘点
+            // 
+            this.装备库存盘点.Location = new System.Drawing.Point(0, 0);
+            this.装备库存盘点.Name = "装备库存盘点";
+            this.装备库存盘点.Size = new System.Drawing.Size(1242, 582);
+            this.装备库存盘点.TabIndex = 5;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1242, 615);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.装备库存管理);
+            this.Controls.Add(this.统计与查询);
+            this.Controls.Add(this.系统管理);
+            this.Controls.Add(this.WelcomePicture);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Main";
@@ -422,11 +644,13 @@
             this.Load += new System.EventHandler(this.Main_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.系统管理.ResumeLayout(false);
+            this.用户管理.ResumeLayout(false);
+            this.统计与查询.ResumeLayout(false);
+            this.装备库存管理.ResumeLayout(false);
+            this.仓库信息管理.ResumeLayout(false);
+            this.入库信息管理.ResumeLayout(false);
+            this.出库信息管理.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -466,15 +690,42 @@
         private System.Windows.Forms.ToolStripMenuItem 经费明细管理ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 经费入账管理ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 经费使用管理ToolStripMenuItem;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolStripMenuItem 注销ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem;
+        private System.Windows.Forms.Panel WelcomePicture;
+        private System.Windows.Forms.ToolStripMenuItem 添加账户ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 重置密码ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 删除账户ToolStripMenuItem;
+        private System.Windows.Forms.Panel 系统管理;
+        private System.Windows.Forms.Panel 用户管理;
+        private System.Windows.Forms.Panel 统计与查询;
+        private System.Windows.Forms.Panel 添加账户;
+        private System.Windows.Forms.Panel 部门人员查询;
+        private System.Windows.Forms.Panel 装备库存流水统计表;
+        private System.Windows.Forms.Panel 出入库统计表;
+        private System.Windows.Forms.ToolStripMenuItem 添加ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 修改ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 删除ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 添加ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 修改ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 删除ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 添加ToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem 修改ToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem 删除ToolStripMenuItem2;
+        private System.Windows.Forms.Panel 装备经费汇总;
+        private System.Windows.Forms.Panel 装备库存管理;
+        private System.Windows.Forms.Panel 仓库信息管理;
+        private System.Windows.Forms.Panel 仓库信息添加;
+        private System.Windows.Forms.Panel 仓库信息修改;
+        private System.Windows.Forms.Panel 仓库信息删除;
+        private System.Windows.Forms.Panel 入库信息管理;
+        private System.Windows.Forms.Panel 入库信息添加;
+        private System.Windows.Forms.Panel 出库信息管理;
+        private System.Windows.Forms.Panel 出库信息删除;
+        private System.Windows.Forms.Panel 出库信息修改;
+        private System.Windows.Forms.Panel 出库信息添加;
+        private System.Windows.Forms.Panel 入库信息删除;
+        private System.Windows.Forms.Panel 入库信息修改;
+        private System.Windows.Forms.Panel 装备库存盘点;
     }
 }
