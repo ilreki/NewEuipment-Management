@@ -19,7 +19,8 @@ namespace Equipment_Management
 
         private void 装备信息ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            装备基本信息 to_zbjbxx = new 装备基本信息();
+            to_zbjbxx.Show();
         }
 
         private void toolStripTextBox1_Click(object sender, EventArgs e)
@@ -71,6 +72,23 @@ namespace Equipment_Management
         private void 统计查询ToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void 经费明细管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 部门基本信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            部门基本信息 to_bmjbxx = new 部门基本信息();
+            to_bmjbxx.Show();
+        }
+
+        private void 人员基本信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            人员基本信息 to_ryjbxx = new 人员基本信息();
+            to_ryjbxx.Show();
         }
     }
 }
