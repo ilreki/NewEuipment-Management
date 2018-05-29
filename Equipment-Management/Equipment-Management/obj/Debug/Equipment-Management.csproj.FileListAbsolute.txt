@@ -20,3 +20,16 @@ D:\Git\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debu
 D:\Git\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment-Management.csproj.CoreCompileInputs.cache
 D:\Git\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment-Management.exe
 D:\Git\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment-Management.pdb
+E:\Github\NewEuipment-Management\Equipment-Management\Equipment-Management\bin\Debug\Equipment-Management.exe.config
+E:\Github\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment-Management.exe
+E:\Github\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment-Management.pdb
+E:\Github\NewEuipment-Management\Equipment-Management\Equipment-Management\bin\Debug\Equipment-Management.exe
+E:\Github\NewEuipment-Management\Equipment-Management\Equipment-Management\bin\Debug\Equipment-Management.pdb
+E:\Github\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment-Management.csprojResolveAssemblyReference.cache
+E:\Github\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.Load.resources
+E:\Github\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.Main.resources
+E:\Github\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.Properties.Resources.resources
+E:\Github\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.装备库存管理框.仓库信息管理添加.resources
+E:\Github\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment-Management.csproj.GenerateResource.Cache
+E:\Github\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.装备库存管理框.仓库信息管理删除.resources
+E:\Github\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.装备库存管理框.仓库信息管理修改.resources

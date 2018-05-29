@@ -72,5 +72,70 @@ namespace Equipment_Management
         {
 
         }
+
+        private void 入库信息管理添加_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 入库信息管理删除_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 添加ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            出库信息管理.Visible = false;
+            入库信息管理.Visible = false;
+            装备库存盘点.Visible = false;
+            仓库信息添加.Visible = true;
+            仓库信息修改.Visible = false;
+            仓库信息删除.Visible = false;
+            装备经费管理.Visible = false;
+            统计与查询.Visible = false;
+            WelcomePicture.Visible = false;
+            //menuStrip1.Visible = false;
+        }
+
+        private void 仓库信息管理添加_Click(object sender, EventArgs e)
+        {
+            new 装备库存管理框.仓库信息管理添加().Show();
+        }
+
+        private void 仓库信息修改修改_Click(object sender, EventArgs e)
+        {
+            new 装备库存管理框.仓库信息管理修改().Show();
+        }
+
+        private void 仓库信息管理删除_Click(object sender, EventArgs e)
+        {
+            new 装备库存管理框.仓库信息管理删除().Show();
+        }
+
+        private void 修改ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            出库信息管理.Visible = false;
+            入库信息管理.Visible = false;
+            装备库存盘点.Visible = false;
+            仓库信息添加.Visible = false;
+            仓库信息修改.Visible = true;
+            仓库信息删除.Visible = false;
+            装备经费管理.Visible = false;
+            统计与查询.Visible = false;
+            WelcomePicture.Visible = false;
+        }
+
+        private void 删除ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            出库信息管理.Visible = false;
+            入库信息管理.Visible = false;
+            装备库存盘点.Visible = false;
+            仓库信息添加.Visible = false;
+            仓库信息修改.Visible = false;
+            仓库信息删除.Visible = true;
+            装备经费管理.Visible = false;
+            统计与查询.Visible = false;
+            WelcomePicture.Visible = false;
+        }
     }
 }
