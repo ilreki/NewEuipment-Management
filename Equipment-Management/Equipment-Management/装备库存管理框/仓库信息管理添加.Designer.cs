@@ -89,6 +89,7 @@
             this.仓库信息管理添加仓库编号.Name = "仓库信息管理添加仓库编号";
             this.仓库信息管理添加仓库编号.Size = new System.Drawing.Size(100, 21);
             this.仓库信息管理添加仓库编号.TabIndex = 5;
+            this.仓库信息管理添加仓库编号.TextChanged += new System.EventHandler(this.仓库信息管理添加仓库编号_TextChanged);
             // 
             // 仓库信息管理添加仓库名称
             // 

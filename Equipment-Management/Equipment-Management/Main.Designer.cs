@@ -93,19 +93,67 @@
             this.装备库存流水统计表 = new System.Windows.Forms.Panel();
             this.出入库统计表 = new System.Windows.Forms.Panel();
             this.装备库存管理 = new System.Windows.Forms.Panel();
-            this.装备库存盘点 = new System.Windows.Forms.Panel();
-            this.出库信息管理 = new System.Windows.Forms.Panel();
-            this.出库信息删除 = new System.Windows.Forms.Panel();
-            this.出库信息修改 = new System.Windows.Forms.Panel();
-            this.出库信息添加 = new System.Windows.Forms.Panel();
-            this.入库信息管理 = new System.Windows.Forms.Panel();
-            this.入库信息删除 = new System.Windows.Forms.Panel();
-            this.入库信息修改 = new System.Windows.Forms.Panel();
-            this.入库信息添加 = new System.Windows.Forms.Panel();
             this.仓库信息管理 = new System.Windows.Forms.Panel();
-            this.仓库信息添加 = new System.Windows.Forms.Panel();
-            this.仓库信息修改 = new System.Windows.Forms.Panel();
             this.仓库信息删除 = new System.Windows.Forms.Panel();
+            this.仓库信息管理删除 = new System.Windows.Forms.Button();
+            this.dataGridView仓库信息管理删除 = new System.Windows.Forms.DataGridView();
+            this.仓库信息修改 = new System.Windows.Forms.Panel();
+            this.仓库信息修改修改 = new System.Windows.Forms.Button();
+            this.dataGridView仓库信息管理修改 = new System.Windows.Forms.DataGridView();
+            this.仓库信息添加 = new System.Windows.Forms.Panel();
+            this.仓库信息管理添加 = new System.Windows.Forms.Button();
+            this.dataGridView仓库信息管理添加 = new System.Windows.Forms.DataGridView();
+            this.出库信息管理 = new System.Windows.Forms.Panel();
+            this.出库信息修改 = new System.Windows.Forms.Panel();
+            this.出库信息管理修改时间选择月 = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.出库信息管理修改时间选择年 = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.dataGridView出库信息管理修改 = new System.Windows.Forms.DataGridView();
+            this.出库信息管理修改 = new System.Windows.Forms.Button();
+            this.出库信息删除 = new System.Windows.Forms.Panel();
+            this.出库信息管理删除时间选择月 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.出库信息管理删除时间选择年 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.出库信息管理删除 = new System.Windows.Forms.Button();
+            this.dataGridView出库信息管理删除 = new System.Windows.Forms.DataGridView();
+            this.出库信息添加 = new System.Windows.Forms.Panel();
+            this.出库信息管理添加时间选择月 = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.出库信息管理添加时间选择年 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dataGridView出库信息管理添加 = new System.Windows.Forms.DataGridView();
+            this.出库信息管理添加 = new System.Windows.Forms.Button();
+            this.入库信息管理 = new System.Windows.Forms.Panel();
+            this.入库信息添加 = new System.Windows.Forms.Panel();
+            this.入库信息管理添加时间选择月 = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.入库信息管理添加时间选择年 = new System.Windows.Forms.ComboBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.入库信息管理添加 = new System.Windows.Forms.Button();
+            this.dataGridView入库信息管理添加 = new System.Windows.Forms.DataGridView();
+            this.入库信息修改 = new System.Windows.Forms.Panel();
+            this.入库信息管理修改时间选择月 = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.入库信息管理修改时间选择年 = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.入库信息管理修改 = new System.Windows.Forms.Button();
+            this.dataGridView入库信息管理修改 = new System.Windows.Forms.DataGridView();
+            this.入库信息删除 = new System.Windows.Forms.Panel();
+            this.入库信息管理删除时间选择月 = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.入库信息管理删除时间选择年 = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.入库信息管理删除 = new System.Windows.Forms.Button();
+            this.dataGridView入库信息管理删除 = new System.Windows.Forms.DataGridView();
+            this.装备库存盘点 = new System.Windows.Forms.Panel();
             this.装备经费管理 = new System.Windows.Forms.Panel();
             this.经费使用管理 = new System.Windows.Forms.Panel();
             this.经费使用删除 = new System.Windows.Forms.Panel();
@@ -119,84 +167,36 @@
             this.经费明细删除 = new System.Windows.Forms.Panel();
             this.经费明细修改 = new System.Windows.Forms.Panel();
             this.经费明细添加 = new System.Windows.Forms.Panel();
-            this.出库信息管理添加 = new System.Windows.Forms.Button();
-            this.dataGridView出库信息管理添加 = new System.Windows.Forms.DataGridView();
-            this.dataGridView出库信息管理删除 = new System.Windows.Forms.DataGridView();
-            this.出库信息管理删除 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.出库信息管理删除时间选择年 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.出库信息管理删除时间选择月 = new System.Windows.Forms.ComboBox();
-            this.出库信息管理添加时间选择月 = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.出库信息管理添加时间选择年 = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.出库信息管理修改时间选择月 = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.出库信息管理修改时间选择年 = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.dataGridView出库信息管理修改 = new System.Windows.Forms.DataGridView();
-            this.出库信息管理修改 = new System.Windows.Forms.Button();
-            this.仓库信息管理添加 = new System.Windows.Forms.Button();
-            this.dataGridView仓库信息管理添加 = new System.Windows.Forms.DataGridView();
-            this.仓库信息修改修改 = new System.Windows.Forms.Button();
-            this.dataGridView仓库信息管理修改 = new System.Windows.Forms.DataGridView();
-            this.仓库信息管理删除 = new System.Windows.Forms.Button();
-            this.dataGridView仓库信息管理删除 = new System.Windows.Forms.DataGridView();
-            this.入库信息管理删除时间选择月 = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.入库信息管理删除时间选择年 = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.入库信息管理删除 = new System.Windows.Forms.Button();
-            this.dataGridView入库信息管理删除 = new System.Windows.Forms.DataGridView();
-            this.入库信息管理修改时间选择月 = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.入库信息管理修改时间选择年 = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.入库信息管理修改 = new System.Windows.Forms.Button();
-            this.dataGridView入库信息管理修改 = new System.Windows.Forms.DataGridView();
-            this.入库信息管理添加时间选择月 = new System.Windows.Forms.ComboBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.入库信息管理添加时间选择年 = new System.Windows.Forms.ComboBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.入库信息管理添加 = new System.Windows.Forms.Button();
-            this.dataGridView入库信息管理添加 = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
             this.系统管理.SuspendLayout();
             this.用户管理.SuspendLayout();
             this.统计与查询.SuspendLayout();
             this.装备库存管理.SuspendLayout();
-            this.出库信息管理.SuspendLayout();
-            this.出库信息删除.SuspendLayout();
-            this.出库信息修改.SuspendLayout();
-            this.出库信息添加.SuspendLayout();
-            this.入库信息管理.SuspendLayout();
-            this.入库信息删除.SuspendLayout();
-            this.入库信息修改.SuspendLayout();
-            this.入库信息添加.SuspendLayout();
             this.仓库信息管理.SuspendLayout();
-            this.仓库信息添加.SuspendLayout();
-            this.仓库信息修改.SuspendLayout();
             this.仓库信息删除.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView仓库信息管理删除)).BeginInit();
+            this.仓库信息修改.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView仓库信息管理修改)).BeginInit();
+            this.仓库信息添加.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView仓库信息管理添加)).BeginInit();
+            this.出库信息管理.SuspendLayout();
+            this.出库信息修改.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView出库信息管理修改)).BeginInit();
+            this.出库信息删除.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView出库信息管理删除)).BeginInit();
+            this.出库信息添加.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView出库信息管理添加)).BeginInit();
+            this.入库信息管理.SuspendLayout();
+            this.入库信息添加.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView入库信息管理添加)).BeginInit();
+            this.入库信息修改.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView入库信息管理修改)).BeginInit();
+            this.入库信息删除.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView入库信息管理删除)).BeginInit();
             this.装备经费管理.SuspendLayout();
             this.经费使用管理.SuspendLayout();
             this.经费入账管理.SuspendLayout();
             this.经费明细管理.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView出库信息管理添加)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView出库信息管理删除)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView出库信息管理修改)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView仓库信息管理添加)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView仓库信息管理修改)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView仓库信息管理删除)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView入库信息管理删除)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView入库信息管理修改)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView入库信息管理添加)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -330,21 +330,21 @@
             // 添加ToolStripMenuItem
             // 
             this.添加ToolStripMenuItem.Name = "添加ToolStripMenuItem";
-            this.添加ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.添加ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.添加ToolStripMenuItem.Text = "添加";
             this.添加ToolStripMenuItem.Click += new System.EventHandler(this.添加ToolStripMenuItem_Click);
             // 
             // 修改ToolStripMenuItem
             // 
             this.修改ToolStripMenuItem.Name = "修改ToolStripMenuItem";
-            this.修改ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.修改ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.修改ToolStripMenuItem.Text = "修改";
             this.修改ToolStripMenuItem.Click += new System.EventHandler(this.修改ToolStripMenuItem_Click);
             // 
             // 删除ToolStripMenuItem
             // 
             this.删除ToolStripMenuItem.Name = "删除ToolStripMenuItem";
-            this.删除ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.删除ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.删除ToolStripMenuItem.Text = "删除";
             this.删除ToolStripMenuItem.Click += new System.EventHandler(this.删除ToolStripMenuItem_Click);
             // 
@@ -361,20 +361,23 @@
             // 添加ToolStripMenuItem1
             // 
             this.添加ToolStripMenuItem1.Name = "添加ToolStripMenuItem1";
-            this.添加ToolStripMenuItem1.Size = new System.Drawing.Size(100, 22);
+            this.添加ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.添加ToolStripMenuItem1.Text = "添加";
+            this.添加ToolStripMenuItem1.Click += new System.EventHandler(this.添加ToolStripMenuItem1_Click);
             // 
             // 修改ToolStripMenuItem1
             // 
             this.修改ToolStripMenuItem1.Name = "修改ToolStripMenuItem1";
-            this.修改ToolStripMenuItem1.Size = new System.Drawing.Size(100, 22);
+            this.修改ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.修改ToolStripMenuItem1.Text = "修改";
+            this.修改ToolStripMenuItem1.Click += new System.EventHandler(this.修改ToolStripMenuItem1_Click);
             // 
             // 删除ToolStripMenuItem1
             // 
             this.删除ToolStripMenuItem1.Name = "删除ToolStripMenuItem1";
-            this.删除ToolStripMenuItem1.Size = new System.Drawing.Size(100, 22);
+            this.删除ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.删除ToolStripMenuItem1.Text = "删除";
+            this.删除ToolStripMenuItem1.Click += new System.EventHandler(this.删除ToolStripMenuItem1_Click);
             // 
             // 出库信息管理ToolStripMenuItem
             // 
@@ -389,20 +392,23 @@
             // 添加ToolStripMenuItem2
             // 
             this.添加ToolStripMenuItem2.Name = "添加ToolStripMenuItem2";
-            this.添加ToolStripMenuItem2.Size = new System.Drawing.Size(100, 22);
+            this.添加ToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.添加ToolStripMenuItem2.Text = "添加";
+            this.添加ToolStripMenuItem2.Click += new System.EventHandler(this.添加ToolStripMenuItem2_Click);
             // 
             // 修改ToolStripMenuItem2
             // 
             this.修改ToolStripMenuItem2.Name = "修改ToolStripMenuItem2";
-            this.修改ToolStripMenuItem2.Size = new System.Drawing.Size(100, 22);
+            this.修改ToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.修改ToolStripMenuItem2.Text = "修改";
+            this.修改ToolStripMenuItem2.Click += new System.EventHandler(this.修改ToolStripMenuItem2_Click);
             // 
             // 删除ToolStripMenuItem2
             // 
             this.删除ToolStripMenuItem2.Name = "删除ToolStripMenuItem2";
-            this.删除ToolStripMenuItem2.Size = new System.Drawing.Size(100, 22);
+            this.删除ToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.删除ToolStripMenuItem2.Text = "删除";
+            this.删除ToolStripMenuItem2.Click += new System.EventHandler(this.删除ToolStripMenuItem2_Click);
             // 
             // 装备库存盘点ToolStripMenuItem
             // 
@@ -613,7 +619,7 @@
             // WelcomePicture
             // 
             this.WelcomePicture.Location = new System.Drawing.Point(0, 25);
-            this.WelcomePicture.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.WelcomePicture.Margin = new System.Windows.Forms.Padding(2);
             this.WelcomePicture.Name = "WelcomePicture";
             this.WelcomePicture.Size = new System.Drawing.Size(932, 466);
             this.WelcomePicture.TabIndex = 0;
@@ -622,7 +628,7 @@
             // 
             this.系统管理.Controls.Add(this.用户管理);
             this.系统管理.Location = new System.Drawing.Point(0, 25);
-            this.系统管理.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.系统管理.Margin = new System.Windows.Forms.Padding(2);
             this.系统管理.Name = "系统管理";
             this.系统管理.Size = new System.Drawing.Size(932, 463);
             this.系统管理.TabIndex = 2;
@@ -631,7 +637,7 @@
             // 
             this.用户管理.Controls.Add(this.添加账户);
             this.用户管理.Location = new System.Drawing.Point(2, 2);
-            this.用户管理.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.用户管理.Margin = new System.Windows.Forms.Padding(2);
             this.用户管理.Name = "用户管理";
             this.用户管理.Size = new System.Drawing.Size(927, 458);
             this.用户管理.TabIndex = 0;
@@ -639,7 +645,7 @@
             // 添加账户
             // 
             this.添加账户.Location = new System.Drawing.Point(0, 0);
-            this.添加账户.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.添加账户.Margin = new System.Windows.Forms.Padding(2);
             this.添加账户.Name = "添加账户";
             this.添加账户.Size = new System.Drawing.Size(929, 463);
             this.添加账户.TabIndex = 0;
@@ -651,7 +657,7 @@
             this.统计与查询.Controls.Add(this.装备库存流水统计表);
             this.统计与查询.Controls.Add(this.出入库统计表);
             this.统计与查询.Location = new System.Drawing.Point(0, 27);
-            this.统计与查询.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.统计与查询.Margin = new System.Windows.Forms.Padding(2);
             this.统计与查询.Name = "统计与查询";
             this.统计与查询.Size = new System.Drawing.Size(927, 461);
             this.统计与查询.TabIndex = 0;
@@ -659,7 +665,7 @@
             // 装备经费汇总
             // 
             this.装备经费汇总.Location = new System.Drawing.Point(0, 0);
-            this.装备经费汇总.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.装备经费汇总.Margin = new System.Windows.Forms.Padding(2);
             this.装备经费汇总.Name = "装备经费汇总";
             this.装备经费汇总.Size = new System.Drawing.Size(932, 463);
             this.装备经费汇总.TabIndex = 0;
@@ -667,7 +673,7 @@
             // 部门人员查询
             // 
             this.部门人员查询.Location = new System.Drawing.Point(0, 0);
-            this.部门人员查询.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.部门人员查询.Margin = new System.Windows.Forms.Padding(2);
             this.部门人员查询.Name = "部门人员查询";
             this.部门人员查询.Size = new System.Drawing.Size(932, 461);
             this.部门人员查询.TabIndex = 0;
@@ -675,7 +681,7 @@
             // 装备库存流水统计表
             // 
             this.装备库存流水统计表.Location = new System.Drawing.Point(0, 0);
-            this.装备库存流水统计表.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.装备库存流水统计表.Margin = new System.Windows.Forms.Padding(2);
             this.装备库存流水统计表.Name = "装备库存流水统计表";
             this.装备库存流水统计表.Size = new System.Drawing.Size(929, 461);
             this.装备库存流水统计表.TabIndex = 1;
@@ -683,56 +689,131 @@
             // 出入库统计表
             // 
             this.出入库统计表.Location = new System.Drawing.Point(2, 2);
-            this.出入库统计表.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.出入库统计表.Margin = new System.Windows.Forms.Padding(2);
             this.出入库统计表.Name = "出入库统计表";
             this.出入库统计表.Size = new System.Drawing.Size(922, 456);
             this.出入库统计表.TabIndex = 0;
             // 
             // 装备库存管理
             // 
-            this.装备库存管理.Controls.Add(this.仓库信息管理);
             this.装备库存管理.Controls.Add(this.出库信息管理);
             this.装备库存管理.Controls.Add(this.入库信息管理);
+            this.装备库存管理.Controls.Add(this.仓库信息管理);
             this.装备库存管理.Controls.Add(this.装备库存盘点);
             this.装备库存管理.Location = new System.Drawing.Point(0, 25);
-            this.装备库存管理.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.装备库存管理.Margin = new System.Windows.Forms.Padding(2);
             this.装备库存管理.Name = "装备库存管理";
             this.装备库存管理.Size = new System.Drawing.Size(932, 466);
             this.装备库存管理.TabIndex = 2;
             // 
-            // 装备库存盘点
+            // 仓库信息管理
             // 
-            this.装备库存盘点.Location = new System.Drawing.Point(0, 0);
-            this.装备库存盘点.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.装备库存盘点.Name = "装备库存盘点";
-            this.装备库存盘点.Size = new System.Drawing.Size(932, 466);
-            this.装备库存盘点.TabIndex = 5;
+            this.仓库信息管理.Controls.Add(this.仓库信息删除);
+            this.仓库信息管理.Controls.Add(this.仓库信息修改);
+            this.仓库信息管理.Controls.Add(this.仓库信息添加);
+            this.仓库信息管理.Location = new System.Drawing.Point(0, 0);
+            this.仓库信息管理.Margin = new System.Windows.Forms.Padding(2);
+            this.仓库信息管理.Name = "仓库信息管理";
+            this.仓库信息管理.Size = new System.Drawing.Size(932, 466);
+            this.仓库信息管理.TabIndex = 0;
+            // 
+            // 仓库信息删除
+            // 
+            this.仓库信息删除.Controls.Add(this.仓库信息管理删除);
+            this.仓库信息删除.Controls.Add(this.dataGridView仓库信息管理删除);
+            this.仓库信息删除.Location = new System.Drawing.Point(0, 0);
+            this.仓库信息删除.Margin = new System.Windows.Forms.Padding(2);
+            this.仓库信息删除.Name = "仓库信息删除";
+            this.仓库信息删除.Size = new System.Drawing.Size(932, 466);
+            this.仓库信息删除.TabIndex = 0;
+            // 
+            // 仓库信息管理删除
+            // 
+            this.仓库信息管理删除.Location = new System.Drawing.Point(398, 402);
+            this.仓库信息管理删除.Name = "仓库信息管理删除";
+            this.仓库信息管理删除.Size = new System.Drawing.Size(75, 23);
+            this.仓库信息管理删除.TabIndex = 5;
+            this.仓库信息管理删除.Text = "删除";
+            this.仓库信息管理删除.UseVisualStyleBackColor = true;
+            this.仓库信息管理删除.Click += new System.EventHandler(this.仓库信息管理删除_Click);
+            // 
+            // dataGridView仓库信息管理删除
+            // 
+            this.dataGridView仓库信息管理删除.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView仓库信息管理删除.Location = new System.Drawing.Point(58, 52);
+            this.dataGridView仓库信息管理删除.Name = "dataGridView仓库信息管理删除";
+            this.dataGridView仓库信息管理删除.RowTemplate.Height = 23;
+            this.dataGridView仓库信息管理删除.Size = new System.Drawing.Size(812, 344);
+            this.dataGridView仓库信息管理删除.TabIndex = 4;
+            // 
+            // 仓库信息修改
+            // 
+            this.仓库信息修改.Controls.Add(this.仓库信息修改修改);
+            this.仓库信息修改.Controls.Add(this.dataGridView仓库信息管理修改);
+            this.仓库信息修改.Location = new System.Drawing.Point(0, 0);
+            this.仓库信息修改.Margin = new System.Windows.Forms.Padding(2);
+            this.仓库信息修改.Name = "仓库信息修改";
+            this.仓库信息修改.Size = new System.Drawing.Size(932, 466);
+            this.仓库信息修改.TabIndex = 1;
+            // 
+            // 仓库信息修改修改
+            // 
+            this.仓库信息修改修改.Location = new System.Drawing.Point(398, 402);
+            this.仓库信息修改修改.Name = "仓库信息修改修改";
+            this.仓库信息修改修改.Size = new System.Drawing.Size(75, 23);
+            this.仓库信息修改修改.TabIndex = 5;
+            this.仓库信息修改修改.Text = "修改";
+            this.仓库信息修改修改.UseVisualStyleBackColor = true;
+            this.仓库信息修改修改.Click += new System.EventHandler(this.仓库信息修改修改_Click);
+            // 
+            // dataGridView仓库信息管理修改
+            // 
+            this.dataGridView仓库信息管理修改.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView仓库信息管理修改.Location = new System.Drawing.Point(58, 52);
+            this.dataGridView仓库信息管理修改.Name = "dataGridView仓库信息管理修改";
+            this.dataGridView仓库信息管理修改.RowTemplate.Height = 23;
+            this.dataGridView仓库信息管理修改.Size = new System.Drawing.Size(812, 344);
+            this.dataGridView仓库信息管理修改.TabIndex = 4;
+            // 
+            // 仓库信息添加
+            // 
+            this.仓库信息添加.Controls.Add(this.仓库信息管理添加);
+            this.仓库信息添加.Controls.Add(this.dataGridView仓库信息管理添加);
+            this.仓库信息添加.Location = new System.Drawing.Point(0, 0);
+            this.仓库信息添加.Margin = new System.Windows.Forms.Padding(2);
+            this.仓库信息添加.Name = "仓库信息添加";
+            this.仓库信息添加.Size = new System.Drawing.Size(932, 466);
+            this.仓库信息添加.TabIndex = 2;
+            // 
+            // 仓库信息管理添加
+            // 
+            this.仓库信息管理添加.Location = new System.Drawing.Point(398, 402);
+            this.仓库信息管理添加.Name = "仓库信息管理添加";
+            this.仓库信息管理添加.Size = new System.Drawing.Size(75, 23);
+            this.仓库信息管理添加.TabIndex = 3;
+            this.仓库信息管理添加.Text = "添加";
+            this.仓库信息管理添加.UseVisualStyleBackColor = true;
+            this.仓库信息管理添加.Click += new System.EventHandler(this.仓库信息管理添加_Click);
+            // 
+            // dataGridView仓库信息管理添加
+            // 
+            this.dataGridView仓库信息管理添加.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView仓库信息管理添加.Location = new System.Drawing.Point(58, 52);
+            this.dataGridView仓库信息管理添加.Name = "dataGridView仓库信息管理添加";
+            this.dataGridView仓库信息管理添加.RowTemplate.Height = 23;
+            this.dataGridView仓库信息管理添加.Size = new System.Drawing.Size(812, 344);
+            this.dataGridView仓库信息管理添加.TabIndex = 2;
             // 
             // 出库信息管理
             // 
-            this.出库信息管理.Controls.Add(this.出库信息修改);
-            this.出库信息管理.Controls.Add(this.出库信息删除);
             this.出库信息管理.Controls.Add(this.出库信息添加);
+            this.出库信息管理.Controls.Add(this.出库信息删除);
+            this.出库信息管理.Controls.Add(this.出库信息修改);
             this.出库信息管理.Location = new System.Drawing.Point(0, 0);
-            this.出库信息管理.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.出库信息管理.Margin = new System.Windows.Forms.Padding(2);
             this.出库信息管理.Name = "出库信息管理";
             this.出库信息管理.Size = new System.Drawing.Size(932, 466);
             this.出库信息管理.TabIndex = 4;
-            // 
-            // 出库信息删除
-            // 
-            this.出库信息删除.Controls.Add(this.出库信息管理删除时间选择月);
-            this.出库信息删除.Controls.Add(this.label3);
-            this.出库信息删除.Controls.Add(this.label2);
-            this.出库信息删除.Controls.Add(this.出库信息管理删除时间选择年);
-            this.出库信息删除.Controls.Add(this.label1);
-            this.出库信息删除.Controls.Add(this.出库信息管理删除);
-            this.出库信息删除.Controls.Add(this.dataGridView出库信息管理删除);
-            this.出库信息删除.Location = new System.Drawing.Point(0, 0);
-            this.出库信息删除.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.出库信息删除.Name = "出库信息删除";
-            this.出库信息删除.Size = new System.Drawing.Size(932, 466);
-            this.出库信息删除.TabIndex = 0;
             // 
             // 出库信息修改
             // 
@@ -744,360 +825,10 @@
             this.出库信息修改.Controls.Add(this.dataGridView出库信息管理修改);
             this.出库信息修改.Controls.Add(this.出库信息管理修改);
             this.出库信息修改.Location = new System.Drawing.Point(0, 0);
-            this.出库信息修改.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.出库信息修改.Margin = new System.Windows.Forms.Padding(2);
             this.出库信息修改.Name = "出库信息修改";
             this.出库信息修改.Size = new System.Drawing.Size(932, 466);
             this.出库信息修改.TabIndex = 0;
-            // 
-            // 出库信息添加
-            // 
-            this.出库信息添加.Controls.Add(this.出库信息管理添加时间选择月);
-            this.出库信息添加.Controls.Add(this.label4);
-            this.出库信息添加.Controls.Add(this.label5);
-            this.出库信息添加.Controls.Add(this.出库信息管理添加时间选择年);
-            this.出库信息添加.Controls.Add(this.label6);
-            this.出库信息添加.Controls.Add(this.dataGridView出库信息管理添加);
-            this.出库信息添加.Controls.Add(this.出库信息管理添加);
-            this.出库信息添加.Location = new System.Drawing.Point(0, 0);
-            this.出库信息添加.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.出库信息添加.Name = "出库信息添加";
-            this.出库信息添加.Size = new System.Drawing.Size(932, 466);
-            this.出库信息添加.TabIndex = 0;
-            // 
-            // 入库信息管理
-            // 
-            this.入库信息管理.Controls.Add(this.入库信息添加);
-            this.入库信息管理.Controls.Add(this.入库信息修改);
-            this.入库信息管理.Controls.Add(this.入库信息删除);
-            this.入库信息管理.Location = new System.Drawing.Point(0, 0);
-            this.入库信息管理.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.入库信息管理.Name = "入库信息管理";
-            this.入库信息管理.Size = new System.Drawing.Size(932, 490);
-            this.入库信息管理.TabIndex = 3;
-            // 
-            // 入库信息删除
-            // 
-            this.入库信息删除.Controls.Add(this.入库信息管理删除时间选择月);
-            this.入库信息删除.Controls.Add(this.label10);
-            this.入库信息删除.Controls.Add(this.label11);
-            this.入库信息删除.Controls.Add(this.入库信息管理删除时间选择年);
-            this.入库信息删除.Controls.Add(this.label12);
-            this.入库信息删除.Controls.Add(this.入库信息管理删除);
-            this.入库信息删除.Controls.Add(this.dataGridView入库信息管理删除);
-            this.入库信息删除.Location = new System.Drawing.Point(0, 0);
-            this.入库信息删除.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.入库信息删除.Name = "入库信息删除";
-            this.入库信息删除.Size = new System.Drawing.Size(932, 466);
-            this.入库信息删除.TabIndex = 0;
-            // 
-            // 入库信息修改
-            // 
-            this.入库信息修改.Controls.Add(this.入库信息管理修改时间选择月);
-            this.入库信息修改.Controls.Add(this.label13);
-            this.入库信息修改.Controls.Add(this.label14);
-            this.入库信息修改.Controls.Add(this.入库信息管理修改时间选择年);
-            this.入库信息修改.Controls.Add(this.label15);
-            this.入库信息修改.Controls.Add(this.入库信息管理修改);
-            this.入库信息修改.Controls.Add(this.dataGridView入库信息管理修改);
-            this.入库信息修改.Location = new System.Drawing.Point(0, 0);
-            this.入库信息修改.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.入库信息修改.Name = "入库信息修改";
-            this.入库信息修改.Size = new System.Drawing.Size(932, 466);
-            this.入库信息修改.TabIndex = 1;
-            // 
-            // 入库信息添加
-            // 
-            this.入库信息添加.Controls.Add(this.入库信息管理添加时间选择月);
-            this.入库信息添加.Controls.Add(this.label16);
-            this.入库信息添加.Controls.Add(this.label17);
-            this.入库信息添加.Controls.Add(this.入库信息管理添加时间选择年);
-            this.入库信息添加.Controls.Add(this.label18);
-            this.入库信息添加.Controls.Add(this.入库信息管理添加);
-            this.入库信息添加.Controls.Add(this.dataGridView入库信息管理添加);
-            this.入库信息添加.Location = new System.Drawing.Point(0, 0);
-            this.入库信息添加.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.入库信息添加.Name = "入库信息添加";
-            this.入库信息添加.Size = new System.Drawing.Size(932, 466);
-            this.入库信息添加.TabIndex = 0;
-            // 
-            // 仓库信息管理
-            // 
-            this.仓库信息管理.Controls.Add(this.仓库信息删除);
-            this.仓库信息管理.Controls.Add(this.仓库信息修改);
-            this.仓库信息管理.Controls.Add(this.仓库信息添加);
-            this.仓库信息管理.Location = new System.Drawing.Point(0, 0);
-            this.仓库信息管理.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.仓库信息管理.Name = "仓库信息管理";
-            this.仓库信息管理.Size = new System.Drawing.Size(932, 466);
-            this.仓库信息管理.TabIndex = 0;
-            // 
-            // 仓库信息添加
-            // 
-            this.仓库信息添加.Controls.Add(this.仓库信息管理添加);
-            this.仓库信息添加.Controls.Add(this.dataGridView仓库信息管理添加);
-            this.仓库信息添加.Location = new System.Drawing.Point(0, 0);
-            this.仓库信息添加.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.仓库信息添加.Name = "仓库信息添加";
-            this.仓库信息添加.Size = new System.Drawing.Size(932, 466);
-            this.仓库信息添加.TabIndex = 2;
-            // 
-            // 仓库信息修改
-            // 
-            this.仓库信息修改.Controls.Add(this.仓库信息修改修改);
-            this.仓库信息修改.Controls.Add(this.dataGridView仓库信息管理修改);
-            this.仓库信息修改.Location = new System.Drawing.Point(0, 0);
-            this.仓库信息修改.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.仓库信息修改.Name = "仓库信息修改";
-            this.仓库信息修改.Size = new System.Drawing.Size(932, 466);
-            this.仓库信息修改.TabIndex = 1;
-            // 
-            // 仓库信息删除
-            // 
-            this.仓库信息删除.Controls.Add(this.仓库信息管理删除);
-            this.仓库信息删除.Controls.Add(this.dataGridView仓库信息管理删除);
-            this.仓库信息删除.Location = new System.Drawing.Point(0, 0);
-            this.仓库信息删除.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.仓库信息删除.Name = "仓库信息删除";
-            this.仓库信息删除.Size = new System.Drawing.Size(932, 466);
-            this.仓库信息删除.TabIndex = 0;
-            // 
-            // 装备经费管理
-            // 
-            this.装备经费管理.Controls.Add(this.经费使用管理);
-            this.装备经费管理.Controls.Add(this.经费入账管理);
-            this.装备经费管理.Controls.Add(this.经费明细管理);
-            this.装备经费管理.Location = new System.Drawing.Point(0, 25);
-            this.装备经费管理.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.装备经费管理.Name = "装备经费管理";
-            this.装备经费管理.Size = new System.Drawing.Size(932, 466);
-            this.装备经费管理.TabIndex = 6;
-            // 
-            // 经费使用管理
-            // 
-            this.经费使用管理.Controls.Add(this.经费使用删除);
-            this.经费使用管理.Controls.Add(this.经费使用修改);
-            this.经费使用管理.Controls.Add(this.经费使用添加);
-            this.经费使用管理.Location = new System.Drawing.Point(0, 0);
-            this.经费使用管理.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.经费使用管理.Name = "经费使用管理";
-            this.经费使用管理.Size = new System.Drawing.Size(932, 466);
-            this.经费使用管理.TabIndex = 2;
-            // 
-            // 经费使用删除
-            // 
-            this.经费使用删除.Location = new System.Drawing.Point(0, 0);
-            this.经费使用删除.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.经费使用删除.Name = "经费使用删除";
-            this.经费使用删除.Size = new System.Drawing.Size(932, 466);
-            this.经费使用删除.TabIndex = 2;
-            // 
-            // 经费使用修改
-            // 
-            this.经费使用修改.Location = new System.Drawing.Point(0, 0);
-            this.经费使用修改.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.经费使用修改.Name = "经费使用修改";
-            this.经费使用修改.Size = new System.Drawing.Size(932, 466);
-            this.经费使用修改.TabIndex = 1;
-            // 
-            // 经费使用添加
-            // 
-            this.经费使用添加.Location = new System.Drawing.Point(0, 0);
-            this.经费使用添加.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.经费使用添加.Name = "经费使用添加";
-            this.经费使用添加.Size = new System.Drawing.Size(932, 466);
-            this.经费使用添加.TabIndex = 0;
-            // 
-            // 经费入账管理
-            // 
-            this.经费入账管理.Controls.Add(this.经费入账删除);
-            this.经费入账管理.Controls.Add(this.经费入账修改);
-            this.经费入账管理.Controls.Add(this.经费入账添加);
-            this.经费入账管理.Location = new System.Drawing.Point(0, 0);
-            this.经费入账管理.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.经费入账管理.Name = "经费入账管理";
-            this.经费入账管理.Size = new System.Drawing.Size(932, 466);
-            this.经费入账管理.TabIndex = 1;
-            // 
-            // 经费入账删除
-            // 
-            this.经费入账删除.Location = new System.Drawing.Point(0, 0);
-            this.经费入账删除.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.经费入账删除.Name = "经费入账删除";
-            this.经费入账删除.Size = new System.Drawing.Size(932, 466);
-            this.经费入账删除.TabIndex = 2;
-            // 
-            // 经费入账修改
-            // 
-            this.经费入账修改.Location = new System.Drawing.Point(0, 0);
-            this.经费入账修改.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.经费入账修改.Name = "经费入账修改";
-            this.经费入账修改.Size = new System.Drawing.Size(932, 466);
-            this.经费入账修改.TabIndex = 1;
-            // 
-            // 经费入账添加
-            // 
-            this.经费入账添加.Location = new System.Drawing.Point(0, 0);
-            this.经费入账添加.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.经费入账添加.Name = "经费入账添加";
-            this.经费入账添加.Size = new System.Drawing.Size(932, 466);
-            this.经费入账添加.TabIndex = 0;
-            // 
-            // 经费明细管理
-            // 
-            this.经费明细管理.Controls.Add(this.经费明细删除);
-            this.经费明细管理.Controls.Add(this.经费明细修改);
-            this.经费明细管理.Controls.Add(this.经费明细添加);
-            this.经费明细管理.Location = new System.Drawing.Point(0, 0);
-            this.经费明细管理.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.经费明细管理.Name = "经费明细管理";
-            this.经费明细管理.Size = new System.Drawing.Size(932, 466);
-            this.经费明细管理.TabIndex = 0;
-            // 
-            // 经费明细删除
-            // 
-            this.经费明细删除.Location = new System.Drawing.Point(0, 0);
-            this.经费明细删除.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.经费明细删除.Name = "经费明细删除";
-            this.经费明细删除.Size = new System.Drawing.Size(932, 466);
-            this.经费明细删除.TabIndex = 2;
-            // 
-            // 经费明细修改
-            // 
-            this.经费明细修改.Location = new System.Drawing.Point(0, 0);
-            this.经费明细修改.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.经费明细修改.Name = "经费明细修改";
-            this.经费明细修改.Size = new System.Drawing.Size(932, 466);
-            this.经费明细修改.TabIndex = 1;
-            // 
-            // 经费明细添加
-            // 
-            this.经费明细添加.Location = new System.Drawing.Point(0, 0);
-            this.经费明细添加.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.经费明细添加.Name = "经费明细添加";
-            this.经费明细添加.Size = new System.Drawing.Size(932, 466);
-            this.经费明细添加.TabIndex = 0;
-            // 
-            // 出库信息管理添加
-            // 
-            this.出库信息管理添加.Location = new System.Drawing.Point(398, 402);
-            this.出库信息管理添加.Name = "出库信息管理添加";
-            this.出库信息管理添加.Size = new System.Drawing.Size(75, 23);
-            this.出库信息管理添加.TabIndex = 0;
-            this.出库信息管理添加.Text = "添加";
-            this.出库信息管理添加.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView出库信息管理添加
-            // 
-            this.dataGridView出库信息管理添加.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView出库信息管理添加.Location = new System.Drawing.Point(58, 52);
-            this.dataGridView出库信息管理添加.Name = "dataGridView出库信息管理添加";
-            this.dataGridView出库信息管理添加.RowTemplate.Height = 23;
-            this.dataGridView出库信息管理添加.Size = new System.Drawing.Size(812, 344);
-            this.dataGridView出库信息管理添加.TabIndex = 1;
-            // 
-            // dataGridView出库信息管理删除
-            // 
-            this.dataGridView出库信息管理删除.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView出库信息管理删除.Location = new System.Drawing.Point(58, 52);
-            this.dataGridView出库信息管理删除.Name = "dataGridView出库信息管理删除";
-            this.dataGridView出库信息管理删除.RowTemplate.Height = 23;
-            this.dataGridView出库信息管理删除.Size = new System.Drawing.Size(812, 344);
-            this.dataGridView出库信息管理删除.TabIndex = 0;
-            // 
-            // 出库信息管理删除
-            // 
-            this.出库信息管理删除.Location = new System.Drawing.Point(398, 402);
-            this.出库信息管理删除.Name = "出库信息管理删除";
-            this.出库信息管理删除.Size = new System.Drawing.Size(75, 23);
-            this.出库信息管理删除.TabIndex = 1;
-            this.出库信息管理删除.Text = "删除";
-            this.出库信息管理删除.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(135, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 12);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "选择时间:";
-            // 
-            // 出库信息管理删除时间选择年
-            // 
-            this.出库信息管理删除时间选择年.FormattingEnabled = true;
-            this.出库信息管理删除时间选择年.Location = new System.Drawing.Point(200, 22);
-            this.出库信息管理删除时间选择年.Name = "出库信息管理删除时间选择年";
-            this.出库信息管理删除时间选择年.Size = new System.Drawing.Size(121, 20);
-            this.出库信息管理删除时间选择年.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(327, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(17, 12);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "年";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(477, 25);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(17, 12);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "月";
-            // 
-            // 出库信息管理删除时间选择月
-            // 
-            this.出库信息管理删除时间选择月.FormattingEnabled = true;
-            this.出库信息管理删除时间选择月.Location = new System.Drawing.Point(350, 22);
-            this.出库信息管理删除时间选择月.Name = "出库信息管理删除时间选择月";
-            this.出库信息管理删除时间选择月.Size = new System.Drawing.Size(121, 20);
-            this.出库信息管理删除时间选择月.TabIndex = 6;
-            // 
-            // 出库信息管理添加时间选择月
-            // 
-            this.出库信息管理添加时间选择月.FormattingEnabled = true;
-            this.出库信息管理添加时间选择月.Location = new System.Drawing.Point(350, 17);
-            this.出库信息管理添加时间选择月.Name = "出库信息管理添加时间选择月";
-            this.出库信息管理添加时间选择月.Size = new System.Drawing.Size(121, 20);
-            this.出库信息管理添加时间选择月.TabIndex = 11;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(477, 20);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(17, 12);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "月";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(327, 20);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(17, 12);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "年";
-            // 
-            // 出库信息管理添加时间选择年
-            // 
-            this.出库信息管理添加时间选择年.FormattingEnabled = true;
-            this.出库信息管理添加时间选择年.Location = new System.Drawing.Point(200, 17);
-            this.出库信息管理添加时间选择年.Name = "出库信息管理添加时间选择年";
-            this.出库信息管理添加时间选择年.Size = new System.Drawing.Size(121, 20);
-            this.出库信息管理添加时间选择年.TabIndex = 8;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(135, 20);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 12);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "选择时间:";
             // 
             // 出库信息管理修改时间选择月
             // 
@@ -1159,186 +890,187 @@
             this.出库信息管理修改.TabIndex = 12;
             this.出库信息管理修改.Text = "修改";
             this.出库信息管理修改.UseVisualStyleBackColor = true;
+            this.出库信息管理修改.Click += new System.EventHandler(this.出库信息管理修改_Click);
             // 
-            // 仓库信息管理添加
+            // 出库信息删除
             // 
-            this.仓库信息管理添加.Location = new System.Drawing.Point(398, 402);
-            this.仓库信息管理添加.Name = "仓库信息管理添加";
-            this.仓库信息管理添加.Size = new System.Drawing.Size(75, 23);
-            this.仓库信息管理添加.TabIndex = 3;
-            this.仓库信息管理添加.Text = "添加";
-            this.仓库信息管理添加.UseVisualStyleBackColor = true;
-            this.仓库信息管理添加.Click += new System.EventHandler(this.仓库信息管理添加_Click);
+            this.出库信息删除.Controls.Add(this.出库信息管理删除时间选择月);
+            this.出库信息删除.Controls.Add(this.label3);
+            this.出库信息删除.Controls.Add(this.label2);
+            this.出库信息删除.Controls.Add(this.出库信息管理删除时间选择年);
+            this.出库信息删除.Controls.Add(this.label1);
+            this.出库信息删除.Controls.Add(this.出库信息管理删除);
+            this.出库信息删除.Controls.Add(this.dataGridView出库信息管理删除);
+            this.出库信息删除.Location = new System.Drawing.Point(0, 0);
+            this.出库信息删除.Margin = new System.Windows.Forms.Padding(2);
+            this.出库信息删除.Name = "出库信息删除";
+            this.出库信息删除.Size = new System.Drawing.Size(932, 466);
+            this.出库信息删除.TabIndex = 0;
             // 
-            // dataGridView仓库信息管理添加
+            // 出库信息管理删除时间选择月
             // 
-            this.dataGridView仓库信息管理添加.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView仓库信息管理添加.Location = new System.Drawing.Point(58, 52);
-            this.dataGridView仓库信息管理添加.Name = "dataGridView仓库信息管理添加";
-            this.dataGridView仓库信息管理添加.RowTemplate.Height = 23;
-            this.dataGridView仓库信息管理添加.Size = new System.Drawing.Size(812, 344);
-            this.dataGridView仓库信息管理添加.TabIndex = 2;
+            this.出库信息管理删除时间选择月.FormattingEnabled = true;
+            this.出库信息管理删除时间选择月.Location = new System.Drawing.Point(350, 22);
+            this.出库信息管理删除时间选择月.Name = "出库信息管理删除时间选择月";
+            this.出库信息管理删除时间选择月.Size = new System.Drawing.Size(121, 20);
+            this.出库信息管理删除时间选择月.TabIndex = 6;
             // 
-            // 仓库信息修改修改
+            // label3
             // 
-            this.仓库信息修改修改.Location = new System.Drawing.Point(398, 402);
-            this.仓库信息修改修改.Name = "仓库信息修改修改";
-            this.仓库信息修改修改.Size = new System.Drawing.Size(75, 23);
-            this.仓库信息修改修改.TabIndex = 5;
-            this.仓库信息修改修改.Text = "修改";
-            this.仓库信息修改修改.UseVisualStyleBackColor = true;
-            this.仓库信息修改修改.Click += new System.EventHandler(this.仓库信息修改修改_Click);
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(477, 25);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(17, 12);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "月";
             // 
-            // dataGridView仓库信息管理修改
+            // label2
             // 
-            this.dataGridView仓库信息管理修改.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView仓库信息管理修改.Location = new System.Drawing.Point(58, 52);
-            this.dataGridView仓库信息管理修改.Name = "dataGridView仓库信息管理修改";
-            this.dataGridView仓库信息管理修改.RowTemplate.Height = 23;
-            this.dataGridView仓库信息管理修改.Size = new System.Drawing.Size(812, 344);
-            this.dataGridView仓库信息管理修改.TabIndex = 4;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(327, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(17, 12);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "年";
             // 
-            // 仓库信息管理删除
+            // 出库信息管理删除时间选择年
             // 
-            this.仓库信息管理删除.Location = new System.Drawing.Point(398, 402);
-            this.仓库信息管理删除.Name = "仓库信息管理删除";
-            this.仓库信息管理删除.Size = new System.Drawing.Size(75, 23);
-            this.仓库信息管理删除.TabIndex = 5;
-            this.仓库信息管理删除.Text = "删除";
-            this.仓库信息管理删除.UseVisualStyleBackColor = true;
-            this.仓库信息管理删除.Click += new System.EventHandler(this.仓库信息管理删除_Click);
+            this.出库信息管理删除时间选择年.FormattingEnabled = true;
+            this.出库信息管理删除时间选择年.Location = new System.Drawing.Point(200, 22);
+            this.出库信息管理删除时间选择年.Name = "出库信息管理删除时间选择年";
+            this.出库信息管理删除时间选择年.Size = new System.Drawing.Size(121, 20);
+            this.出库信息管理删除时间选择年.TabIndex = 3;
             // 
-            // dataGridView仓库信息管理删除
+            // label1
             // 
-            this.dataGridView仓库信息管理删除.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView仓库信息管理删除.Location = new System.Drawing.Point(58, 52);
-            this.dataGridView仓库信息管理删除.Name = "dataGridView仓库信息管理删除";
-            this.dataGridView仓库信息管理删除.RowTemplate.Height = 23;
-            this.dataGridView仓库信息管理删除.Size = new System.Drawing.Size(812, 344);
-            this.dataGridView仓库信息管理删除.TabIndex = 4;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(135, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 12);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "选择时间:";
             // 
-            // 入库信息管理删除时间选择月
+            // 出库信息管理删除
             // 
-            this.入库信息管理删除时间选择月.FormattingEnabled = true;
-            this.入库信息管理删除时间选择月.Location = new System.Drawing.Point(350, 22);
-            this.入库信息管理删除时间选择月.Name = "入库信息管理删除时间选择月";
-            this.入库信息管理删除时间选择月.Size = new System.Drawing.Size(121, 20);
-            this.入库信息管理删除时间选择月.TabIndex = 13;
+            this.出库信息管理删除.Location = new System.Drawing.Point(398, 402);
+            this.出库信息管理删除.Name = "出库信息管理删除";
+            this.出库信息管理删除.Size = new System.Drawing.Size(75, 23);
+            this.出库信息管理删除.TabIndex = 1;
+            this.出库信息管理删除.Text = "删除";
+            this.出库信息管理删除.UseVisualStyleBackColor = true;
+            this.出库信息管理删除.Click += new System.EventHandler(this.出库信息管理删除_Click);
             // 
-            // label10
+            // dataGridView出库信息管理删除
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(477, 25);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(17, 12);
-            this.label10.TabIndex = 12;
-            this.label10.Text = "月";
+            this.dataGridView出库信息管理删除.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView出库信息管理删除.Location = new System.Drawing.Point(58, 52);
+            this.dataGridView出库信息管理删除.Name = "dataGridView出库信息管理删除";
+            this.dataGridView出库信息管理删除.RowTemplate.Height = 23;
+            this.dataGridView出库信息管理删除.Size = new System.Drawing.Size(812, 344);
+            this.dataGridView出库信息管理删除.TabIndex = 0;
             // 
-            // label11
+            // 出库信息添加
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(327, 25);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(17, 12);
-            this.label11.TabIndex = 11;
-            this.label11.Text = "年";
+            this.出库信息添加.Controls.Add(this.出库信息管理添加时间选择月);
+            this.出库信息添加.Controls.Add(this.label4);
+            this.出库信息添加.Controls.Add(this.label5);
+            this.出库信息添加.Controls.Add(this.出库信息管理添加时间选择年);
+            this.出库信息添加.Controls.Add(this.label6);
+            this.出库信息添加.Controls.Add(this.dataGridView出库信息管理添加);
+            this.出库信息添加.Controls.Add(this.出库信息管理添加);
+            this.出库信息添加.Location = new System.Drawing.Point(0, 0);
+            this.出库信息添加.Margin = new System.Windows.Forms.Padding(2);
+            this.出库信息添加.Name = "出库信息添加";
+            this.出库信息添加.Size = new System.Drawing.Size(932, 466);
+            this.出库信息添加.TabIndex = 0;
             // 
-            // 入库信息管理删除时间选择年
+            // 出库信息管理添加时间选择月
             // 
-            this.入库信息管理删除时间选择年.FormattingEnabled = true;
-            this.入库信息管理删除时间选择年.Location = new System.Drawing.Point(200, 22);
-            this.入库信息管理删除时间选择年.Name = "入库信息管理删除时间选择年";
-            this.入库信息管理删除时间选择年.Size = new System.Drawing.Size(121, 20);
-            this.入库信息管理删除时间选择年.TabIndex = 10;
+            this.出库信息管理添加时间选择月.FormattingEnabled = true;
+            this.出库信息管理添加时间选择月.Location = new System.Drawing.Point(350, 17);
+            this.出库信息管理添加时间选择月.Name = "出库信息管理添加时间选择月";
+            this.出库信息管理添加时间选择月.Size = new System.Drawing.Size(121, 20);
+            this.出库信息管理添加时间选择月.TabIndex = 11;
             // 
-            // label12
+            // label4
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(135, 25);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(59, 12);
-            this.label12.TabIndex = 9;
-            this.label12.Text = "选择时间:";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(477, 20);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(17, 12);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "月";
             // 
-            // 入库信息管理删除
+            // label5
             // 
-            this.入库信息管理删除.Location = new System.Drawing.Point(396, 402);
-            this.入库信息管理删除.Name = "入库信息管理删除";
-            this.入库信息管理删除.Size = new System.Drawing.Size(75, 23);
-            this.入库信息管理删除.TabIndex = 8;
-            this.入库信息管理删除.Text = "删除";
-            this.入库信息管理删除.UseVisualStyleBackColor = true;
-            this.入库信息管理删除.Click += new System.EventHandler(this.入库信息管理删除_Click);
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(327, 20);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(17, 12);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "年";
             // 
-            // dataGridView入库信息管理删除
+            // 出库信息管理添加时间选择年
             // 
-            this.dataGridView入库信息管理删除.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView入库信息管理删除.Location = new System.Drawing.Point(58, 52);
-            this.dataGridView入库信息管理删除.Name = "dataGridView入库信息管理删除";
-            this.dataGridView入库信息管理删除.RowTemplate.Height = 23;
-            this.dataGridView入库信息管理删除.Size = new System.Drawing.Size(812, 344);
-            this.dataGridView入库信息管理删除.TabIndex = 7;
+            this.出库信息管理添加时间选择年.FormattingEnabled = true;
+            this.出库信息管理添加时间选择年.Location = new System.Drawing.Point(200, 17);
+            this.出库信息管理添加时间选择年.Name = "出库信息管理添加时间选择年";
+            this.出库信息管理添加时间选择年.Size = new System.Drawing.Size(121, 20);
+            this.出库信息管理添加时间选择年.TabIndex = 8;
             // 
-            // 入库信息管理修改时间选择月
+            // label6
             // 
-            this.入库信息管理修改时间选择月.FormattingEnabled = true;
-            this.入库信息管理修改时间选择月.Location = new System.Drawing.Point(350, 22);
-            this.入库信息管理修改时间选择月.Name = "入库信息管理修改时间选择月";
-            this.入库信息管理修改时间选择月.Size = new System.Drawing.Size(121, 20);
-            this.入库信息管理修改时间选择月.TabIndex = 13;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(135, 20);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(59, 12);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "选择时间:";
             // 
-            // label13
+            // dataGridView出库信息管理添加
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(477, 25);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(17, 12);
-            this.label13.TabIndex = 12;
-            this.label13.Text = "月";
+            this.dataGridView出库信息管理添加.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView出库信息管理添加.Location = new System.Drawing.Point(58, 52);
+            this.dataGridView出库信息管理添加.Name = "dataGridView出库信息管理添加";
+            this.dataGridView出库信息管理添加.RowTemplate.Height = 23;
+            this.dataGridView出库信息管理添加.Size = new System.Drawing.Size(812, 344);
+            this.dataGridView出库信息管理添加.TabIndex = 1;
             // 
-            // label14
+            // 出库信息管理添加
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(327, 25);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(17, 12);
-            this.label14.TabIndex = 11;
-            this.label14.Text = "年";
+            this.出库信息管理添加.Location = new System.Drawing.Point(398, 402);
+            this.出库信息管理添加.Name = "出库信息管理添加";
+            this.出库信息管理添加.Size = new System.Drawing.Size(75, 23);
+            this.出库信息管理添加.TabIndex = 0;
+            this.出库信息管理添加.Text = "添加";
+            this.出库信息管理添加.UseVisualStyleBackColor = true;
+            this.出库信息管理添加.Click += new System.EventHandler(this.出库信息管理添加_Click);
             // 
-            // 入库信息管理修改时间选择年
+            // 入库信息管理
             // 
-            this.入库信息管理修改时间选择年.FormattingEnabled = true;
-            this.入库信息管理修改时间选择年.Location = new System.Drawing.Point(200, 22);
-            this.入库信息管理修改时间选择年.Name = "入库信息管理修改时间选择年";
-            this.入库信息管理修改时间选择年.Size = new System.Drawing.Size(121, 20);
-            this.入库信息管理修改时间选择年.TabIndex = 10;
+            this.入库信息管理.Controls.Add(this.入库信息添加);
+            this.入库信息管理.Controls.Add(this.入库信息删除);
+            this.入库信息管理.Controls.Add(this.入库信息修改);
+            this.入库信息管理.Location = new System.Drawing.Point(0, 0);
+            this.入库信息管理.Margin = new System.Windows.Forms.Padding(2);
+            this.入库信息管理.Name = "入库信息管理";
+            this.入库信息管理.Size = new System.Drawing.Size(932, 490);
+            this.入库信息管理.TabIndex = 3;
             // 
-            // label15
+            // 入库信息添加
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(135, 25);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(59, 12);
-            this.label15.TabIndex = 9;
-            this.label15.Text = "选择时间:";
-            // 
-            // 入库信息管理修改
-            // 
-            this.入库信息管理修改.Location = new System.Drawing.Point(398, 402);
-            this.入库信息管理修改.Name = "入库信息管理修改";
-            this.入库信息管理修改.Size = new System.Drawing.Size(75, 23);
-            this.入库信息管理修改.TabIndex = 8;
-            this.入库信息管理修改.Text = "修改";
-            this.入库信息管理修改.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView入库信息管理修改
-            // 
-            this.dataGridView入库信息管理修改.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView入库信息管理修改.Location = new System.Drawing.Point(58, 52);
-            this.dataGridView入库信息管理修改.Name = "dataGridView入库信息管理修改";
-            this.dataGridView入库信息管理修改.RowTemplate.Height = 23;
-            this.dataGridView入库信息管理修改.Size = new System.Drawing.Size(812, 344);
-            this.dataGridView入库信息管理修改.TabIndex = 7;
+            this.入库信息添加.Controls.Add(this.入库信息管理添加时间选择月);
+            this.入库信息添加.Controls.Add(this.label16);
+            this.入库信息添加.Controls.Add(this.label17);
+            this.入库信息添加.Controls.Add(this.入库信息管理添加时间选择年);
+            this.入库信息添加.Controls.Add(this.label18);
+            this.入库信息添加.Controls.Add(this.入库信息管理添加);
+            this.入库信息添加.Controls.Add(this.dataGridView入库信息管理添加);
+            this.入库信息添加.Location = new System.Drawing.Point(0, 0);
+            this.入库信息添加.Margin = new System.Windows.Forms.Padding(2);
+            this.入库信息添加.Name = "入库信息添加";
+            this.入库信息添加.Size = new System.Drawing.Size(932, 466);
+            this.入库信息添加.TabIndex = 0;
             // 
             // 入库信息管理添加时间选择月
             // 
@@ -1402,6 +1134,284 @@
             this.dataGridView入库信息管理添加.Size = new System.Drawing.Size(812, 344);
             this.dataGridView入库信息管理添加.TabIndex = 7;
             // 
+            // 入库信息修改
+            // 
+            this.入库信息修改.Controls.Add(this.入库信息管理修改时间选择月);
+            this.入库信息修改.Controls.Add(this.label13);
+            this.入库信息修改.Controls.Add(this.label14);
+            this.入库信息修改.Controls.Add(this.入库信息管理修改时间选择年);
+            this.入库信息修改.Controls.Add(this.label15);
+            this.入库信息修改.Controls.Add(this.入库信息管理修改);
+            this.入库信息修改.Controls.Add(this.dataGridView入库信息管理修改);
+            this.入库信息修改.Location = new System.Drawing.Point(0, 0);
+            this.入库信息修改.Margin = new System.Windows.Forms.Padding(2);
+            this.入库信息修改.Name = "入库信息修改";
+            this.入库信息修改.Size = new System.Drawing.Size(932, 466);
+            this.入库信息修改.TabIndex = 1;
+            // 
+            // 入库信息管理修改时间选择月
+            // 
+            this.入库信息管理修改时间选择月.FormattingEnabled = true;
+            this.入库信息管理修改时间选择月.Location = new System.Drawing.Point(350, 22);
+            this.入库信息管理修改时间选择月.Name = "入库信息管理修改时间选择月";
+            this.入库信息管理修改时间选择月.Size = new System.Drawing.Size(121, 20);
+            this.入库信息管理修改时间选择月.TabIndex = 13;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(477, 25);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(17, 12);
+            this.label13.TabIndex = 12;
+            this.label13.Text = "月";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(327, 25);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(17, 12);
+            this.label14.TabIndex = 11;
+            this.label14.Text = "年";
+            // 
+            // 入库信息管理修改时间选择年
+            // 
+            this.入库信息管理修改时间选择年.FormattingEnabled = true;
+            this.入库信息管理修改时间选择年.Location = new System.Drawing.Point(200, 22);
+            this.入库信息管理修改时间选择年.Name = "入库信息管理修改时间选择年";
+            this.入库信息管理修改时间选择年.Size = new System.Drawing.Size(121, 20);
+            this.入库信息管理修改时间选择年.TabIndex = 10;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(135, 25);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(59, 12);
+            this.label15.TabIndex = 9;
+            this.label15.Text = "选择时间:";
+            // 
+            // 入库信息管理修改
+            // 
+            this.入库信息管理修改.Location = new System.Drawing.Point(398, 402);
+            this.入库信息管理修改.Name = "入库信息管理修改";
+            this.入库信息管理修改.Size = new System.Drawing.Size(75, 23);
+            this.入库信息管理修改.TabIndex = 8;
+            this.入库信息管理修改.Text = "修改";
+            this.入库信息管理修改.UseVisualStyleBackColor = true;
+            this.入库信息管理修改.Click += new System.EventHandler(this.入库信息管理修改_Click);
+            // 
+            // dataGridView入库信息管理修改
+            // 
+            this.dataGridView入库信息管理修改.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView入库信息管理修改.Location = new System.Drawing.Point(58, 52);
+            this.dataGridView入库信息管理修改.Name = "dataGridView入库信息管理修改";
+            this.dataGridView入库信息管理修改.RowTemplate.Height = 23;
+            this.dataGridView入库信息管理修改.Size = new System.Drawing.Size(812, 344);
+            this.dataGridView入库信息管理修改.TabIndex = 7;
+            // 
+            // 入库信息删除
+            // 
+            this.入库信息删除.Controls.Add(this.入库信息管理删除时间选择月);
+            this.入库信息删除.Controls.Add(this.label10);
+            this.入库信息删除.Controls.Add(this.label11);
+            this.入库信息删除.Controls.Add(this.入库信息管理删除时间选择年);
+            this.入库信息删除.Controls.Add(this.label12);
+            this.入库信息删除.Controls.Add(this.入库信息管理删除);
+            this.入库信息删除.Controls.Add(this.dataGridView入库信息管理删除);
+            this.入库信息删除.Location = new System.Drawing.Point(0, 0);
+            this.入库信息删除.Margin = new System.Windows.Forms.Padding(2);
+            this.入库信息删除.Name = "入库信息删除";
+            this.入库信息删除.Size = new System.Drawing.Size(932, 466);
+            this.入库信息删除.TabIndex = 0;
+            // 
+            // 入库信息管理删除时间选择月
+            // 
+            this.入库信息管理删除时间选择月.FormattingEnabled = true;
+            this.入库信息管理删除时间选择月.Location = new System.Drawing.Point(350, 22);
+            this.入库信息管理删除时间选择月.Name = "入库信息管理删除时间选择月";
+            this.入库信息管理删除时间选择月.Size = new System.Drawing.Size(121, 20);
+            this.入库信息管理删除时间选择月.TabIndex = 13;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(477, 25);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(17, 12);
+            this.label10.TabIndex = 12;
+            this.label10.Text = "月";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(327, 25);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(17, 12);
+            this.label11.TabIndex = 11;
+            this.label11.Text = "年";
+            // 
+            // 入库信息管理删除时间选择年
+            // 
+            this.入库信息管理删除时间选择年.FormattingEnabled = true;
+            this.入库信息管理删除时间选择年.Location = new System.Drawing.Point(200, 22);
+            this.入库信息管理删除时间选择年.Name = "入库信息管理删除时间选择年";
+            this.入库信息管理删除时间选择年.Size = new System.Drawing.Size(121, 20);
+            this.入库信息管理删除时间选择年.TabIndex = 10;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(135, 25);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(59, 12);
+            this.label12.TabIndex = 9;
+            this.label12.Text = "选择时间:";
+            // 
+            // 入库信息管理删除
+            // 
+            this.入库信息管理删除.Location = new System.Drawing.Point(396, 402);
+            this.入库信息管理删除.Name = "入库信息管理删除";
+            this.入库信息管理删除.Size = new System.Drawing.Size(75, 23);
+            this.入库信息管理删除.TabIndex = 8;
+            this.入库信息管理删除.Text = "删除";
+            this.入库信息管理删除.UseVisualStyleBackColor = true;
+            this.入库信息管理删除.Click += new System.EventHandler(this.入库信息管理删除_Click);
+            // 
+            // dataGridView入库信息管理删除
+            // 
+            this.dataGridView入库信息管理删除.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView入库信息管理删除.Location = new System.Drawing.Point(58, 52);
+            this.dataGridView入库信息管理删除.Name = "dataGridView入库信息管理删除";
+            this.dataGridView入库信息管理删除.RowTemplate.Height = 23;
+            this.dataGridView入库信息管理删除.Size = new System.Drawing.Size(812, 344);
+            this.dataGridView入库信息管理删除.TabIndex = 7;
+            // 
+            // 装备库存盘点
+            // 
+            this.装备库存盘点.Location = new System.Drawing.Point(0, 0);
+            this.装备库存盘点.Margin = new System.Windows.Forms.Padding(2);
+            this.装备库存盘点.Name = "装备库存盘点";
+            this.装备库存盘点.Size = new System.Drawing.Size(932, 466);
+            this.装备库存盘点.TabIndex = 5;
+            // 
+            // 装备经费管理
+            // 
+            this.装备经费管理.Controls.Add(this.经费使用管理);
+            this.装备经费管理.Controls.Add(this.经费入账管理);
+            this.装备经费管理.Controls.Add(this.经费明细管理);
+            this.装备经费管理.Location = new System.Drawing.Point(0, 25);
+            this.装备经费管理.Margin = new System.Windows.Forms.Padding(2);
+            this.装备经费管理.Name = "装备经费管理";
+            this.装备经费管理.Size = new System.Drawing.Size(932, 466);
+            this.装备经费管理.TabIndex = 6;
+            // 
+            // 经费使用管理
+            // 
+            this.经费使用管理.Controls.Add(this.经费使用删除);
+            this.经费使用管理.Controls.Add(this.经费使用修改);
+            this.经费使用管理.Controls.Add(this.经费使用添加);
+            this.经费使用管理.Location = new System.Drawing.Point(0, 0);
+            this.经费使用管理.Margin = new System.Windows.Forms.Padding(2);
+            this.经费使用管理.Name = "经费使用管理";
+            this.经费使用管理.Size = new System.Drawing.Size(932, 466);
+            this.经费使用管理.TabIndex = 2;
+            // 
+            // 经费使用删除
+            // 
+            this.经费使用删除.Location = new System.Drawing.Point(0, 0);
+            this.经费使用删除.Margin = new System.Windows.Forms.Padding(2);
+            this.经费使用删除.Name = "经费使用删除";
+            this.经费使用删除.Size = new System.Drawing.Size(932, 466);
+            this.经费使用删除.TabIndex = 2;
+            // 
+            // 经费使用修改
+            // 
+            this.经费使用修改.Location = new System.Drawing.Point(0, 0);
+            this.经费使用修改.Margin = new System.Windows.Forms.Padding(2);
+            this.经费使用修改.Name = "经费使用修改";
+            this.经费使用修改.Size = new System.Drawing.Size(932, 466);
+            this.经费使用修改.TabIndex = 1;
+            // 
+            // 经费使用添加
+            // 
+            this.经费使用添加.Location = new System.Drawing.Point(0, 0);
+            this.经费使用添加.Margin = new System.Windows.Forms.Padding(2);
+            this.经费使用添加.Name = "经费使用添加";
+            this.经费使用添加.Size = new System.Drawing.Size(932, 466);
+            this.经费使用添加.TabIndex = 0;
+            // 
+            // 经费入账管理
+            // 
+            this.经费入账管理.Controls.Add(this.经费入账删除);
+            this.经费入账管理.Controls.Add(this.经费入账修改);
+            this.经费入账管理.Controls.Add(this.经费入账添加);
+            this.经费入账管理.Location = new System.Drawing.Point(0, 0);
+            this.经费入账管理.Margin = new System.Windows.Forms.Padding(2);
+            this.经费入账管理.Name = "经费入账管理";
+            this.经费入账管理.Size = new System.Drawing.Size(932, 466);
+            this.经费入账管理.TabIndex = 1;
+            // 
+            // 经费入账删除
+            // 
+            this.经费入账删除.Location = new System.Drawing.Point(0, 0);
+            this.经费入账删除.Margin = new System.Windows.Forms.Padding(2);
+            this.经费入账删除.Name = "经费入账删除";
+            this.经费入账删除.Size = new System.Drawing.Size(932, 466);
+            this.经费入账删除.TabIndex = 2;
+            // 
+            // 经费入账修改
+            // 
+            this.经费入账修改.Location = new System.Drawing.Point(0, 0);
+            this.经费入账修改.Margin = new System.Windows.Forms.Padding(2);
+            this.经费入账修改.Name = "经费入账修改";
+            this.经费入账修改.Size = new System.Drawing.Size(932, 466);
+            this.经费入账修改.TabIndex = 1;
+            // 
+            // 经费入账添加
+            // 
+            this.经费入账添加.Location = new System.Drawing.Point(0, 0);
+            this.经费入账添加.Margin = new System.Windows.Forms.Padding(2);
+            this.经费入账添加.Name = "经费入账添加";
+            this.经费入账添加.Size = new System.Drawing.Size(932, 466);
+            this.经费入账添加.TabIndex = 0;
+            // 
+            // 经费明细管理
+            // 
+            this.经费明细管理.Controls.Add(this.经费明细删除);
+            this.经费明细管理.Controls.Add(this.经费明细修改);
+            this.经费明细管理.Controls.Add(this.经费明细添加);
+            this.经费明细管理.Location = new System.Drawing.Point(0, 0);
+            this.经费明细管理.Margin = new System.Windows.Forms.Padding(2);
+            this.经费明细管理.Name = "经费明细管理";
+            this.经费明细管理.Size = new System.Drawing.Size(932, 466);
+            this.经费明细管理.TabIndex = 0;
+            // 
+            // 经费明细删除
+            // 
+            this.经费明细删除.Location = new System.Drawing.Point(0, 0);
+            this.经费明细删除.Margin = new System.Windows.Forms.Padding(2);
+            this.经费明细删除.Name = "经费明细删除";
+            this.经费明细删除.Size = new System.Drawing.Size(932, 466);
+            this.经费明细删除.TabIndex = 2;
+            // 
+            // 经费明细修改
+            // 
+            this.经费明细修改.Location = new System.Drawing.Point(0, 0);
+            this.经费明细修改.Margin = new System.Windows.Forms.Padding(2);
+            this.经费明细修改.Name = "经费明细修改";
+            this.经费明细修改.Size = new System.Drawing.Size(932, 466);
+            this.经费明细修改.TabIndex = 1;
+            // 
+            // 经费明细添加
+            // 
+            this.经费明细添加.Location = new System.Drawing.Point(0, 0);
+            this.经费明细添加.Margin = new System.Windows.Forms.Padding(2);
+            this.经费明细添加.Name = "经费明细添加";
+            this.经费明细添加.Size = new System.Drawing.Size(932, 466);
+            this.经费明细添加.TabIndex = 0;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -1414,7 +1424,7 @@
             this.Controls.Add(this.WelcomePicture);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Main";
             this.Text = "装备库存管理系统";
             this.Load += new System.EventHandler(this.Main_Load);
@@ -1424,37 +1434,37 @@
             this.用户管理.ResumeLayout(false);
             this.统计与查询.ResumeLayout(false);
             this.装备库存管理.ResumeLayout(false);
+            this.仓库信息管理.ResumeLayout(false);
+            this.仓库信息删除.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView仓库信息管理删除)).EndInit();
+            this.仓库信息修改.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView仓库信息管理修改)).EndInit();
+            this.仓库信息添加.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView仓库信息管理添加)).EndInit();
             this.出库信息管理.ResumeLayout(false);
-            this.出库信息删除.ResumeLayout(false);
-            this.出库信息删除.PerformLayout();
             this.出库信息修改.ResumeLayout(false);
             this.出库信息修改.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView出库信息管理修改)).EndInit();
+            this.出库信息删除.ResumeLayout(false);
+            this.出库信息删除.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView出库信息管理删除)).EndInit();
             this.出库信息添加.ResumeLayout(false);
             this.出库信息添加.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView出库信息管理添加)).EndInit();
             this.入库信息管理.ResumeLayout(false);
-            this.入库信息删除.ResumeLayout(false);
-            this.入库信息删除.PerformLayout();
-            this.入库信息修改.ResumeLayout(false);
-            this.入库信息修改.PerformLayout();
             this.入库信息添加.ResumeLayout(false);
             this.入库信息添加.PerformLayout();
-            this.仓库信息管理.ResumeLayout(false);
-            this.仓库信息添加.ResumeLayout(false);
-            this.仓库信息修改.ResumeLayout(false);
-            this.仓库信息删除.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView入库信息管理添加)).EndInit();
+            this.入库信息修改.ResumeLayout(false);
+            this.入库信息修改.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView入库信息管理修改)).EndInit();
+            this.入库信息删除.ResumeLayout(false);
+            this.入库信息删除.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView入库信息管理删除)).EndInit();
             this.装备经费管理.ResumeLayout(false);
             this.经费使用管理.ResumeLayout(false);
             this.经费入账管理.ResumeLayout(false);
             this.经费明细管理.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView出库信息管理添加)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView出库信息管理删除)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView出库信息管理修改)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView仓库信息管理添加)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView仓库信息管理修改)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView仓库信息管理删除)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView入库信息管理删除)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView入库信息管理修改)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView入库信息管理添加)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

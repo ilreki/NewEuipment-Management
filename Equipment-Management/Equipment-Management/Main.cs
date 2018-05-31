@@ -75,16 +75,17 @@ namespace Equipment_Management
 
         private void 入库信息管理添加_Click(object sender, EventArgs e)
         {
-
+            new 装备库存管理框.入库信息管理添加().Show();
         }
 
         private void 入库信息管理删除_Click(object sender, EventArgs e)
         {
-
+            new 装备库存管理框.入库信息管理删除().Show();
         }
 
         private void 添加ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            仓库信息管理.Visible = true;
             出库信息管理.Visible = false;
             入库信息管理.Visible = false;
             装备库存盘点.Visible = false;
@@ -114,6 +115,7 @@ namespace Equipment_Management
 
         private void 修改ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            仓库信息管理.Visible = true;
             出库信息管理.Visible = false;
             入库信息管理.Visible = false;
             装备库存盘点.Visible = false;
@@ -127,6 +129,7 @@ namespace Equipment_Management
 
         private void 删除ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            仓库信息管理.Visible = true;
             出库信息管理.Visible = false;
             入库信息管理.Visible = false;
             装备库存盘点.Visible = false;
@@ -136,6 +139,110 @@ namespace Equipment_Management
             装备经费管理.Visible = false;
             统计与查询.Visible = false;
             WelcomePicture.Visible = false;
+        }
+
+        private void 入库信息管理修改_Click(object sender, EventArgs e)
+        {
+            new 装备库存管理框.入库信息管理修改().Show();
+        }
+
+        private void 添加ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            入库信息管理.Visible = true;
+            出库信息管理.Visible = false;
+            仓库信息管理.Visible = false;
+            装备库存盘点.Visible = false;
+            入库信息添加.Visible = true;
+            入库信息删除.Visible = false;
+            入库信息修改.Visible = false;
+            装备经费管理.Visible = false;
+            统计与查询.Visible = false;
+            WelcomePicture.Visible = false;
+        }
+
+        private void 修改ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            入库信息管理.Visible = true;
+            出库信息管理.Visible = false;
+            仓库信息管理.Visible = false;
+            装备库存盘点.Visible = false;
+            入库信息添加.Visible = false;
+            入库信息删除.Visible = false;
+            入库信息修改.Visible = true;
+            装备经费管理.Visible = false;
+            统计与查询.Visible = false;
+            WelcomePicture.Visible = false;
+        }
+
+        private void 删除ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            入库信息管理.Visible = true;
+            出库信息管理.Visible = false;
+            仓库信息管理.Visible = false;
+            装备库存盘点.Visible = false;
+            入库信息添加.Visible = false;
+            入库信息删除.Visible = true;
+            入库信息修改.Visible = false;
+            装备经费管理.Visible = false;
+            统计与查询.Visible = false;
+            WelcomePicture.Visible = false;
+        }
+
+        private void 添加ToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            出库信息管理.Visible = true;
+            仓库信息管理.Visible = false;
+            装备库存盘点.Visible = false;
+            入库信息管理.Visible = false;
+            出库信息添加.Visible = true;
+            出库信息删除.Visible = false;
+            出库信息修改.Visible = false;
+            装备经费管理.Visible = false;
+            统计与查询.Visible = false;
+            WelcomePicture.Visible = false;
+        }
+
+        private void 修改ToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            出库信息管理.Visible = true;
+            仓库信息管理.Visible = false;
+            装备库存盘点.Visible = false;
+            入库信息管理.Visible = false;
+            出库信息添加.Visible = false;
+            出库信息删除.Visible = false;
+            出库信息修改.Visible = true;
+            装备经费管理.Visible = false;
+            统计与查询.Visible = false;
+            WelcomePicture.Visible = false;
+        }
+
+        private void 删除ToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            出库信息管理.Visible = true;
+            仓库信息管理.Visible = false;
+            装备库存盘点.Visible = false;
+            入库信息管理.Visible = false;
+            出库信息添加.Visible = false;
+            出库信息删除.Visible = true;
+            出库信息修改.Visible = false;
+            装备经费管理.Visible = false;
+            统计与查询.Visible = false;
+            WelcomePicture.Visible = false;
+        }
+
+        private void 出库信息管理修改_Click(object sender, EventArgs e)
+        {
+            new 装备库存管理框.出库信息管理修改().Show();
+        }
+
+        private void 出库信息管理删除_Click(object sender, EventArgs e)
+        {
+            new 装备库存管理框.出库信息管理删除().Show();
+        }
+
+        private void 出库信息管理添加_Click(object sender, EventArgs e)
+        {
+            new 装备库存管理框.出库信息管理添加().Show();
         }
     }
 }
