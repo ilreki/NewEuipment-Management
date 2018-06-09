@@ -100,5 +100,10 @@ namespace Equipment_Management
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+           // this.text
+        }
     }
 }
