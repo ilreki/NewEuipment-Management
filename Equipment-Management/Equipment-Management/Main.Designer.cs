@@ -119,10 +119,23 @@
             this.经费明细删除 = new System.Windows.Forms.Panel();
             this.经费明细修改 = new System.Windows.Forms.Panel();
             this.经费明细添加 = new System.Windows.Forms.Panel();
+            this.部门人员基本信息表标题 = new System.Windows.Forms.Label();
+            this.部门人员信息显示表 = new System.Windows.Forms.Panel();
+            this.人员信息查询输入 = new System.Windows.Forms.TextBox();
+            this.部门信息查询容器 = new System.Windows.Forms.GroupBox();
+            this.人员信息查询按钮 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.编号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.姓名 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.性别 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.民族 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.生日 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.职务 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.系统管理.SuspendLayout();
             this.用户管理.SuspendLayout();
             this.统计与查询.SuspendLayout();
+            this.部门人员查询.SuspendLayout();
             this.装备库存管理.SuspendLayout();
             this.出库信息管理.SuspendLayout();
             this.入库信息管理.SuspendLayout();
@@ -131,6 +144,9 @@
             this.经费使用管理.SuspendLayout();
             this.经费入账管理.SuspendLayout();
             this.经费明细管理.SuspendLayout();
+            this.部门人员信息显示表.SuspendLayout();
+            this.部门信息查询容器.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -575,8 +591,8 @@
             // 
             // 统计与查询
             // 
-            this.统计与查询.Controls.Add(this.装备经费汇总);
             this.统计与查询.Controls.Add(this.部门人员查询);
+            this.统计与查询.Controls.Add(this.装备经费汇总);
             this.统计与查询.Controls.Add(this.装备库存流水统计表);
             this.统计与查询.Controls.Add(this.出入库统计表);
             this.统计与查询.Location = new System.Drawing.Point(0, 34);
@@ -586,30 +602,36 @@
             // 
             // 装备经费汇总
             // 
+            this.装备经费汇总.Dock = System.Windows.Forms.DockStyle.Fill;
             this.装备经费汇总.Location = new System.Drawing.Point(0, 0);
             this.装备经费汇总.Name = "装备经费汇总";
-            this.装备经费汇总.Size = new System.Drawing.Size(1242, 579);
+            this.装备经费汇总.Size = new System.Drawing.Size(1236, 576);
             this.装备经费汇总.TabIndex = 0;
             // 
             // 部门人员查询
             // 
+            this.部门人员查询.Controls.Add(this.部门信息查询容器);
+            this.部门人员查询.Controls.Add(this.部门人员信息显示表);
+            this.部门人员查询.Dock = System.Windows.Forms.DockStyle.Fill;
             this.部门人员查询.Location = new System.Drawing.Point(0, 0);
             this.部门人员查询.Name = "部门人员查询";
-            this.部门人员查询.Size = new System.Drawing.Size(1242, 576);
+            this.部门人员查询.Size = new System.Drawing.Size(1236, 576);
             this.部门人员查询.TabIndex = 0;
             // 
             // 装备库存流水统计表
             // 
+            this.装备库存流水统计表.Dock = System.Windows.Forms.DockStyle.Fill;
             this.装备库存流水统计表.Location = new System.Drawing.Point(0, 0);
             this.装备库存流水统计表.Name = "装备库存流水统计表";
-            this.装备库存流水统计表.Size = new System.Drawing.Size(1239, 576);
+            this.装备库存流水统计表.Size = new System.Drawing.Size(1236, 576);
             this.装备库存流水统计表.TabIndex = 1;
             // 
             // 出入库统计表
             // 
-            this.出入库统计表.Location = new System.Drawing.Point(3, 3);
+            this.出入库统计表.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.出入库统计表.Location = new System.Drawing.Point(0, 0);
             this.出入库统计表.Name = "出入库统计表";
-            this.出入库统计表.Size = new System.Drawing.Size(1230, 570);
+            this.出入库统计表.Size = new System.Drawing.Size(1236, 576);
             this.出入库统计表.TabIndex = 0;
             // 
             // 装备库存管理
@@ -826,14 +848,115 @@
             this.经费明细添加.Size = new System.Drawing.Size(1242, 582);
             this.经费明细添加.TabIndex = 0;
             // 
+            // 部门人员基本信息表标题
+            // 
+            this.部门人员基本信息表标题.AutoSize = true;
+            this.部门人员基本信息表标题.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.部门人员基本信息表标题.Location = new System.Drawing.Point(320, 26);
+            this.部门人员基本信息表标题.Name = "部门人员基本信息表标题";
+            this.部门人员基本信息表标题.Size = new System.Drawing.Size(240, 33);
+            this.部门人员基本信息表标题.TabIndex = 0;
+            this.部门人员基本信息表标题.Text = "部门人员基本信息表";
+            // 
+            // 部门人员信息显示表
+            // 
+            this.部门人员信息显示表.Controls.Add(this.dataGridView1);
+            this.部门人员信息显示表.Controls.Add(this.部门人员基本信息表标题);
+            this.部门人员信息显示表.Location = new System.Drawing.Point(0, 0);
+            this.部门人员信息显示表.Name = "部门人员信息显示表";
+            this.部门人员信息显示表.Size = new System.Drawing.Size(1027, 531);
+            this.部门人员信息显示表.TabIndex = 1;
+            this.部门人员信息显示表.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
+            // 
+            // 人员信息查询输入
+            // 
+            this.人员信息查询输入.Location = new System.Drawing.Point(16, 76);
+            this.人员信息查询输入.Multiline = true;
+            this.人员信息查询输入.Name = "人员信息查询输入";
+            this.人员信息查询输入.Size = new System.Drawing.Size(126, 43);
+            this.人员信息查询输入.TabIndex = 2;
+            // 
+            // 部门信息查询容器
+            // 
+            this.部门信息查询容器.Controls.Add(this.人员信息查询按钮);
+            this.部门信息查询容器.Controls.Add(this.人员信息查询输入);
+            this.部门信息查询容器.Location = new System.Drawing.Point(1050, 100);
+            this.部门信息查询容器.Name = "部门信息查询容器";
+            this.部门信息查询容器.Size = new System.Drawing.Size(158, 258);
+            this.部门信息查询容器.TabIndex = 3;
+            this.部门信息查询容器.TabStop = false;
+            this.部门信息查询容器.Text = "部门信息查询";
+            // 
+            // 人员信息查询按钮
+            // 
+            this.人员信息查询按钮.Location = new System.Drawing.Point(16, 180);
+            this.人员信息查询按钮.Name = "人员信息查询按钮";
+            this.人员信息查询按钮.Size = new System.Drawing.Size(126, 34);
+            this.人员信息查询按钮.TabIndex = 3;
+            this.人员信息查询按钮.Text = "点击查询";
+            this.人员信息查询按钮.UseVisualStyleBackColor = true;
+            this.人员信息查询按钮.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.编号,
+            this.姓名,
+            this.性别,
+            this.民族,
+            this.生日,
+            this.职务});
+            this.dataGridView1.Location = new System.Drawing.Point(47, 77);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 27;
+            this.dataGridView1.Size = new System.Drawing.Size(776, 364);
+            this.dataGridView1.TabIndex = 1;
+            // 
+            // 编号
+            // 
+            this.编号.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.编号.HeaderText = "编号";
+            this.编号.Name = "编号";
+            // 
+            // 姓名
+            // 
+            this.姓名.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.姓名.HeaderText = "姓名";
+            this.姓名.Name = "姓名";
+            // 
+            // 性别
+            // 
+            this.性别.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.性别.HeaderText = "性别";
+            this.性别.Name = "性别";
+            // 
+            // 民族
+            // 
+            this.民族.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.民族.HeaderText = "民族";
+            this.民族.Name = "民族";
+            // 
+            // 生日
+            // 
+            this.生日.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.生日.HeaderText = "生日";
+            this.生日.Name = "生日";
+            // 
+            // 职务
+            // 
+            this.职务.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.职务.HeaderText = "职务";
+            this.职务.Name = "职务";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1242, 615);
+            this.ClientSize = new System.Drawing.Size(1242, 562);
+            this.Controls.Add(this.统计与查询);
             this.Controls.Add(this.装备经费管理);
             this.Controls.Add(this.装备库存管理);
-            this.Controls.Add(this.统计与查询);
             this.Controls.Add(this.系统管理);
             this.Controls.Add(this.WelcomePicture);
             this.Controls.Add(this.menuStrip1);
@@ -846,6 +969,7 @@
             this.系统管理.ResumeLayout(false);
             this.用户管理.ResumeLayout(false);
             this.统计与查询.ResumeLayout(false);
+            this.部门人员查询.ResumeLayout(false);
             this.装备库存管理.ResumeLayout(false);
             this.出库信息管理.ResumeLayout(false);
             this.入库信息管理.ResumeLayout(false);
@@ -854,6 +978,11 @@
             this.经费使用管理.ResumeLayout(false);
             this.经费入账管理.ResumeLayout(false);
             this.经费明细管理.ResumeLayout(false);
+            this.部门人员信息显示表.ResumeLayout(false);
+            this.部门人员信息显示表.PerformLayout();
+            this.部门信息查询容器.ResumeLayout(false);
+            this.部门信息查询容器.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -952,5 +1081,17 @@
         private System.Windows.Forms.Panel 经费明细删除;
         private System.Windows.Forms.Panel 经费明细修改;
         private System.Windows.Forms.Panel 经费明细添加;
+        private System.Windows.Forms.Panel 部门人员信息显示表;
+        private System.Windows.Forms.Label 部门人员基本信息表标题;
+        private System.Windows.Forms.GroupBox 部门信息查询容器;
+        private System.Windows.Forms.Button 人员信息查询按钮;
+        private System.Windows.Forms.TextBox 人员信息查询输入;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 编号;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 姓名;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 性别;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 民族;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 生日;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 职务;
     }
 }

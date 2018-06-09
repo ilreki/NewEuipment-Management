@@ -90,5 +90,15 @@ namespace Equipment_Management
             人员基本信息 to_ryjbxx = new 人员基本信息();
             to_ryjbxx.Show();
         }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

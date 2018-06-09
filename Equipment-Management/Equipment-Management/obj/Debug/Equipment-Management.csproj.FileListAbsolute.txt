@@ -37,3 +37,19 @@ D:\a million code\github\NewEuipment-Management-master\NewEuipment-Management\Eq
 D:\a million code\github\NewEuipment-Management-master\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.编辑部门信息.resources
 D:\a million code\github\NewEuipment-Management-master\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.装备基本信息.resources
 D:\a million code\github\NewEuipment-Management-master\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.部门基本信息.resources
+F:\Documents\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\bin\Debug\Equipment-Management.exe.config
+F:\Documents\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment-Management.exe
+F:\Documents\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment-Management.pdb
+F:\Documents\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\bin\Debug\Equipment-Management.exe
+F:\Documents\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\bin\Debug\Equipment-Management.pdb
+F:\Documents\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment-Management.csprojResolveAssemblyReference.cache
+F:\Documents\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.Load.resources
+F:\Documents\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.Main.resources
+F:\Documents\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.Properties.Resources.resources
+F:\Documents\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.人员基本信息.resources
+F:\Documents\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.编辑人员信息.resources
+F:\Documents\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.编辑装备信息.resources
+F:\Documents\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.编辑部门信息.resources
+F:\Documents\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.装备基本信息.resources
+F:\Documents\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.部门基本信息.resources
+F:\Documents\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment-Management.csproj.GenerateResource.Cache
