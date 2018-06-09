@@ -237,7 +237,7 @@ namespace Equipment_Management
         //菜单点击删除账户
         private void 删除账户ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("你确定要重置吗？", "提示", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("你确定要删除吗？", "提示", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 try
                 {
@@ -435,77 +435,86 @@ namespace Equipment_Management
         //日志管理点击逐个删除
         private void buttonLogManageDeleteOneByOne_Click(object sender, EventArgs e)
         {
-            if (dataGridViewLogManage.CurrentRow == null)
+            if (MessageBox.Show("你确定要删除吗？", "提示", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                return;
-            }
-            try
-            {
-                //DBClass.conn.Open();
-                string strcmd = "delete from SysLog where 1 = 1 and [LogId] = " +
-                    dataGridViewLogManage.CurrentRow.Cells[0].ToString();
-                SqlCommand cmd = new SqlCommand(strcmd, DBClass.conn);
-                cmd.ExecuteNonQuery();
-                LogManageRefresh();
-                DBClass.conn.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString() + "\n打开数据库失败");
+                if (dataGridViewLogManage.CurrentRow == null)
+                {
+                    return;
+                }
+                try
+                {
+                    //DBClass.conn.Open();
+                    string strcmd = "delete from SysLog where 1 = 1 and [LogId] = " +
+                        dataGridViewLogManage.CurrentRow.Cells[0].ToString();
+                    SqlCommand cmd = new SqlCommand(strcmd, DBClass.conn);
+                    cmd.ExecuteNonQuery();
+                    LogManageRefresh();
+                    DBClass.conn.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString() + "\n打开数据库失败");
+                }
             }
         }
 
         //日志管理点击全部删除
         private void buttonLogManageDeleteAll_Click(object sender, EventArgs e)
         {
-            try
+            if (MessageBox.Show("你确定要删除吗？", "提示", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                //DBClass.conn.Open();
-                string strcmd = "delete from SysLog where 1 = 1";
-                if (strList.items[0] != "空")
+                try
                 {
-                    strcmd += " and [LogType] = " + strList.items[0];
+                    //DBClass.conn.Open();
+                    string strcmd = "delete from SysLog where 1 = 1";
+                    if (strList.items[0] != "空")
+                    {
+                        strcmd += " and [LogType] = " + strList.items[0];
+                    }
+                    if (strList.timeFlag)
+                    {
+                        strcmd += " and [LogDate] = " + strList.items[1];
+                    }
+                    if (strList.items[2] != "空")
+                    {
+                        strcmd += " and [UserName] = " + strList.items[2];
+                    }
+                    SqlCommand cmd = new SqlCommand(strcmd, DBClass.conn);
+                    cmd.ExecuteNonQuery();
+                    LogManageRefresh();
+                    DBClass.conn.Close();
                 }
-                if (strList.timeFlag)
+                catch (Exception ex)
                 {
-                    strcmd += " and [LogDate] = " + strList.items[1];
+                    MessageBox.Show(ex.ToString() + "\n打开数据库失败");
                 }
-                if (strList.items[2] != "空")
-                {
-                    strcmd += " and [UserName] = " + strList.items[2];
-                }
-                SqlCommand cmd = new SqlCommand(strcmd, DBClass.conn);
-                cmd.ExecuteNonQuery();
-                LogManageRefresh();
-                DBClass.conn.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString() + "\n打开数据库失败");
-            }
+            }  
         }
 
         //日志管理点击全天删除
         private void buttonLogManageDeleteTheDay_Click(object sender, EventArgs e)
         {
-            if (!strList.timeFlag)
+            if (MessageBox.Show("你确定要删除吗？", "提示", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                return;
-            }
-            try
-            {
-                //DBClass.conn.Open();
-                string strcmd = "delete from SysLog where 1 = 1";
-                strcmd += " and [LogDate] = " + strList.items[1];
-                SqlCommand cmd = new SqlCommand(strcmd, DBClass.conn);
-                cmd.ExecuteNonQuery();
-                LogManageRefresh();
-                DBClass.conn.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString() + "\n打开数据库失败");
-            }
+                if (!strList.timeFlag)
+                {
+                    return;
+                }
+                try
+                {
+                    //DBClass.conn.Open();
+                    string strcmd = "delete from SysLog where 1 = 1";
+                    strcmd += " and [LogDate] = " + strList.items[1];
+                    SqlCommand cmd = new SqlCommand(strcmd, DBClass.conn);
+                    cmd.ExecuteNonQuery();
+                    LogManageRefresh();
+                    DBClass.conn.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString() + "\n打开数据库失败");
+                }
+            }    
         }
 
         //日志管理点击退出
@@ -515,6 +524,213 @@ namespace Equipment_Management
             {
                 myPanel.Show(new List<Panel>() { WelcomePicture });
             }
+        }
+
+        //菜单点击查看维修记录
+        private void 查看维修记录ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            myPanel.Show(new List<Panel>() { 装备维修管理, 查看维修记录 });
+            comboBoxRepairManageSelectArms.Items.Add("空");
+            comboBoxRepairManageSelectArms.SelectedItem = "空";
+            comboBoxRepairManageSelectRepairMan.Items.Add("空");
+            comboBoxRepairManageSelectRepairMan.SelectedItem = "空";
+            try
+            {
+                //DBClass.conn.Open();
+                RepairManageRefresh();
+                DBClass.conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString() + "\n打开数据库失败");
+            }
+        }
+
+        //装备维修管理刷新
+        private void RepairManageRefresh()
+        {
+            SqlDataAdapter da = new SqlDataAdapter("select * from ArmsRepair", DBClass.conn);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "RepairLog");
+            dataGridViewRepairManage.DataSource = ds.Tables["ArmsRepair"];
+            da = new SqlDataAdapter("select [Zbname] from ArmsInfo ai, ArmsRepair ar" +
+                " where ai.[Zbid] = ar.[Zbid]", DBClass.conn);
+            da.Fill(ds, "ArmsName");
+            comboBoxRepairManageSelectArms.DataSource = ds.Tables["ArmsName"];
+            da = new SqlDataAdapter("select [Ryname] from ArmsRepair", DBClass.conn);
+            da.Fill(ds, "RepairMan");
+            comboBoxRepairManageSelectRepairMan.DataSource = ds.Tables["RepairMan"];
+        }
+
+        //装备维修管理选择装备
+        private void comboBoxSelectArms_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            strList.items.Clear();
+            strList.items.AddRange(new List<string>() { comboBoxRepairManageSelectArms.SelectedItem.ToString(),
+                dateTimePickerRepairManage.Value.ToShortDateString(),
+                comboBoxRepairManageSelectRepairMan.SelectedItem.ToString()});
+            try
+            {
+                //DBClass.conn.Open();
+                SqlCommand cmd = new SqlCommand("select [Zbid] from ArmsInfo " +
+                    "where [Zbname] = " + strList.items[0], DBClass.conn);
+                strList.items[0] = cmd.ExecuteScalar().ToString();
+                string strda = "select * from ArmsRepair where 1 = 1";
+                if (strList.items[0] != "空")
+                {
+                    strda += " and [Zbid] = " + strList.items[0];
+                }
+                if (strList.timeFlag)
+                {
+                    strda += " and [RepairDate] = " + strList.items[1];
+                }
+                if (strList.items[2] != "空")
+                {
+                    strda += " and [Ryname] = " + strList.items[2];
+                }
+                SqlDataAdapter da = new SqlDataAdapter(strda, DBClass.conn);
+                DataSet ds = new DataSet();
+                da.Fill(ds, "RepairLog");
+                dataGridViewRepairManage.DataSource = ds.Tables["RepairLog"];
+                DBClass.conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString() + "\n打开数据库失败");
+            }
+        }
+
+        //装备维修管理选择日期
+        private void dateTimePicker1_CloseUp(object sender, EventArgs e)
+        {
+            strList.timeFlag = true;
+            strList.items.Clear();
+            strList.items.AddRange(new List<string>() { comboBoxRepairManageSelectArms.SelectedItem.ToString(),
+                dateTimePickerRepairManage.Value.ToShortDateString(),
+                comboBoxRepairManageSelectRepairMan.SelectedItem.ToString()});
+            try
+            {
+                //DBClass.conn.Open();
+                SqlCommand cmd = new SqlCommand("select [Zbid] from ArmsInfo " +
+                    "where [Zbname] = " + strList.items[0], DBClass.conn);
+                strList.items[0] = cmd.ExecuteScalar().ToString();
+                string strda = "select * from SysLog where 1 = 1";
+                if (strList.items[0] != "空")
+                {
+                    strda += " and [Zbid] = " + strList.items[0];
+                }
+                if (strList.timeFlag)
+                {
+                    strda += " and [RepairDate] = " + strList.items[1];
+                }
+                if (strList.items[2] != "空")
+                {
+                    strda += " and [Ryname] = " + strList.items[2];
+                }
+                SqlDataAdapter da = new SqlDataAdapter(strda, DBClass.conn);
+                DataSet ds = new DataSet();
+                da.Fill(ds, "RepairLog");
+                dataGridViewRepairManage.DataSource = ds.Tables["RepairLog"];
+                DBClass.conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString() + "\n打开数据库失败");
+            }
+        }
+
+        //装备维修管理清除日期
+        private void buttonRepairManageTimeFlagClear_Click(object sender, EventArgs e)
+        {
+            strList.timeFlag = false;
+        }
+
+        //装备维修管理选择负责人
+        private void comboBoxSelectRepairMan_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            strList.items.Clear();
+            strList.items.AddRange(new List<string>() { comboBoxRepairManageSelectArms.SelectedItem.ToString(),
+                dateTimePickerRepairManage.Value.ToShortDateString(),
+                comboBoxRepairManageSelectRepairMan.SelectedItem.ToString()});
+            try
+            {
+                //DBClass.conn.Open();
+                SqlCommand cmd = new SqlCommand("select [Zbid] from ArmsInfo " +
+                    "where [Zbname] = " + strList.items[0], DBClass.conn);
+                strList.items[0] = cmd.ExecuteScalar().ToString();
+                string strda = "select * from SysLog where 1 = 1";
+                if (strList.items[0] != "空")
+                {
+                    strda += " and [Zbid] = " + strList.items[0];
+                }
+                if (strList.timeFlag)
+                {
+                    strda += " and [RepairDate] = " + strList.items[1];
+                }
+                if (strList.items[2] != "空")
+                {
+                    strda += " and [Ryname] = " + strList.items[2];
+                }
+                SqlDataAdapter da = new SqlDataAdapter(strda, DBClass.conn);
+                DataSet ds = new DataSet();
+                da.Fill(ds, "RepairLog");
+                dataGridViewRepairManage.DataSource = ds.Tables["RepairLog"];
+                DBClass.conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString() + "\n打开数据库失败");
+            }
+        }
+
+        //查看维修记录隐藏时
+        private void 查看维修记录_VisibleChanged(object sender, EventArgs e)
+        {
+            strList.timeFlag = false;
+        }
+
+        //菜单点击删除维修记录
+        private void 删除维修记录ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("你确定要删除吗？", "提示", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                if (dataGridViewRepairManage.CurrentRow == null)
+                {
+                    return;
+                }
+                try
+                {
+                    //DBClass.conn.Open();
+                    string strcmd = "delete from SysLog where 1 = 1 and [LogId] = " +
+                        dataGridViewRepairManage.CurrentRow.Cells[0].ToString();
+                    SqlCommand cmd = new SqlCommand(strcmd, DBClass.conn);
+                    cmd.ExecuteNonQuery();
+                    RepairManageRefresh();
+                    DBClass.conn.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString() + "\n打开数据库失败");
+                }
+            }
+        }
+
+        //菜单点击添加维修记录
+        private void 添加维修记录ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //菜单点击修改维修记录
+        private void 修改维修记录ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //菜单点击维修完成
+        private void 维修完成ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
