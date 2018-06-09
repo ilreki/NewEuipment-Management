@@ -26,7 +26,7 @@ namespace Equipment_Management
     {
         public static string userName;
         public static string userType;
-        public static bool AddFlag;//添加账户时用于判断是否能添加
+        public static bool addFlag;//添加账户时用于判断是否能添加
     }
 
     //连接数据库
@@ -41,6 +41,7 @@ namespace Equipment_Management
     public static class myPanel
     {
         public static List<Panel> lastpanels = new List<Panel>();
+        //隐藏旧panel，显示新panel
         public static void Show(List<Panel> mypanels)
         {
             foreach(Panel items in lastpanels)
@@ -54,5 +55,12 @@ namespace Equipment_Management
                 items.Visible = true;
             }
         }
+    }
+
+    //存储用在cmd命令里的字符串
+    public static class strList
+    {
+        public static List<string> items = new List<string>();
+        public static bool timeFlag = false;
     }
 }

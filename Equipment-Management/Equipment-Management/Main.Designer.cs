@@ -84,22 +84,50 @@
             this.删除ToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.注销ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.WelcomePicture = new System.Windows.Forms.Panel();
             this.系统管理 = new System.Windows.Forms.Panel();
+            this.日志管理 = new System.Windows.Forms.Panel();
+            this.dateTimePickerLogManage = new System.Windows.Forms.DateTimePicker();
+            this.buttonLogManageExit = new System.Windows.Forms.Button();
+            this.buttonLogManageDeleteAll = new System.Windows.Forms.Button();
+            this.buttonLogManageDeleteTheDay = new System.Windows.Forms.Button();
+            this.buttonLogManageDeleteOneByOne = new System.Windows.Forms.Button();
+            this.dataGridViewLogManage = new System.Windows.Forms.DataGridView();
+            this.comboBoxLogManageSelectUser = new System.Windows.Forms.ComboBox();
+            this.labelLogManageSelectUser = new System.Windows.Forms.Label();
+            this.labelLogManageSelectDatetime = new System.Windows.Forms.Label();
+            this.labelLogManageSelectGenre = new System.Windows.Forms.Label();
+            this.comboBoxLogManageSelectGenre = new System.Windows.Forms.ComboBox();
+            this.修改密码 = new System.Windows.Forms.Panel();
+            this.buttonPwdModifyCancel = new System.Windows.Forms.Button();
+            this.buttonPwdModifyConfirm = new System.Windows.Forms.Button();
+            this.textBoxPwdModifyConfirmNewPwd = new System.Windows.Forms.TextBox();
+            this.labelPwdModifyComfirmNewPwd = new System.Windows.Forms.Label();
+            this.textBoxPwdModifyNewPwd = new System.Windows.Forms.TextBox();
+            this.labelPwdModifyNewPwd = new System.Windows.Forms.Label();
+            this.textBoxPwdModifyOldPwd = new System.Windows.Forms.TextBox();
+            this.labelPwdModifyOldPwd = new System.Windows.Forms.Label();
             this.用户管理 = new System.Windows.Forms.Panel();
-            this.查看账户 = new System.Windows.Forms.Panel();
-            this.listBoxUserInfo = new System.Windows.Forms.ListBox();
+            this.删除账户 = new System.Windows.Forms.Panel();
+            this.groupBoxUserDelete = new System.Windows.Forms.GroupBox();
+            this.buttonUserDelete = new System.Windows.Forms.Button();
+            this.listBoxUserDelete = new System.Windows.Forms.ListBox();
+            this.重置密码 = new System.Windows.Forms.Panel();
+            this.groupBoxPwdReset = new System.Windows.Forms.GroupBox();
+            this.buttonPwdReset = new System.Windows.Forms.Button();
+            this.listBoxPwdReset = new System.Windows.Forms.ListBox();
             this.添加账户 = new System.Windows.Forms.Panel();
             this.buttonUserAddCancel = new System.Windows.Forms.Button();
             this.buttonUserAddConfirm = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelAddUserType = new System.Windows.Forms.Label();
+            this.labelAddUserConfirmPwd = new System.Windows.Forms.Label();
             this.comboBoxUserType = new System.Windows.Forms.ComboBox();
             this.textBoxPwd = new System.Windows.Forms.TextBox();
             this.textBoxConfirmPwd = new System.Windows.Forms.TextBox();
             this.textBoxUserName = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelAddUserPwd = new System.Windows.Forms.Label();
+            this.labelAddUserUserName = new System.Windows.Forms.Label();
+            this.查看账户 = new System.Windows.Forms.Panel();
+            this.listBoxUserInfo = new System.Windows.Forms.ListBox();
             this.统计与查询 = new System.Windows.Forms.Panel();
             this.装备经费汇总 = new System.Windows.Forms.Panel();
             this.部门人员查询 = new System.Windows.Forms.Panel();
@@ -121,9 +149,9 @@
             this.出库信息修改 = new System.Windows.Forms.Panel();
             this.装备经费管理 = new System.Windows.Forms.Panel();
             this.经费使用管理 = new System.Windows.Forms.Panel();
+            this.经费使用添加 = new System.Windows.Forms.Panel();
             this.经费使用删除 = new System.Windows.Forms.Panel();
             this.经费使用修改 = new System.Windows.Forms.Panel();
-            this.经费使用添加 = new System.Windows.Forms.Panel();
             this.经费入账管理 = new System.Windows.Forms.Panel();
             this.经费入账删除 = new System.Windows.Forms.Panel();
             this.经费入账修改 = new System.Windows.Forms.Panel();
@@ -132,14 +160,38 @@
             this.经费明细删除 = new System.Windows.Forms.Panel();
             this.经费明细修改 = new System.Windows.Forms.Panel();
             this.经费明细添加 = new System.Windows.Forms.Panel();
-            this.重置密码 = new System.Windows.Forms.Panel();
-            this.删除账户 = new System.Windows.Forms.Panel();
+            this.WelcomePicture = new System.Windows.Forms.Panel();
+            this.buttonTimeFlagClear = new System.Windows.Forms.Button();
+            this.查看维修记录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.添加维修记录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.删除维修记录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.修改维修记录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.维修完成ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.添加调拨记录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.删除调拨记录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.修改调拨记录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.装备维修管理 = new System.Windows.Forms.Panel();
+            this.装备调拨管理 = new System.Windows.Forms.Panel();
+            this.查看维修记录 = new System.Windows.Forms.Panel();
+            this.查看调拨记录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.添加维修记录 = new System.Windows.Forms.Panel();
+            this.删除维修记录 = new System.Windows.Forms.Panel();
+            this.修改维修记录 = new System.Windows.Forms.Panel();
+            this.维修状态更新 = new System.Windows.Forms.Panel();
+            this.查看调拨记录 = new System.Windows.Forms.Panel();
             查看账户ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.系统管理.SuspendLayout();
+            this.日志管理.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLogManage)).BeginInit();
+            this.修改密码.SuspendLayout();
             this.用户管理.SuspendLayout();
-            this.查看账户.SuspendLayout();
+            this.删除账户.SuspendLayout();
+            this.groupBoxUserDelete.SuspendLayout();
+            this.重置密码.SuspendLayout();
+            this.groupBoxPwdReset.SuspendLayout();
             this.添加账户.SuspendLayout();
+            this.查看账户.SuspendLayout();
             this.统计与查询.SuspendLayout();
             this.装备库存管理.SuspendLayout();
             this.出库信息管理.SuspendLayout();
@@ -150,6 +202,8 @@
             this.经费入账管理.SuspendLayout();
             this.经费入账添加.SuspendLayout();
             this.经费明细管理.SuspendLayout();
+            this.装备维修管理.SuspendLayout();
+            this.装备调拨管理.SuspendLayout();
             this.SuspendLayout();
             // 
             // 查看账户ToolStripMenuItem
@@ -219,18 +273,21 @@
             this.删除账户ToolStripMenuItem.Name = "删除账户ToolStripMenuItem";
             this.删除账户ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.删除账户ToolStripMenuItem.Text = "删除账户";
+            this.删除账户ToolStripMenuItem.Click += new System.EventHandler(this.删除账户ToolStripMenuItem_Click);
             // 
             // 修改密码ToolStripMenuItem
             // 
             this.修改密码ToolStripMenuItem.Name = "修改密码ToolStripMenuItem";
             this.修改密码ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.修改密码ToolStripMenuItem.Text = "修改密码";
+            this.修改密码ToolStripMenuItem.Click += new System.EventHandler(this.修改密码ToolStripMenuItem_Click);
             // 
             // 日志管理ToolStripMenuItem
             // 
             this.日志管理ToolStripMenuItem.Name = "日志管理ToolStripMenuItem";
             this.日志管理ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.日志管理ToolStripMenuItem.Text = "日志管理";
+            this.日志管理ToolStripMenuItem.Click += new System.EventHandler(this.日志管理ToolStripMenuItem_Click);
             // 
             // 退出系统ToolStripMenuItem
             // 
@@ -414,14 +471,25 @@
             // 
             // 装备维修管理ToolStripMenuItem
             // 
+            this.装备维修管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.查看维修记录ToolStripMenuItem,
+            this.添加维修记录ToolStripMenuItem,
+            this.删除维修记录ToolStripMenuItem,
+            this.修改维修记录ToolStripMenuItem,
+            this.维修完成ToolStripMenuItem});
             this.装备维修管理ToolStripMenuItem.Name = "装备维修管理ToolStripMenuItem";
-            this.装备维修管理ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.装备维修管理ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.装备维修管理ToolStripMenuItem.Text = "装备维修管理";
             // 
             // 装备调拨管理ToolStripMenuItem
             // 
+            this.装备调拨管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.查看调拨记录ToolStripMenuItem,
+            this.添加调拨记录ToolStripMenuItem,
+            this.删除调拨记录ToolStripMenuItem,
+            this.修改调拨记录ToolStripMenuItem});
             this.装备调拨管理ToolStripMenuItem.Name = "装备调拨管理ToolStripMenuItem";
-            this.装备调拨管理ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.装备调拨管理ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.装备调拨管理ToolStripMenuItem.Text = "装备调拨管理";
             // 
             // 统计查询ToolStripMenuItem
@@ -568,64 +636,326 @@
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 
-            // WelcomePicture
-            // 
-            this.WelcomePicture.Location = new System.Drawing.Point(0, 31);
-            this.WelcomePicture.Name = "WelcomePicture";
-            this.WelcomePicture.Size = new System.Drawing.Size(1242, 582);
-            this.WelcomePicture.TabIndex = 0;
-            // 
             // 系统管理
             // 
+            this.系统管理.Controls.Add(this.日志管理);
+            this.系统管理.Controls.Add(this.装备调拨管理);
+            this.系统管理.Controls.Add(this.装备维修管理);
             this.系统管理.Controls.Add(this.用户管理);
+            this.系统管理.Controls.Add(this.修改密码);
             this.系统管理.Location = new System.Drawing.Point(0, 31);
             this.系统管理.Name = "系统管理";
             this.系统管理.Size = new System.Drawing.Size(1242, 579);
             this.系统管理.TabIndex = 2;
             this.系统管理.Visible = false;
             // 
+            // 日志管理
+            // 
+            this.日志管理.Controls.Add(this.buttonTimeFlagClear);
+            this.日志管理.Controls.Add(this.dateTimePickerLogManage);
+            this.日志管理.Controls.Add(this.buttonLogManageExit);
+            this.日志管理.Controls.Add(this.buttonLogManageDeleteAll);
+            this.日志管理.Controls.Add(this.buttonLogManageDeleteTheDay);
+            this.日志管理.Controls.Add(this.buttonLogManageDeleteOneByOne);
+            this.日志管理.Controls.Add(this.dataGridViewLogManage);
+            this.日志管理.Controls.Add(this.comboBoxLogManageSelectUser);
+            this.日志管理.Controls.Add(this.labelLogManageSelectUser);
+            this.日志管理.Controls.Add(this.labelLogManageSelectDatetime);
+            this.日志管理.Controls.Add(this.labelLogManageSelectGenre);
+            this.日志管理.Controls.Add(this.comboBoxLogManageSelectGenre);
+            this.日志管理.Location = new System.Drawing.Point(0, 0);
+            this.日志管理.Name = "日志管理";
+            this.日志管理.Size = new System.Drawing.Size(1242, 582);
+            this.日志管理.TabIndex = 4;
+            this.日志管理.Visible = false;
+            this.日志管理.VisibleChanged += new System.EventHandler(this.日志管理_VisibleChanged);
+            // 
+            // dateTimePickerLogManage
+            // 
+            this.dateTimePickerLogManage.Location = new System.Drawing.Point(490, 113);
+            this.dateTimePickerLogManage.Name = "dateTimePickerLogManage";
+            this.dateTimePickerLogManage.Size = new System.Drawing.Size(164, 25);
+            this.dateTimePickerLogManage.TabIndex = 22;
+            this.dateTimePickerLogManage.CloseUp += new System.EventHandler(this.dateTimePickerLogManage_CloseUp);
+            // 
+            // buttonLogManageExit
+            // 
+            this.buttonLogManageExit.Location = new System.Drawing.Point(877, 419);
+            this.buttonLogManageExit.Name = "buttonLogManageExit";
+            this.buttonLogManageExit.Size = new System.Drawing.Size(97, 53);
+            this.buttonLogManageExit.TabIndex = 21;
+            this.buttonLogManageExit.Text = "退出";
+            this.buttonLogManageExit.UseVisualStyleBackColor = true;
+            this.buttonLogManageExit.Click += new System.EventHandler(this.buttonLogManageExit_Click);
+            // 
+            // buttonLogManageDeleteAll
+            // 
+            this.buttonLogManageDeleteAll.Location = new System.Drawing.Point(675, 420);
+            this.buttonLogManageDeleteAll.Name = "buttonLogManageDeleteAll";
+            this.buttonLogManageDeleteAll.Size = new System.Drawing.Size(92, 53);
+            this.buttonLogManageDeleteAll.TabIndex = 20;
+            this.buttonLogManageDeleteAll.Text = "全部删除";
+            this.buttonLogManageDeleteAll.UseVisualStyleBackColor = true;
+            this.buttonLogManageDeleteAll.Click += new System.EventHandler(this.buttonLogManageDeleteAll_Click);
+            // 
+            // buttonLogManageDeleteTheDay
+            // 
+            this.buttonLogManageDeleteTheDay.Location = new System.Drawing.Point(422, 419);
+            this.buttonLogManageDeleteTheDay.Name = "buttonLogManageDeleteTheDay";
+            this.buttonLogManageDeleteTheDay.Size = new System.Drawing.Size(102, 53);
+            this.buttonLogManageDeleteTheDay.TabIndex = 19;
+            this.buttonLogManageDeleteTheDay.Text = "全天删除";
+            this.buttonLogManageDeleteTheDay.UseVisualStyleBackColor = true;
+            this.buttonLogManageDeleteTheDay.Click += new System.EventHandler(this.buttonLogManageDeleteTheDay_Click);
+            // 
+            // buttonLogManageDeleteOneByOne
+            // 
+            this.buttonLogManageDeleteOneByOne.Location = new System.Drawing.Point(209, 420);
+            this.buttonLogManageDeleteOneByOne.Name = "buttonLogManageDeleteOneByOne";
+            this.buttonLogManageDeleteOneByOne.Size = new System.Drawing.Size(92, 53);
+            this.buttonLogManageDeleteOneByOne.TabIndex = 18;
+            this.buttonLogManageDeleteOneByOne.Text = "逐个删除";
+            this.buttonLogManageDeleteOneByOne.UseVisualStyleBackColor = true;
+            this.buttonLogManageDeleteOneByOne.Click += new System.EventHandler(this.buttonLogManageDeleteOneByOne_Click);
+            // 
+            // dataGridViewLogManage
+            // 
+            this.dataGridViewLogManage.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewLogManage.Location = new System.Drawing.Point(209, 161);
+            this.dataGridViewLogManage.Name = "dataGridViewLogManage";
+            this.dataGridViewLogManage.RowTemplate.Height = 27;
+            this.dataGridViewLogManage.Size = new System.Drawing.Size(765, 237);
+            this.dataGridViewLogManage.TabIndex = 17;
+            // 
+            // comboBoxLogManageSelectUser
+            // 
+            this.comboBoxLogManageSelectUser.FormattingEnabled = true;
+            this.comboBoxLogManageSelectUser.Location = new System.Drawing.Point(853, 115);
+            this.comboBoxLogManageSelectUser.Name = "comboBoxLogManageSelectUser";
+            this.comboBoxLogManageSelectUser.Size = new System.Drawing.Size(121, 23);
+            this.comboBoxLogManageSelectUser.TabIndex = 16;
+            this.comboBoxLogManageSelectUser.SelectionChangeCommitted += new System.EventHandler(this.comboBoxLogManageSelectUser_SelectionChangeCommitted);
+            // 
+            // labelLogManageSelectUser
+            // 
+            this.labelLogManageSelectUser.AutoSize = true;
+            this.labelLogManageSelectUser.Location = new System.Drawing.Point(780, 117);
+            this.labelLogManageSelectUser.Name = "labelLogManageSelectUser";
+            this.labelLogManageSelectUser.Size = new System.Drawing.Size(67, 15);
+            this.labelLogManageSelectUser.TabIndex = 15;
+            this.labelLogManageSelectUser.Text = "选择用户";
+            // 
+            // labelLogManageSelectDatetime
+            // 
+            this.labelLogManageSelectDatetime.AutoSize = true;
+            this.labelLogManageSelectDatetime.Location = new System.Drawing.Point(417, 117);
+            this.labelLogManageSelectDatetime.Name = "labelLogManageSelectDatetime";
+            this.labelLogManageSelectDatetime.Size = new System.Drawing.Size(67, 15);
+            this.labelLogManageSelectDatetime.TabIndex = 13;
+            this.labelLogManageSelectDatetime.Text = "选择日期";
+            // 
+            // labelLogManageSelectGenre
+            // 
+            this.labelLogManageSelectGenre.AutoSize = true;
+            this.labelLogManageSelectGenre.Location = new System.Drawing.Point(206, 118);
+            this.labelLogManageSelectGenre.Name = "labelLogManageSelectGenre";
+            this.labelLogManageSelectGenre.Size = new System.Drawing.Size(67, 15);
+            this.labelLogManageSelectGenre.TabIndex = 12;
+            this.labelLogManageSelectGenre.Text = "选择类别";
+            // 
+            // comboBoxLogManageSelectGenre
+            // 
+            this.comboBoxLogManageSelectGenre.FormattingEnabled = true;
+            this.comboBoxLogManageSelectGenre.Location = new System.Drawing.Point(279, 115);
+            this.comboBoxLogManageSelectGenre.Name = "comboBoxLogManageSelectGenre";
+            this.comboBoxLogManageSelectGenre.Size = new System.Drawing.Size(115, 23);
+            this.comboBoxLogManageSelectGenre.TabIndex = 11;
+            this.comboBoxLogManageSelectGenre.SelectionChangeCommitted += new System.EventHandler(this.comboBoxLogManageSelectGenre_SelectionChangeCommitted);
+            // 
+            // 修改密码
+            // 
+            this.修改密码.Controls.Add(this.buttonPwdModifyCancel);
+            this.修改密码.Controls.Add(this.buttonPwdModifyConfirm);
+            this.修改密码.Controls.Add(this.textBoxPwdModifyConfirmNewPwd);
+            this.修改密码.Controls.Add(this.labelPwdModifyComfirmNewPwd);
+            this.修改密码.Controls.Add(this.textBoxPwdModifyNewPwd);
+            this.修改密码.Controls.Add(this.labelPwdModifyNewPwd);
+            this.修改密码.Controls.Add(this.textBoxPwdModifyOldPwd);
+            this.修改密码.Controls.Add(this.labelPwdModifyOldPwd);
+            this.修改密码.Location = new System.Drawing.Point(0, -2);
+            this.修改密码.Name = "修改密码";
+            this.修改密码.Size = new System.Drawing.Size(1242, 582);
+            this.修改密码.TabIndex = 3;
+            this.修改密码.Visible = false;
+            // 
+            // buttonPwdModifyCancel
+            // 
+            this.buttonPwdModifyCancel.Location = new System.Drawing.Point(643, 361);
+            this.buttonPwdModifyCancel.Name = "buttonPwdModifyCancel";
+            this.buttonPwdModifyCancel.Size = new System.Drawing.Size(75, 39);
+            this.buttonPwdModifyCancel.TabIndex = 19;
+            this.buttonPwdModifyCancel.Text = "取消";
+            this.buttonPwdModifyCancel.UseVisualStyleBackColor = true;
+            // 
+            // buttonPwdModifyConfirm
+            // 
+            this.buttonPwdModifyConfirm.Location = new System.Drawing.Point(517, 362);
+            this.buttonPwdModifyConfirm.Name = "buttonPwdModifyConfirm";
+            this.buttonPwdModifyConfirm.Size = new System.Drawing.Size(75, 38);
+            this.buttonPwdModifyConfirm.TabIndex = 18;
+            this.buttonPwdModifyConfirm.Text = "确认";
+            this.buttonPwdModifyConfirm.UseVisualStyleBackColor = true;
+            this.buttonPwdModifyConfirm.Click += new System.EventHandler(this.buttonPwdModifyConfirm_Click);
+            // 
+            // textBoxPwdModifyConfirmNewPwd
+            // 
+            this.textBoxPwdModifyConfirmNewPwd.Location = new System.Drawing.Point(629, 319);
+            this.textBoxPwdModifyConfirmNewPwd.Name = "textBoxPwdModifyConfirmNewPwd";
+            this.textBoxPwdModifyConfirmNewPwd.Size = new System.Drawing.Size(100, 25);
+            this.textBoxPwdModifyConfirmNewPwd.TabIndex = 17;
+            // 
+            // labelPwdModifyComfirmNewPwd
+            // 
+            this.labelPwdModifyComfirmNewPwd.AutoSize = true;
+            this.labelPwdModifyComfirmNewPwd.Location = new System.Drawing.Point(514, 322);
+            this.labelPwdModifyComfirmNewPwd.Name = "labelPwdModifyComfirmNewPwd";
+            this.labelPwdModifyComfirmNewPwd.Size = new System.Drawing.Size(82, 15);
+            this.labelPwdModifyComfirmNewPwd.TabIndex = 16;
+            this.labelPwdModifyComfirmNewPwd.Text = "确认新密码";
+            // 
+            // textBoxPwdModifyNewPwd
+            // 
+            this.textBoxPwdModifyNewPwd.Location = new System.Drawing.Point(629, 270);
+            this.textBoxPwdModifyNewPwd.Name = "textBoxPwdModifyNewPwd";
+            this.textBoxPwdModifyNewPwd.Size = new System.Drawing.Size(100, 25);
+            this.textBoxPwdModifyNewPwd.TabIndex = 15;
+            // 
+            // labelPwdModifyNewPwd
+            // 
+            this.labelPwdModifyNewPwd.AutoSize = true;
+            this.labelPwdModifyNewPwd.Location = new System.Drawing.Point(516, 273);
+            this.labelPwdModifyNewPwd.Name = "labelPwdModifyNewPwd";
+            this.labelPwdModifyNewPwd.Size = new System.Drawing.Size(52, 15);
+            this.labelPwdModifyNewPwd.TabIndex = 14;
+            this.labelPwdModifyNewPwd.Text = "新密码";
+            // 
+            // textBoxPwdModifyOldPwd
+            // 
+            this.textBoxPwdModifyOldPwd.Location = new System.Drawing.Point(629, 225);
+            this.textBoxPwdModifyOldPwd.Name = "textBoxPwdModifyOldPwd";
+            this.textBoxPwdModifyOldPwd.Size = new System.Drawing.Size(100, 25);
+            this.textBoxPwdModifyOldPwd.TabIndex = 13;
+            // 
+            // labelPwdModifyOldPwd
+            // 
+            this.labelPwdModifyOldPwd.AutoSize = true;
+            this.labelPwdModifyOldPwd.Location = new System.Drawing.Point(516, 228);
+            this.labelPwdModifyOldPwd.Name = "labelPwdModifyOldPwd";
+            this.labelPwdModifyOldPwd.Size = new System.Drawing.Size(52, 15);
+            this.labelPwdModifyOldPwd.TabIndex = 12;
+            this.labelPwdModifyOldPwd.Text = "旧密码";
+            // 
             // 用户管理
             // 
-            this.用户管理.Controls.Add(this.重置密码);
-            this.用户管理.Controls.Add(this.删除账户);
             this.用户管理.Controls.Add(this.查看账户);
+            this.用户管理.Controls.Add(this.删除账户);
             this.用户管理.Controls.Add(this.添加账户);
+            this.用户管理.Controls.Add(this.重置密码);
             this.用户管理.Location = new System.Drawing.Point(3, 3);
             this.用户管理.Name = "用户管理";
             this.用户管理.Size = new System.Drawing.Size(1236, 573);
             this.用户管理.TabIndex = 0;
             this.用户管理.Visible = false;
             // 
-            // 查看账户
+            // 删除账户
             // 
-            this.查看账户.Controls.Add(this.listBoxUserInfo);
-            this.查看账户.Location = new System.Drawing.Point(-1, -3);
-            this.查看账户.Name = "查看账户";
-            this.查看账户.Size = new System.Drawing.Size(1239, 579);
-            this.查看账户.TabIndex = 2;
-            this.查看账户.Visible = false;
+            this.删除账户.Controls.Add(this.groupBoxUserDelete);
+            this.删除账户.Location = new System.Drawing.Point(0, 0);
+            this.删除账户.Name = "删除账户";
+            this.删除账户.Size = new System.Drawing.Size(1230, 570);
+            this.删除账户.TabIndex = 4;
+            this.删除账户.Visible = false;
             // 
-            // listBoxUserInfo
+            // groupBoxUserDelete
             // 
-            this.listBoxUserInfo.FormattingEnabled = true;
-            this.listBoxUserInfo.ItemHeight = 15;
-            this.listBoxUserInfo.Location = new System.Drawing.Point(96, 65);
-            this.listBoxUserInfo.Name = "listBoxUserInfo";
-            this.listBoxUserInfo.Size = new System.Drawing.Size(567, 244);
-            this.listBoxUserInfo.TabIndex = 0;
+            this.groupBoxUserDelete.Controls.Add(this.buttonUserDelete);
+            this.groupBoxUserDelete.Controls.Add(this.listBoxUserDelete);
+            this.groupBoxUserDelete.Location = new System.Drawing.Point(505, 112);
+            this.groupBoxUserDelete.Name = "groupBoxUserDelete";
+            this.groupBoxUserDelete.Size = new System.Drawing.Size(221, 346);
+            this.groupBoxUserDelete.TabIndex = 3;
+            this.groupBoxUserDelete.TabStop = false;
+            this.groupBoxUserDelete.Text = "选择需要删除的账户";
+            // 
+            // buttonUserDelete
+            // 
+            this.buttonUserDelete.Location = new System.Drawing.Point(55, 301);
+            this.buttonUserDelete.Name = "buttonUserDelete";
+            this.buttonUserDelete.Size = new System.Drawing.Size(112, 35);
+            this.buttonUserDelete.TabIndex = 2;
+            this.buttonUserDelete.Text = "删除账户";
+            this.buttonUserDelete.UseVisualStyleBackColor = true;
+            // 
+            // listBoxUserDelete
+            // 
+            this.listBoxUserDelete.FormattingEnabled = true;
+            this.listBoxUserDelete.ItemHeight = 15;
+            this.listBoxUserDelete.Location = new System.Drawing.Point(34, 36);
+            this.listBoxUserDelete.Name = "listBoxUserDelete";
+            this.listBoxUserDelete.Size = new System.Drawing.Size(154, 259);
+            this.listBoxUserDelete.TabIndex = 1;
+            // 
+            // 重置密码
+            // 
+            this.重置密码.Controls.Add(this.groupBoxPwdReset);
+            this.重置密码.Location = new System.Drawing.Point(0, 0);
+            this.重置密码.Name = "重置密码";
+            this.重置密码.Size = new System.Drawing.Size(1230, 570);
+            this.重置密码.TabIndex = 3;
+            this.重置密码.Visible = false;
+            // 
+            // groupBoxPwdReset
+            // 
+            this.groupBoxPwdReset.Controls.Add(this.buttonPwdReset);
+            this.groupBoxPwdReset.Controls.Add(this.listBoxPwdReset);
+            this.groupBoxPwdReset.Location = new System.Drawing.Point(371, 84);
+            this.groupBoxPwdReset.Name = "groupBoxPwdReset";
+            this.groupBoxPwdReset.Size = new System.Drawing.Size(221, 346);
+            this.groupBoxPwdReset.TabIndex = 2;
+            this.groupBoxPwdReset.TabStop = false;
+            this.groupBoxPwdReset.Text = "选择需要重置密码的用户";
+            // 
+            // buttonPwdReset
+            // 
+            this.buttonPwdReset.Location = new System.Drawing.Point(55, 301);
+            this.buttonPwdReset.Name = "buttonPwdReset";
+            this.buttonPwdReset.Size = new System.Drawing.Size(112, 35);
+            this.buttonPwdReset.TabIndex = 2;
+            this.buttonPwdReset.Text = "重置密码";
+            this.buttonPwdReset.UseVisualStyleBackColor = true;
+            this.buttonPwdReset.Click += new System.EventHandler(this.buttonPwdReset_Click);
+            // 
+            // listBoxPwdReset
+            // 
+            this.listBoxPwdReset.FormattingEnabled = true;
+            this.listBoxPwdReset.ItemHeight = 15;
+            this.listBoxPwdReset.Location = new System.Drawing.Point(34, 36);
+            this.listBoxPwdReset.Name = "listBoxPwdReset";
+            this.listBoxPwdReset.Size = new System.Drawing.Size(154, 259);
+            this.listBoxPwdReset.TabIndex = 1;
             // 
             // 添加账户
             // 
             this.添加账户.Controls.Add(this.buttonUserAddCancel);
             this.添加账户.Controls.Add(this.buttonUserAddConfirm);
-            this.添加账户.Controls.Add(this.label4);
-            this.添加账户.Controls.Add(this.label3);
+            this.添加账户.Controls.Add(this.labelAddUserType);
+            this.添加账户.Controls.Add(this.labelAddUserConfirmPwd);
             this.添加账户.Controls.Add(this.comboBoxUserType);
             this.添加账户.Controls.Add(this.textBoxPwd);
             this.添加账户.Controls.Add(this.textBoxConfirmPwd);
             this.添加账户.Controls.Add(this.textBoxUserName);
-            this.添加账户.Controls.Add(this.label2);
-            this.添加账户.Controls.Add(this.label1);
+            this.添加账户.Controls.Add(this.labelAddUserPwd);
+            this.添加账户.Controls.Add(this.labelAddUserUserName);
             this.添加账户.Location = new System.Drawing.Point(0, 0);
             this.添加账户.Name = "添加账户";
             this.添加账户.Size = new System.Drawing.Size(1239, 579);
@@ -643,31 +973,31 @@
             // 
             // buttonUserAddConfirm
             // 
-            this.buttonUserAddConfirm.Location = new System.Drawing.Point(498, 366);
+            this.buttonUserAddConfirm.Location = new System.Drawing.Point(495, 366);
             this.buttonUserAddConfirm.Name = "buttonUserAddConfirm";
-            this.buttonUserAddConfirm.Size = new System.Drawing.Size(82, 35);
+            this.buttonUserAddConfirm.Size = new System.Drawing.Size(91, 35);
             this.buttonUserAddConfirm.TabIndex = 18;
             this.buttonUserAddConfirm.Text = "确认添加";
             this.buttonUserAddConfirm.UseVisualStyleBackColor = true;
             this.buttonUserAddConfirm.Click += new System.EventHandler(this.buttonUserAddConfirm_Click);
             // 
-            // label4
+            // labelAddUserType
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(492, 322);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 15);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "用户类型";
+            this.labelAddUserType.AutoSize = true;
+            this.labelAddUserType.Location = new System.Drawing.Point(492, 322);
+            this.labelAddUserType.Name = "labelAddUserType";
+            this.labelAddUserType.Size = new System.Drawing.Size(67, 15);
+            this.labelAddUserType.TabIndex = 17;
+            this.labelAddUserType.Text = "用户类型";
             // 
-            // label3
+            // labelAddUserConfirmPwd
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(492, 276);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 15);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "确认密码";
+            this.labelAddUserConfirmPwd.AutoSize = true;
+            this.labelAddUserConfirmPwd.Location = new System.Drawing.Point(492, 276);
+            this.labelAddUserConfirmPwd.Name = "labelAddUserConfirmPwd";
+            this.labelAddUserConfirmPwd.Size = new System.Drawing.Size(67, 15);
+            this.labelAddUserConfirmPwd.TabIndex = 16;
+            this.labelAddUserConfirmPwd.Text = "确认密码";
             // 
             // comboBoxUserType
             // 
@@ -700,23 +1030,41 @@
             this.textBoxUserName.TabIndex = 12;
             this.textBoxUserName.Leave += new System.EventHandler(this.textBoxUserName_Leave);
             // 
-            // label2
+            // labelAddUserPwd
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(492, 228);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 15);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "密码";
+            this.labelAddUserPwd.AutoSize = true;
+            this.labelAddUserPwd.Location = new System.Drawing.Point(492, 228);
+            this.labelAddUserPwd.Name = "labelAddUserPwd";
+            this.labelAddUserPwd.Size = new System.Drawing.Size(37, 15);
+            this.labelAddUserPwd.TabIndex = 11;
+            this.labelAddUserPwd.Text = "密码";
             // 
-            // label1
+            // labelAddUserUserName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(495, 177);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 15);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "用户名";
+            this.labelAddUserUserName.AutoSize = true;
+            this.labelAddUserUserName.Location = new System.Drawing.Point(495, 177);
+            this.labelAddUserUserName.Name = "labelAddUserUserName";
+            this.labelAddUserUserName.Size = new System.Drawing.Size(52, 15);
+            this.labelAddUserUserName.TabIndex = 10;
+            this.labelAddUserUserName.Text = "用户名";
+            // 
+            // 查看账户
+            // 
+            this.查看账户.Controls.Add(this.listBoxUserInfo);
+            this.查看账户.Location = new System.Drawing.Point(0, 0);
+            this.查看账户.Name = "查看账户";
+            this.查看账户.Size = new System.Drawing.Size(1239, 579);
+            this.查看账户.TabIndex = 2;
+            this.查看账户.Visible = false;
+            // 
+            // listBoxUserInfo
+            // 
+            this.listBoxUserInfo.FormattingEnabled = true;
+            this.listBoxUserInfo.ItemHeight = 15;
+            this.listBoxUserInfo.Location = new System.Drawing.Point(96, 65);
+            this.listBoxUserInfo.Name = "listBoxUserInfo";
+            this.listBoxUserInfo.Size = new System.Drawing.Size(567, 244);
+            this.listBoxUserInfo.TabIndex = 0;
             // 
             // 统计与查询
             // 
@@ -899,14 +1247,22 @@
             // 
             // 经费使用管理
             // 
+            this.经费使用管理.Controls.Add(this.经费使用添加);
             this.经费使用管理.Controls.Add(this.经费使用删除);
             this.经费使用管理.Controls.Add(this.经费使用修改);
-            this.经费使用管理.Controls.Add(this.经费使用添加);
             this.经费使用管理.Location = new System.Drawing.Point(0, 0);
             this.经费使用管理.Name = "经费使用管理";
             this.经费使用管理.Size = new System.Drawing.Size(1242, 582);
             this.经费使用管理.TabIndex = 2;
             this.经费使用管理.Visible = false;
+            // 
+            // 经费使用添加
+            // 
+            this.经费使用添加.Location = new System.Drawing.Point(0, 0);
+            this.经费使用添加.Name = "经费使用添加";
+            this.经费使用添加.Size = new System.Drawing.Size(1242, 582);
+            this.经费使用添加.TabIndex = 0;
+            this.经费使用添加.Visible = false;
             // 
             // 经费使用删除
             // 
@@ -923,14 +1279,6 @@
             this.经费使用修改.Size = new System.Drawing.Size(1242, 582);
             this.经费使用修改.TabIndex = 1;
             this.经费使用修改.Visible = false;
-            // 
-            // 经费使用添加
-            // 
-            this.经费使用添加.Location = new System.Drawing.Point(0, 0);
-            this.经费使用添加.Name = "经费使用添加";
-            this.经费使用添加.Size = new System.Drawing.Size(1242, 582);
-            this.经费使用添加.TabIndex = 0;
-            this.经费使用添加.Visible = false;
             // 
             // 经费入账管理
             // 
@@ -1003,33 +1351,158 @@
             this.经费明细添加.TabIndex = 0;
             this.经费明细添加.Visible = false;
             // 
-            // 重置密码
+            // WelcomePicture
             // 
-            this.重置密码.Location = new System.Drawing.Point(0, 0);
-            this.重置密码.Name = "重置密码";
-            this.重置密码.Size = new System.Drawing.Size(1230, 570);
-            this.重置密码.TabIndex = 3;
-            this.重置密码.Visible = false;
+            this.WelcomePicture.Location = new System.Drawing.Point(0, 31);
+            this.WelcomePicture.Name = "WelcomePicture";
+            this.WelcomePicture.Size = new System.Drawing.Size(1242, 582);
+            this.WelcomePicture.TabIndex = 0;
             // 
-            // 删除账户
+            // buttonTimeFlagClear
             // 
-            this.删除账户.Location = new System.Drawing.Point(11, 9);
-            this.删除账户.Name = "删除账户";
-            this.删除账户.Size = new System.Drawing.Size(1230, 570);
-            this.删除账户.TabIndex = 4;
-            this.删除账户.Visible = false;
+            this.buttonTimeFlagClear.Location = new System.Drawing.Point(663, 113);
+            this.buttonTimeFlagClear.Name = "buttonTimeFlagClear";
+            this.buttonTimeFlagClear.Size = new System.Drawing.Size(92, 25);
+            this.buttonTimeFlagClear.TabIndex = 23;
+            this.buttonTimeFlagClear.Text = "清除日期";
+            this.buttonTimeFlagClear.UseVisualStyleBackColor = true;
+            this.buttonTimeFlagClear.Click += new System.EventHandler(this.buttonTimeFlagClear_Click);
+            // 
+            // 查看维修记录ToolStripMenuItem
+            // 
+            this.查看维修记录ToolStripMenuItem.Name = "查看维修记录ToolStripMenuItem";
+            this.查看维修记录ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.查看维修记录ToolStripMenuItem.Text = "查看维修记录";
+            // 
+            // 添加维修记录ToolStripMenuItem
+            // 
+            this.添加维修记录ToolStripMenuItem.Name = "添加维修记录ToolStripMenuItem";
+            this.添加维修记录ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.添加维修记录ToolStripMenuItem.Text = "添加维修记录";
+            // 
+            // 删除维修记录ToolStripMenuItem
+            // 
+            this.删除维修记录ToolStripMenuItem.Name = "删除维修记录ToolStripMenuItem";
+            this.删除维修记录ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.删除维修记录ToolStripMenuItem.Text = "删除维修记录";
+            // 
+            // 修改维修记录ToolStripMenuItem
+            // 
+            this.修改维修记录ToolStripMenuItem.Name = "修改维修记录ToolStripMenuItem";
+            this.修改维修记录ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.修改维修记录ToolStripMenuItem.Text = "修改维修记录";
+            // 
+            // 维修完成ToolStripMenuItem
+            // 
+            this.维修完成ToolStripMenuItem.Name = "维修完成ToolStripMenuItem";
+            this.维修完成ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.维修完成ToolStripMenuItem.Text = "维修状态更新";
+            // 
+            // 添加调拨记录ToolStripMenuItem
+            // 
+            this.添加调拨记录ToolStripMenuItem.Name = "添加调拨记录ToolStripMenuItem";
+            this.添加调拨记录ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.添加调拨记录ToolStripMenuItem.Text = "添加调拨记录";
+            // 
+            // 删除调拨记录ToolStripMenuItem
+            // 
+            this.删除调拨记录ToolStripMenuItem.Name = "删除调拨记录ToolStripMenuItem";
+            this.删除调拨记录ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.删除调拨记录ToolStripMenuItem.Text = "删除调拨记录";
+            // 
+            // 修改调拨记录ToolStripMenuItem
+            // 
+            this.修改调拨记录ToolStripMenuItem.Name = "修改调拨记录ToolStripMenuItem";
+            this.修改调拨记录ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.修改调拨记录ToolStripMenuItem.Text = "修改调拨记录";
+            // 
+            // 装备维修管理
+            // 
+            this.装备维修管理.Controls.Add(this.删除维修记录);
+            this.装备维修管理.Controls.Add(this.修改维修记录);
+            this.装备维修管理.Controls.Add(this.维修状态更新);
+            this.装备维修管理.Controls.Add(this.查看维修记录);
+            this.装备维修管理.Controls.Add(this.添加维修记录);
+            this.装备维修管理.Location = new System.Drawing.Point(0, 0);
+            this.装备维修管理.Name = "装备维修管理";
+            this.装备维修管理.Size = new System.Drawing.Size(1242, 579);
+            this.装备维修管理.TabIndex = 5;
+            this.装备维修管理.Visible = false;
+            // 
+            // 装备调拨管理
+            // 
+            this.装备调拨管理.Controls.Add(this.查看调拨记录);
+            this.装备调拨管理.Location = new System.Drawing.Point(0, 0);
+            this.装备调拨管理.Name = "装备调拨管理";
+            this.装备调拨管理.Size = new System.Drawing.Size(1242, 579);
+            this.装备调拨管理.TabIndex = 6;
+            this.装备调拨管理.Visible = false;
+            // 
+            // 查看维修记录
+            // 
+            this.查看维修记录.Location = new System.Drawing.Point(0, 0);
+            this.查看维修记录.Name = "查看维修记录";
+            this.查看维修记录.Size = new System.Drawing.Size(1242, 579);
+            this.查看维修记录.TabIndex = 6;
+            this.查看维修记录.Visible = false;
+            // 
+            // 查看调拨记录ToolStripMenuItem
+            // 
+            this.查看调拨记录ToolStripMenuItem.Name = "查看调拨记录ToolStripMenuItem";
+            this.查看调拨记录ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.查看调拨记录ToolStripMenuItem.Text = "查看调拨记录";
+            // 
+            // 添加维修记录
+            // 
+            this.添加维修记录.Location = new System.Drawing.Point(0, 0);
+            this.添加维修记录.Name = "添加维修记录";
+            this.添加维修记录.Size = new System.Drawing.Size(1242, 579);
+            this.添加维修记录.TabIndex = 7;
+            this.添加维修记录.Visible = false;
+            // 
+            // 删除维修记录
+            // 
+            this.删除维修记录.Location = new System.Drawing.Point(0, 0);
+            this.删除维修记录.Name = "删除维修记录";
+            this.删除维修记录.Size = new System.Drawing.Size(1242, 579);
+            this.删除维修记录.TabIndex = 6;
+            this.删除维修记录.Visible = false;
+            // 
+            // 修改维修记录
+            // 
+            this.修改维修记录.Location = new System.Drawing.Point(0, 0);
+            this.修改维修记录.Name = "修改维修记录";
+            this.修改维修记录.Size = new System.Drawing.Size(1242, 579);
+            this.修改维修记录.TabIndex = 6;
+            this.修改维修记录.Visible = false;
+            // 
+            // 维修状态更新
+            // 
+            this.维修状态更新.Location = new System.Drawing.Point(0, 0);
+            this.维修状态更新.Name = "维修状态更新";
+            this.维修状态更新.Size = new System.Drawing.Size(1242, 579);
+            this.维修状态更新.TabIndex = 8;
+            this.维修状态更新.Visible = false;
+            // 
+            // 查看调拨记录
+            // 
+            this.查看调拨记录.Location = new System.Drawing.Point(0, 0);
+            this.查看调拨记录.Name = "查看调拨记录";
+            this.查看调拨记录.Size = new System.Drawing.Size(1242, 579);
+            this.查看调拨记录.TabIndex = 6;
+            this.查看调拨记录.Visible = false;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1242, 615);
-            this.Controls.Add(this.装备经费管理);
-            this.Controls.Add(this.装备库存管理);
-            this.Controls.Add(this.统计与查询);
             this.Controls.Add(this.系统管理);
             this.Controls.Add(this.WelcomePicture);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.装备经费管理);
+            this.Controls.Add(this.装备库存管理);
+            this.Controls.Add(this.统计与查询);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Main";
             this.Text = "Main";
@@ -1038,10 +1511,19 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.系统管理.ResumeLayout(false);
+            this.日志管理.ResumeLayout(false);
+            this.日志管理.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLogManage)).EndInit();
+            this.修改密码.ResumeLayout(false);
+            this.修改密码.PerformLayout();
             this.用户管理.ResumeLayout(false);
-            this.查看账户.ResumeLayout(false);
+            this.删除账户.ResumeLayout(false);
+            this.groupBoxUserDelete.ResumeLayout(false);
+            this.重置密码.ResumeLayout(false);
+            this.groupBoxPwdReset.ResumeLayout(false);
             this.添加账户.ResumeLayout(false);
             this.添加账户.PerformLayout();
+            this.查看账户.ResumeLayout(false);
             this.统计与查询.ResumeLayout(false);
             this.装备库存管理.ResumeLayout(false);
             this.出库信息管理.ResumeLayout(false);
@@ -1052,6 +1534,8 @@
             this.经费入账管理.ResumeLayout(false);
             this.经费入账添加.ResumeLayout(false);
             this.经费明细管理.ResumeLayout(false);
+            this.装备维修管理.ResumeLayout(false);
+            this.装备调拨管理.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1154,15 +1638,60 @@
         private System.Windows.Forms.ListBox listBoxUserInfo;
         private System.Windows.Forms.Button buttonUserAddCancel;
         private System.Windows.Forms.Button buttonUserAddConfirm;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelAddUserType;
+        private System.Windows.Forms.Label labelAddUserConfirmPwd;
         private System.Windows.Forms.ComboBox comboBoxUserType;
         private System.Windows.Forms.TextBox textBoxPwd;
         private System.Windows.Forms.TextBox textBoxConfirmPwd;
         private System.Windows.Forms.TextBox textBoxUserName;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelAddUserPwd;
+        private System.Windows.Forms.Label labelAddUserUserName;
         private System.Windows.Forms.Panel 重置密码;
         private System.Windows.Forms.Panel 删除账户;
+        private System.Windows.Forms.GroupBox groupBoxPwdReset;
+        private System.Windows.Forms.Button buttonPwdReset;
+        private System.Windows.Forms.ListBox listBoxPwdReset;
+        private System.Windows.Forms.GroupBox groupBoxUserDelete;
+        private System.Windows.Forms.Button buttonUserDelete;
+        private System.Windows.Forms.ListBox listBoxUserDelete;
+        private System.Windows.Forms.Panel 修改密码;
+        private System.Windows.Forms.Button buttonPwdModifyCancel;
+        private System.Windows.Forms.Button buttonPwdModifyConfirm;
+        private System.Windows.Forms.TextBox textBoxPwdModifyConfirmNewPwd;
+        private System.Windows.Forms.Label labelPwdModifyComfirmNewPwd;
+        private System.Windows.Forms.TextBox textBoxPwdModifyNewPwd;
+        private System.Windows.Forms.Label labelPwdModifyNewPwd;
+        private System.Windows.Forms.TextBox textBoxPwdModifyOldPwd;
+        private System.Windows.Forms.Label labelPwdModifyOldPwd;
+        private System.Windows.Forms.Panel 日志管理;
+        private System.Windows.Forms.DateTimePicker dateTimePickerLogManage;
+        private System.Windows.Forms.Button buttonLogManageExit;
+        private System.Windows.Forms.Button buttonLogManageDeleteAll;
+        private System.Windows.Forms.Button buttonLogManageDeleteTheDay;
+        private System.Windows.Forms.Button buttonLogManageDeleteOneByOne;
+        private System.Windows.Forms.DataGridView dataGridViewLogManage;
+        private System.Windows.Forms.ComboBox comboBoxLogManageSelectUser;
+        private System.Windows.Forms.Label labelLogManageSelectUser;
+        private System.Windows.Forms.Label labelLogManageSelectDatetime;
+        private System.Windows.Forms.Label labelLogManageSelectGenre;
+        private System.Windows.Forms.ComboBox comboBoxLogManageSelectGenre;
+        private System.Windows.Forms.Button buttonTimeFlagClear;
+        private System.Windows.Forms.ToolStripMenuItem 查看维修记录ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 添加维修记录ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 删除维修记录ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 修改维修记录ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 维修完成ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 查看调拨记录ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 添加调拨记录ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 删除调拨记录ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 修改调拨记录ToolStripMenuItem;
+        private System.Windows.Forms.Panel 装备调拨管理;
+        private System.Windows.Forms.Panel 查看调拨记录;
+        private System.Windows.Forms.Panel 装备维修管理;
+        private System.Windows.Forms.Panel 删除维修记录;
+        private System.Windows.Forms.Panel 修改维修记录;
+        private System.Windows.Forms.Panel 维修状态更新;
+        private System.Windows.Forms.Panel 查看维修记录;
+        private System.Windows.Forms.Panel 添加维修记录;
     }
 }
