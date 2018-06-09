@@ -459,24 +459,28 @@
             this.出入库统计表ToolStripMenuItem.Name = "出入库统计表ToolStripMenuItem";
             this.出入库统计表ToolStripMenuItem.Size = new System.Drawing.Size(219, 26);
             this.出入库统计表ToolStripMenuItem.Text = "出入库统计表";
+            this.出入库统计表ToolStripMenuItem.Click += new System.EventHandler(this.出入库统计表ToolStripMenuItem_Click);
             // 
             // 装备库存流水统计表ToolStripMenuItem
             // 
             this.装备库存流水统计表ToolStripMenuItem.Name = "装备库存流水统计表ToolStripMenuItem";
             this.装备库存流水统计表ToolStripMenuItem.Size = new System.Drawing.Size(219, 26);
             this.装备库存流水统计表ToolStripMenuItem.Text = "装备库存流水统计表";
+            this.装备库存流水统计表ToolStripMenuItem.Click += new System.EventHandler(this.装备库存流水统计表ToolStripMenuItem_Click);
             // 
             // 部门人员查询ToolStripMenuItem
             // 
             this.部门人员查询ToolStripMenuItem.Name = "部门人员查询ToolStripMenuItem";
             this.部门人员查询ToolStripMenuItem.Size = new System.Drawing.Size(219, 26);
             this.部门人员查询ToolStripMenuItem.Text = "部门人员查询";
+            this.部门人员查询ToolStripMenuItem.Click += new System.EventHandler(this.部门人员查询ToolStripMenuItem_Click);
             // 
             // 装备经费汇总ToolStripMenuItem
             // 
             this.装备经费汇总ToolStripMenuItem.Name = "装备经费汇总ToolStripMenuItem";
             this.装备经费汇总ToolStripMenuItem.Size = new System.Drawing.Size(219, 26);
             this.装备经费汇总ToolStripMenuItem.Text = "装备经费汇总";
+            this.装备经费汇总ToolStripMenuItem.Click += new System.EventHandler(this.装备经费汇总ToolStripMenuItem_Click);
             // 
             // 装备经费管理ToolStripMenuItem
             // 
@@ -1189,8 +1193,8 @@
             this.Controls.Add(this.装备经费管理);
             this.Controls.Add(this.装备库存管理);
             this.Controls.Add(this.系统管理);
-            this.Controls.Add(this.WelcomePicture);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.WelcomePicture);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Main";
             this.Text = "Main";

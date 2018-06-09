@@ -30,6 +30,11 @@ namespace Equipment_Management
 
         private void Main_Load(object sender, EventArgs e)
         {
+            WelcomePicture.Visible = true;
+            统计与查询.Visible = false;
+            装备经费管理.Visible = false;
+            装备库存管理.Visible = false;
+            系统管理.Visible = false;
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -104,6 +109,66 @@ namespace Equipment_Management
         private void label1_Click(object sender, EventArgs e)
         {
            // this.text
+        }
+
+        private void 出入库统计表ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // 将其他层的panel隐藏
+            统计与查询.Visible = true;
+            装备经费管理.Visible = false;
+            装备库存管理.Visible = false;
+            系统管理.Visible = false;
+
+            // 将同层的panel隐藏
+            出入库统计表.Visible = true;
+            部门人员查询.Visible = false;
+            装备经费汇总.Visible = false;
+            装备库存流水统计表.Visible = false;
+        }
+
+        private void 部门人员查询ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // 将其他层的panel隐藏
+            统计与查询.Visible = true;
+            装备经费管理.Visible = false;
+            装备库存管理.Visible = false;
+            系统管理.Visible = false;
+
+            // 将同层的panel隐藏
+            出入库统计表.Visible = false;
+            部门人员查询.Visible = true;
+            装备经费汇总.Visible = false;
+            装备库存流水统计表.Visible = false;
+        }
+
+        private void 装备经费汇总ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // 将其他层的panel隐藏
+            统计与查询.Visible = true;
+            装备经费管理.Visible = false;
+            装备库存管理.Visible = false;
+            系统管理.Visible = false;
+
+            // 将同层的panel隐藏
+            出入库统计表.Visible = false;
+            部门人员查询.Visible = false;
+            装备经费汇总.Visible = true;
+            装备库存流水统计表.Visible = false;
+        }
+
+        private void 装备库存流水统计表ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // 将其他层的panel隐藏
+            统计与查询.Visible = true;
+            装备经费管理.Visible = false;
+            装备库存管理.Visible = false;
+            系统管理.Visible = false;
+
+            // 将同层的panel隐藏
+            出入库统计表.Visible = false;
+            部门人员查询.Visible = false;
+            装备经费汇总.Visible = false;
+            装备库存流水统计表.Visible = true;
         }
     }
 }
