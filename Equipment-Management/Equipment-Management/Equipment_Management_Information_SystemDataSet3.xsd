@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Equipment_Management_Information_SystemDataSet3" targetNamespace="http://tempuri.org/Equipment_Management_Information_SystemDataSet3.xsd" xmlns:mstns="http://tempuri.org/Equipment_Management_Information_SystemDataSet3.xsd" xmlns="http://tempuri.org/Equipment_Management_Information_SystemDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Equipment_Management_Information_SystemConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Equipment_Management_Information_SystemConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Equipment_Management.Properties.Settings.GlobalReference.Default.Equipment_Management_Information_SystemConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataLendTableAdapter" GeneratorDataComponentClassName="DataLendTableAdapter" Name="DataLend" UserDataComponentName="DataLendTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Equipment_Management_Information_SystemConnectionString (Settings)" DbObjectName="[Equipment Management Information System].dbo.DataLend" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, DataNo, LendDate, Ryid, LendCount, Ryname FROM dbo.DataLend</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="DataNo" DataSetColumn="DataNo" />
+              <Mapping SourceColumn="LendDate" DataSetColumn="LendDate" />
+              <Mapping SourceColumn="Ryid" DataSetColumn="Ryid" />
+              <Mapping SourceColumn="LendCount" DataSetColumn="LendCount" />
+              <Mapping SourceColumn="Ryname" DataSetColumn="Ryname" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Equipment_Management_Information_SystemDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Equipment_Management_Information_SystemDataSet3" msprop:Generator_UserDSName="Equipment_Management_Information_SystemDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataLend" msprop:Generator_TableClassName="DataLendDataTable" msprop:Generator_TableVarName="tableDataLend" msprop:Generator_TablePropName="DataLend" msprop:Generator_RowDeletingName="DataLendRowDeleting" msprop:Generator_RowChangingName="DataLendRowChanging" msprop:Generator_RowEvHandlerName="DataLendRowChangeEventHandler" msprop:Generator_RowDeletedName="DataLendRowDeleted" msprop:Generator_UserTableName="DataLend" msprop:Generator_RowChangedName="DataLendRowChanged" msprop:Generator_RowEvArgName="DataLendRowChangeEvent" msprop:Generator_RowClassName="DataLendRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="DataNo" msprop:Generator_ColumnVarNameInTable="columnDataNo" msprop:Generator_ColumnPropNameInRow="DataNo" msprop:Generator_ColumnPropNameInTable="DataNoColumn" msprop:Generator_UserColumnName="DataNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="14" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LendDate" msprop:Generator_ColumnVarNameInTable="columnLendDate" msprop:Generator_ColumnPropNameInRow="LendDate" msprop:Generator_ColumnPropNameInTable="LendDateColumn" msprop:Generator_UserColumnName="LendDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ryid" msprop:Generator_ColumnVarNameInTable="columnRyid" msprop:Generator_ColumnPropNameInRow="Ryid" msprop:Generator_ColumnPropNameInTable="RyidColumn" msprop:Generator_UserColumnName="Ryid" type="xs:int" minOccurs="0" />
+              <xs:element name="LendCount" msprop:Generator_ColumnVarNameInTable="columnLendCount" msprop:Generator_ColumnPropNameInRow="LendCount" msprop:Generator_ColumnPropNameInTable="LendCountColumn" msprop:Generator_UserColumnName="LendCount" type="xs:int" minOccurs="0" />
+              <xs:element name="Ryname" msprop:Generator_ColumnVarNameInTable="columnRyname" msprop:Generator_ColumnPropNameInRow="Ryname" msprop:Generator_ColumnPropNameInTable="RynameColumn" msprop:Generator_UserColumnName="Ryname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

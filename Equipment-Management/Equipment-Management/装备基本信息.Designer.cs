@@ -28,39 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.zbidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.zbnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.zbspecDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.zbkindDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.zbunitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.armsInfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.equipment_Management_Information_SystemDataSet = new Equipment_Management.Equipment_Management_Information_SystemDataSet();
+            this.armsInfoTableAdapter = new Equipment_Management.Equipment_Management_Information_SystemDataSetTableAdapters.ArmsInfoTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.armsInfoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.equipment_Management_Information_SystemDataSet)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 58);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "装备类型";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "轻武器"});
-            this.comboBox1.Location = new System.Drawing.Point(183, 58);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 23);
-            this.comboBox1.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(33, 329);
+            this.button1.Location = new System.Drawing.Point(33, 298);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
@@ -70,7 +60,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(137, 329);
+            this.button2.Location = new System.Drawing.Point(137, 298);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 3;
@@ -80,7 +70,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(241, 329);
+            this.button3.Location = new System.Drawing.Point(241, 298);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 4;
@@ -89,7 +79,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(340, 329);
+            this.button4.Location = new System.Drawing.Point(340, 298);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 5;
@@ -98,7 +88,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(447, 328);
+            this.button5.Location = new System.Drawing.Point(501, 298);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 6;
@@ -107,43 +97,101 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(33, 87);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.zbidDataGridViewTextBoxColumn,
+            this.zbnameDataGridViewTextBoxColumn,
+            this.zbspecDataGridViewTextBoxColumn,
+            this.zbkindDataGridViewTextBoxColumn,
+            this.zbunitDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.armsInfoBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(33, 47);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(489, 218);
+            this.dataGridView1.Size = new System.Drawing.Size(664, 218);
             this.dataGridView1.TabIndex = 7;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // zbidDataGridViewTextBoxColumn
+            // 
+            this.zbidDataGridViewTextBoxColumn.DataPropertyName = "Zbid";
+            this.zbidDataGridViewTextBoxColumn.HeaderText = "装备编号";
+            this.zbidDataGridViewTextBoxColumn.Name = "zbidDataGridViewTextBoxColumn";
+            // 
+            // zbnameDataGridViewTextBoxColumn
+            // 
+            this.zbnameDataGridViewTextBoxColumn.DataPropertyName = "Zbname";
+            this.zbnameDataGridViewTextBoxColumn.HeaderText = "装备名称";
+            this.zbnameDataGridViewTextBoxColumn.Name = "zbnameDataGridViewTextBoxColumn";
+            // 
+            // zbspecDataGridViewTextBoxColumn
+            // 
+            this.zbspecDataGridViewTextBoxColumn.DataPropertyName = "Zbspec";
+            this.zbspecDataGridViewTextBoxColumn.HeaderText = "装备型号";
+            this.zbspecDataGridViewTextBoxColumn.Name = "zbspecDataGridViewTextBoxColumn";
+            // 
+            // zbkindDataGridViewTextBoxColumn
+            // 
+            this.zbkindDataGridViewTextBoxColumn.DataPropertyName = "Zbkind";
+            this.zbkindDataGridViewTextBoxColumn.HeaderText = "装备类别";
+            this.zbkindDataGridViewTextBoxColumn.Name = "zbkindDataGridViewTextBoxColumn";
+            // 
+            // zbunitDataGridViewTextBoxColumn
+            // 
+            this.zbunitDataGridViewTextBoxColumn.DataPropertyName = "Zbunit";
+            this.zbunitDataGridViewTextBoxColumn.HeaderText = "计量单位";
+            this.zbunitDataGridViewTextBoxColumn.Name = "zbunitDataGridViewTextBoxColumn";
+            // 
+            // armsInfoBindingSource
+            // 
+            this.armsInfoBindingSource.DataMember = "ArmsInfo";
+            this.armsInfoBindingSource.DataSource = this.equipment_Management_Information_SystemDataSet;
+            // 
+            // equipment_Management_Information_SystemDataSet
+            // 
+            this.equipment_Management_Information_SystemDataSet.DataSetName = "Equipment_Management_Information_SystemDataSet";
+            this.equipment_Management_Information_SystemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // armsInfoTableAdapter
+            // 
+            this.armsInfoTableAdapter.ClearBeforeFill = true;
             // 
             // 装备基本信息
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(562, 418);
+            this.ClientSize = new System.Drawing.Size(856, 389);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label1);
             this.Name = "装备基本信息";
             this.Text = "装备基本信息";
+            this.Load += new System.EventHandler(this.装备基本信息_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.armsInfoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.equipment_Management_Information_SystemDataSet)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private Equipment_Management_Information_SystemDataSet equipment_Management_Information_SystemDataSet;
+        private System.Windows.Forms.BindingSource armsInfoBindingSource;
+        private Equipment_Management_Information_SystemDataSetTableAdapters.ArmsInfoTableAdapter armsInfoTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn zbidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn zbnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn zbspecDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn zbkindDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn zbunitDataGridViewTextBoxColumn;
     }
 }

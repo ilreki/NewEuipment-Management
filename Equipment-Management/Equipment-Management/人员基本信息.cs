@@ -28,5 +28,12 @@ namespace Equipment_Management
             编辑人员信息 do_ryxx = new 编辑人员信息();
             do_ryxx.Show();
         }
+
+        private void 人员基本信息_Load(object sender, EventArgs e)
+        {
+            // TODO: 这行代码将数据加载到表“equipment_Management_Information_SystemDataSet1.ArmsPerson”中。您可以根据需要移动或删除它。
+            this.armsPersonTableAdapter.Fill(this.equipment_Management_Information_SystemDataSet1.ArmsPerson);
+
+        }
     }
 }

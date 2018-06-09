@@ -37,3 +37,11 @@ D:\a million code\github\NewEuipment-Management-master\NewEuipment-Management\Eq
 D:\a million code\github\NewEuipment-Management-master\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.编辑部门信息.resources
 D:\a million code\github\NewEuipment-Management-master\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.装备基本信息.resources
 D:\a million code\github\NewEuipment-Management-master\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.部门基本信息.resources
+D:\a million code\github\NewEuipment-Management-master\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.编辑借阅.resources
+D:\a million code\github\NewEuipment-Management-master\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.编辑资料信息.resources
+D:\a million code\github\NewEuipment-Management-master\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.编辑资料归档.resources
+D:\a million code\github\NewEuipment-Management-master\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.编辑资料类型.resources
+D:\a million code\github\NewEuipment-Management-master\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.资料类型管理.resources
+D:\a million code\github\NewEuipment-Management-master\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.资料信息管理.resources
+D:\a million code\github\NewEuipment-Management-master\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.资料借阅管理.resources
+D:\a million code\github\NewEuipment-Management-master\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.资料归档管理.resources
