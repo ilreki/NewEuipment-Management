@@ -156,6 +156,17 @@
             this.出入库信息日期选择按钮 = new System.Windows.Forms.Button();
             this.出入库信息查询时间信息显示 = new System.Windows.Forms.Label();
             this.出入库信息文本至 = new System.Windows.Forms.Label();
+            this.装备经费汇总统计标题 = new System.Windows.Forms.Label();
+            this.装备经费汇总数据库表 = new System.Windows.Forms.DataGridView();
+            this.经费汇总编号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.经费汇总类型 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.经费汇总金额 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.经费汇总经办人 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.经费汇总日期 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.经费汇总批准人 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.经费汇总余额 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.经费汇总备注 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.装备经费汇总表导出按钮 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.系统管理.SuspendLayout();
             this.用户管理.SuspendLayout();
@@ -170,6 +181,7 @@
             this.部门信息查询容器.SuspendLayout();
             this.部门人员信息显示表.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.部门人员信息数据显示)).BeginInit();
+            this.装备经费汇总.SuspendLayout();
             this.装备库存管理.SuspendLayout();
             this.出库信息管理.SuspendLayout();
             this.入库信息管理.SuspendLayout();
@@ -178,6 +190,7 @@
             this.经费使用管理.SuspendLayout();
             this.经费入账管理.SuspendLayout();
             this.经费明细管理.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.装备经费汇总数据库表)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -627,9 +640,9 @@
             // 
             // 统计与查询
             // 
+            this.统计与查询.Controls.Add(this.装备经费汇总);
             this.统计与查询.Controls.Add(this.出入库统计表);
             this.统计与查询.Controls.Add(this.部门人员查询);
-            this.统计与查询.Controls.Add(this.装备经费汇总);
             this.统计与查询.Controls.Add(this.装备库存流水统计表);
             this.统计与查询.Dock = System.Windows.Forms.DockStyle.Fill;
             this.统计与查询.Location = new System.Drawing.Point(0, 28);
@@ -960,6 +973,9 @@
             // 
             // 装备经费汇总
             // 
+            this.装备经费汇总.Controls.Add(this.装备经费汇总表导出按钮);
+            this.装备经费汇总.Controls.Add(this.装备经费汇总数据库表);
+            this.装备经费汇总.Controls.Add(this.装备经费汇总统计标题);
             this.装备经费汇总.Dock = System.Windows.Forms.DockStyle.Fill;
             this.装备经费汇总.Location = new System.Drawing.Point(0, 0);
             this.装备经费汇总.Name = "装备经费汇总";
@@ -1217,6 +1233,91 @@
             this.出入库信息文本至.TabIndex = 8;
             this.出入库信息文本至.Text = "至";
             // 
+            // 装备经费汇总统计标题
+            // 
+            this.装备经费汇总统计标题.AutoSize = true;
+            this.装备经费汇总统计标题.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.装备经费汇总统计标题.Location = new System.Drawing.Point(475, 28);
+            this.装备经费汇总统计标题.Name = "装备经费汇总统计标题";
+            this.装备经费汇总统计标题.Size = new System.Drawing.Size(230, 31);
+            this.装备经费汇总统计标题.TabIndex = 0;
+            this.装备经费汇总统计标题.Text = "装备经费汇总统计表";
+            // 
+            // 装备经费汇总数据库表
+            // 
+            this.装备经费汇总数据库表.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.装备经费汇总数据库表.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.经费汇总编号,
+            this.经费汇总类型,
+            this.经费汇总金额,
+            this.经费汇总经办人,
+            this.经费汇总日期,
+            this.经费汇总批准人,
+            this.经费汇总余额,
+            this.经费汇总备注});
+            this.装备经费汇总数据库表.Location = new System.Drawing.Point(41, 114);
+            this.装备经费汇总数据库表.Name = "装备经费汇总数据库表";
+            this.装备经费汇总数据库表.RowTemplate.Height = 27;
+            this.装备经费汇总数据库表.Size = new System.Drawing.Size(1161, 403);
+            this.装备经费汇总数据库表.TabIndex = 1;
+            // 
+            // 经费汇总编号
+            // 
+            this.经费汇总编号.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.经费汇总编号.HeaderText = "编号";
+            this.经费汇总编号.Name = "经费汇总编号";
+            // 
+            // 经费汇总类型
+            // 
+            this.经费汇总类型.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.经费汇总类型.HeaderText = "类型";
+            this.经费汇总类型.Name = "经费汇总类型";
+            // 
+            // 经费汇总金额
+            // 
+            this.经费汇总金额.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.经费汇总金额.HeaderText = "金额";
+            this.经费汇总金额.Name = "经费汇总金额";
+            // 
+            // 经费汇总经办人
+            // 
+            this.经费汇总经办人.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.经费汇总经办人.HeaderText = "经办人";
+            this.经费汇总经办人.Name = "经费汇总经办人";
+            // 
+            // 经费汇总日期
+            // 
+            this.经费汇总日期.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.经费汇总日期.HeaderText = "日期";
+            this.经费汇总日期.Name = "经费汇总日期";
+            // 
+            // 经费汇总批准人
+            // 
+            this.经费汇总批准人.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.经费汇总批准人.HeaderText = "批准人";
+            this.经费汇总批准人.Name = "经费汇总批准人";
+            // 
+            // 经费汇总余额
+            // 
+            this.经费汇总余额.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.经费汇总余额.HeaderText = "余额";
+            this.经费汇总余额.Name = "经费汇总余额";
+            // 
+            // 经费汇总备注
+            // 
+            this.经费汇总备注.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.经费汇总备注.HeaderText = "备注";
+            this.经费汇总备注.Name = "经费汇总备注";
+            // 
+            // 装备经费汇总表导出按钮
+            // 
+            this.装备经费汇总表导出按钮.Location = new System.Drawing.Point(1066, 50);
+            this.装备经费汇总表导出按钮.Name = "装备经费汇总表导出按钮";
+            this.装备经费汇总表导出按钮.Size = new System.Drawing.Size(126, 44);
+            this.装备经费汇总表导出按钮.TabIndex = 2;
+            this.装备经费汇总表导出按钮.Text = "导出表格";
+            this.装备经费汇总表导出按钮.UseVisualStyleBackColor = true;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -1252,6 +1353,8 @@
             this.部门人员信息显示表.ResumeLayout(false);
             this.部门人员信息显示表.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.部门人员信息数据显示)).EndInit();
+            this.装备经费汇总.ResumeLayout(false);
+            this.装备经费汇总.PerformLayout();
             this.装备库存管理.ResumeLayout(false);
             this.出库信息管理.ResumeLayout(false);
             this.入库信息管理.ResumeLayout(false);
@@ -1260,6 +1363,7 @@
             this.经费使用管理.ResumeLayout(false);
             this.经费入账管理.ResumeLayout(false);
             this.经费明细管理.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.装备经费汇总数据库表)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1395,5 +1499,16 @@
         private System.Windows.Forms.Label 出入库信息文本至;
         private System.Windows.Forms.Label 出入库信息查询时间信息显示;
         private System.Windows.Forms.Button 出入库信息日期选择按钮;
+        private System.Windows.Forms.Button 装备经费汇总表导出按钮;
+        private System.Windows.Forms.DataGridView 装备经费汇总数据库表;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 经费汇总编号;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 经费汇总类型;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 经费汇总金额;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 经费汇总经办人;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 经费汇总日期;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 经费汇总批准人;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 经费汇总余额;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 经费汇总备注;
+        private System.Windows.Forms.Label 装备经费汇总统计标题;
     }
 }
