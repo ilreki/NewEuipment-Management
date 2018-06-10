@@ -170,5 +170,52 @@ namespace Equipment_Management
             装备经费汇总.Visible = false;
             装备库存流水统计表.Visible = true;
         }
+
+        private void 出入库信息日期选择按钮_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 出入库信息查询按钮_Click(object sender, EventArgs e)
+        {
+            int flag = 0;       // 判定选择按钮
+            if (出库信息查询选择.Checked == true)
+            {
+                flag = 1;
+            }
+            else if (入库信息查询选择.Checked == true)
+                flag = 2;
+            else if (出入库信息查询选择.Checked == true)
+                flag = 0;
+
+            if (flag == 0)  // 判断查询类型是否为空
+            {
+                MessageBox.Show("请选择您所查询的类型！");
+                return;
+            }
+                
+
+            string str = 出入库查询内容输入.Text;        //  读入查询信息
+            if (str == "")          // 判定查询内容是否为空
+            {
+                MessageBox.Show("请输入查询内容！");
+                return;
+            }
+
+            if(flag == 1)       // 选择查询内容类型
+            {
+
+            }
+            else if(flag == 2)
+            {
+
+            }
+            else if(flag == 3)
+            {
+
+            }
+
+
+        }
     }
 }
