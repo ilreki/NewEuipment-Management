@@ -90,5 +90,34 @@ namespace Equipment_Management
             人员基本信息 to_ryjbxx = new 人员基本信息();
             to_ryjbxx.Show();
         }
+
+        private void 资料类型管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            资料类型管理 to_zllx = new 资料类型管理();
+            to_zllx.Show();
+        }
+
+        private void 资料信息管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            资料信息管理 to_zlxx = new 资料信息管理();
+            to_zlxx.Show();
+        }
+
+        private void 资料借阅管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            资料借阅管理 to_zljy = new 资料借阅管理();
+            to_zljy.Show();
+        }
+
+        private void 资料归档管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            资料归档管理 to_zlgd = new 资料归档管理();
+            to_zlgd.Show();
+        }
+
+        private void Main_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

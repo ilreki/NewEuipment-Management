@@ -30,14 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.equipment_Management_Information_SystemDataSet2 = new Equipment_Management.Equipment_Management_Information_SystemDataSet2();
-            this.dataInBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataInTableAdapter = new Equipment_Management.Equipment_Management_Information_SystemDataSet2TableAdapters.DataInTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.inDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,9 +37,17 @@
             this.usersnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rynameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.flagDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataInBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.equipment_Management_Information_SystemDataSet2 = new Equipment_Management.Equipment_Management_Information_SystemDataSet2();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.dataInTableAdapter = new Equipment_Management.Equipment_Management_Information_SystemDataSet2TableAdapters.DataInTableAdapter();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.equipment_Management_Information_SystemDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataInBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.equipment_Management_Information_SystemDataSet2)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -68,65 +68,6 @@
             this.dataGridView1.RowTemplate.Height = 27;
             this.dataGridView1.Size = new System.Drawing.Size(745, 305);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(13, 352);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "增加";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(170, 351);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "删除";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(340, 352);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "修改";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(509, 352);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "审核";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(668, 351);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "查看";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // equipment_Management_Information_SystemDataSet2
-            // 
-            this.equipment_Management_Information_SystemDataSet2.DataSetName = "Equipment_Management_Information_SystemDataSet2";
-            this.equipment_Management_Information_SystemDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dataInBindingSource
-            // 
-            this.dataInBindingSource.DataMember = "DataIn";
-            this.dataInBindingSource.DataSource = this.equipment_Management_Information_SystemDataSet2;
-            // 
-            // dataInTableAdapter
-            // 
-            this.dataInTableAdapter.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -170,6 +111,70 @@
             this.flagDataGridViewTextBoxColumn.HeaderText = "审批标记";
             this.flagDataGridViewTextBoxColumn.Name = "flagDataGridViewTextBoxColumn";
             // 
+            // dataInBindingSource
+            // 
+            this.dataInBindingSource.DataMember = "DataIn";
+            this.dataInBindingSource.DataSource = this.equipment_Management_Information_SystemDataSet2;
+            // 
+            // equipment_Management_Information_SystemDataSet2
+            // 
+            this.equipment_Management_Information_SystemDataSet2.DataSetName = "Equipment_Management_Information_SystemDataSet2";
+            this.equipment_Management_Information_SystemDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(13, 352);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "增加";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(170, 351);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "删除";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(340, 352);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "修改";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(509, 352);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "审核";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // dataInTableAdapter
+            // 
+            this.dataInTableAdapter.ClearBeforeFill = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(668, 351);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 5;
+            this.button5.Text = "查看";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // 资料归档管理
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -185,8 +190,8 @@
             this.Text = "资料归档管理";
             this.Load += new System.EventHandler(this.资料归档管理_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.equipment_Management_Information_SystemDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataInBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.equipment_Management_Information_SystemDataSet2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -198,7 +203,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
         private Equipment_Management_Information_SystemDataSet2 equipment_Management_Information_SystemDataSet2;
         private System.Windows.Forms.BindingSource dataInBindingSource;
         private Equipment_Management_Information_SystemDataSet2TableAdapters.DataInTableAdapter dataInTableAdapter;
@@ -209,5 +213,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn usersnameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn rynameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn flagDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button5;
     }
 }

@@ -35,5 +35,10 @@ namespace Equipment_Management
             this.armsPersonTableAdapter.Fill(this.equipment_Management_Information_SystemDataSet1.ArmsPerson);
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

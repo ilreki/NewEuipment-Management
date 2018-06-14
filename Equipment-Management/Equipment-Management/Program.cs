@@ -18,5 +18,13 @@ namespace Equipment_Management
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Load());
         }
+
+        public static class mystr
+        {
+            public static string str = "";
+            public static DataGridView data;
+            public static int num;
+            public static int i;
+        }
     }
 }

@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBClass_xu.cs" />
     <Compile Include="Equipment_Management_Information_SystemDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -54,6 +55,16 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Equipment_Management_Information_SystemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Equipment_Management_Information_SystemDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Equipment_Management_Information_SystemDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Equipment_Management_Information_SystemDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Equipment_Management_Information_SystemDataSet11.xsd</DependentUpon>
     </Compile>
     <Compile Include="Equipment_Management_Information_SystemDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -69,6 +80,31 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Equipment_Management_Information_SystemDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Equipment_Management_Information_SystemDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Equipment_Management_Information_SystemDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Equipment_Management_Information_SystemDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Equipment_Management_Information_SystemDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Equipment_Management_Information_SystemDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Equipment_Management_Information_SystemDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Equipment_Management_Information_SystemDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Equipment_Management_Information_SystemDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Equipment_Management_Information_SystemDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Equipment_Management_Information_SystemDataSet9.xsd</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -89,6 +125,18 @@
     </Compile>
     <Compile Include="人员基本信息.Designer.cs">
       <DependentUpon>人员基本信息.cs</DependentUpon>
+    </Compile>
+    <Compile Include="展示归档信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="展示归档信息.Designer.cs">
+      <DependentUpon>展示归档信息.cs</DependentUpon>
+    </Compile>
+    <Compile Include="展示资料信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="展示资料信息.Designer.cs">
+      <DependentUpon>展示资料信息.cs</DependentUpon>
     </Compile>
     <Compile Include="编辑人员信息.cs">
       <SubType>Form</SubType>
@@ -186,6 +234,12 @@
     <EmbeddedResource Include="人员基本信息.resx">
       <DependentUpon>人员基本信息.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="展示归档信息.resx">
+      <DependentUpon>展示归档信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="展示资料信息.resx">
+      <DependentUpon>展示资料信息.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="编辑人员信息.resx">
       <DependentUpon>编辑人员信息.cs</DependentUpon>
     </EmbeddedResource>
@@ -247,6 +301,28 @@
     <None Include="Equipment_Management_Information_SystemDataSet1.xss">
       <DependentUpon>Equipment_Management_Information_SystemDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="Equipment_Management_Information_SystemDataSet10.xsc">
+      <DependentUpon>Equipment_Management_Information_SystemDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Equipment_Management_Information_SystemDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Equipment_Management_Information_SystemDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Equipment_Management_Information_SystemDataSet10.xss">
+      <DependentUpon>Equipment_Management_Information_SystemDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Equipment_Management_Information_SystemDataSet11.xsc">
+      <DependentUpon>Equipment_Management_Information_SystemDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Equipment_Management_Information_SystemDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Equipment_Management_Information_SystemDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Equipment_Management_Information_SystemDataSet11.xss">
+      <DependentUpon>Equipment_Management_Information_SystemDataSet11.xsd</DependentUpon>
+    </None>
     <None Include="Equipment_Management_Information_SystemDataSet2.xsc">
       <DependentUpon>Equipment_Management_Information_SystemDataSet2.xsd</DependentUpon>
     </None>
@@ -279,6 +355,61 @@
     </None>
     <None Include="Equipment_Management_Information_SystemDataSet4.xss">
       <DependentUpon>Equipment_Management_Information_SystemDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Equipment_Management_Information_SystemDataSet5.xsc">
+      <DependentUpon>Equipment_Management_Information_SystemDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Equipment_Management_Information_SystemDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Equipment_Management_Information_SystemDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Equipment_Management_Information_SystemDataSet5.xss">
+      <DependentUpon>Equipment_Management_Information_SystemDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Equipment_Management_Information_SystemDataSet6.xsc">
+      <DependentUpon>Equipment_Management_Information_SystemDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Equipment_Management_Information_SystemDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Equipment_Management_Information_SystemDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Equipment_Management_Information_SystemDataSet6.xss">
+      <DependentUpon>Equipment_Management_Information_SystemDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Equipment_Management_Information_SystemDataSet7.xsc">
+      <DependentUpon>Equipment_Management_Information_SystemDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Equipment_Management_Information_SystemDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Equipment_Management_Information_SystemDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Equipment_Management_Information_SystemDataSet7.xss">
+      <DependentUpon>Equipment_Management_Information_SystemDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Equipment_Management_Information_SystemDataSet8.xsc">
+      <DependentUpon>Equipment_Management_Information_SystemDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Equipment_Management_Information_SystemDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Equipment_Management_Information_SystemDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Equipment_Management_Information_SystemDataSet8.xss">
+      <DependentUpon>Equipment_Management_Information_SystemDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Equipment_Management_Information_SystemDataSet9.xsc">
+      <DependentUpon>Equipment_Management_Information_SystemDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Equipment_Management_Information_SystemDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Equipment_Management_Information_SystemDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Equipment_Management_Information_SystemDataSet9.xss">
+      <DependentUpon>Equipment_Management_Information_SystemDataSet9.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

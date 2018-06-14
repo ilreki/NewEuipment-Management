@@ -223,21 +223,21 @@
             // 装备信息ToolStripMenuItem
             // 
             this.装备信息ToolStripMenuItem.Name = "装备信息ToolStripMenuItem";
-            this.装备信息ToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.装备信息ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.装备信息ToolStripMenuItem.Text = "装备基本信息";
             this.装备信息ToolStripMenuItem.Click += new System.EventHandler(this.装备信息ToolStripMenuItem_Click);
             // 
             // 部门基本信息ToolStripMenuItem
             // 
             this.部门基本信息ToolStripMenuItem.Name = "部门基本信息ToolStripMenuItem";
-            this.部门基本信息ToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.部门基本信息ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.部门基本信息ToolStripMenuItem.Text = "部门基本信息";
             this.部门基本信息ToolStripMenuItem.Click += new System.EventHandler(this.部门基本信息ToolStripMenuItem_Click);
             // 
             // 人员基本信息ToolStripMenuItem
             // 
             this.人员基本信息ToolStripMenuItem.Name = "人员基本信息ToolStripMenuItem";
-            this.人员基本信息ToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.人员基本信息ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.人员基本信息ToolStripMenuItem.Text = "人员基本信息";
             this.人员基本信息ToolStripMenuItem.Click += new System.EventHandler(this.人员基本信息ToolStripMenuItem_Click);
             // 
@@ -358,24 +358,28 @@
             this.资料类型管理ToolStripMenuItem.Name = "资料类型管理ToolStripMenuItem";
             this.资料类型管理ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.资料类型管理ToolStripMenuItem.Text = "资料类型管理";
+            this.资料类型管理ToolStripMenuItem.Click += new System.EventHandler(this.资料类型管理ToolStripMenuItem_Click);
             // 
             // 资料信息管理ToolStripMenuItem
             // 
             this.资料信息管理ToolStripMenuItem.Name = "资料信息管理ToolStripMenuItem";
             this.资料信息管理ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.资料信息管理ToolStripMenuItem.Text = "资料信息管理";
+            this.资料信息管理ToolStripMenuItem.Click += new System.EventHandler(this.资料信息管理ToolStripMenuItem_Click);
             // 
             // 资料借阅管理ToolStripMenuItem
             // 
             this.资料借阅管理ToolStripMenuItem.Name = "资料借阅管理ToolStripMenuItem";
             this.资料借阅管理ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.资料借阅管理ToolStripMenuItem.Text = "资料借阅管理";
+            this.资料借阅管理ToolStripMenuItem.Click += new System.EventHandler(this.资料借阅管理ToolStripMenuItem_Click);
             // 
             // 资料归档管理ToolStripMenuItem
             // 
             this.资料归档管理ToolStripMenuItem.Name = "资料归档管理ToolStripMenuItem";
             this.资料归档管理ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.资料归档管理ToolStripMenuItem.Text = "资料归档管理";
+            this.资料归档管理ToolStripMenuItem.Click += new System.EventHandler(this.资料归档管理ToolStripMenuItem_Click);
             // 
             // 装备维修与调拨ToolStripMenuItem
             // 
@@ -840,6 +844,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Main";
             this.Text = "Main";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
             this.Load += new System.EventHandler(this.Main_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

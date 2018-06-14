@@ -31,14 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.equipment_Management_Information_SystemDataSet1 = new Equipment_Management.Equipment_Management_Information_SystemDataSet1();
-            this.armsPersonBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.armsPersonTableAdapter = new Equipment_Management.Equipment_Management_Information_SystemDataSet1TableAdapters.ArmsPersonTableAdapter();
             this.ryidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rynameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,9 +39,17 @@
             this.cultureLevelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.maritalConditionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.positionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.armsPersonBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.equipment_Management_Information_SystemDataSet1 = new Equipment_Management.Equipment_Management_Information_SystemDataSet1();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.armsPersonTableAdapter = new Equipment_Management.Equipment_Management_Information_SystemDataSet1TableAdapters.ArmsPersonTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.equipment_Management_Information_SystemDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.armsPersonBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.equipment_Management_Information_SystemDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // treeView1
@@ -78,67 +78,6 @@
             this.dataGridView1.RowTemplate.Height = 27;
             this.dataGridView1.Size = new System.Drawing.Size(846, 358);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(22, 398);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "添加";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(135, 398);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "修改";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(256, 398);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "删除";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(380, 398);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "部门调转";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(522, 398);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "返回";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // equipment_Management_Information_SystemDataSet1
-            // 
-            this.equipment_Management_Information_SystemDataSet1.DataSetName = "Equipment_Management_Information_SystemDataSet1";
-            this.equipment_Management_Information_SystemDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // armsPersonBindingSource
-            // 
-            this.armsPersonBindingSource.DataMember = "ArmsPerson";
-            this.armsPersonBindingSource.DataSource = this.equipment_Management_Information_SystemDataSet1;
-            // 
-            // armsPersonTableAdapter
-            // 
-            this.armsPersonTableAdapter.ClearBeforeFill = true;
             // 
             // ryidDataGridViewTextBoxColumn
             // 
@@ -188,6 +127,68 @@
             this.positionDataGridViewTextBoxColumn.HeaderText = "工作岗位";
             this.positionDataGridViewTextBoxColumn.Name = "positionDataGridViewTextBoxColumn";
             // 
+            // armsPersonBindingSource
+            // 
+            this.armsPersonBindingSource.DataMember = "ArmsPerson";
+            this.armsPersonBindingSource.DataSource = this.equipment_Management_Information_SystemDataSet1;
+            // 
+            // equipment_Management_Information_SystemDataSet1
+            // 
+            this.equipment_Management_Information_SystemDataSet1.DataSetName = "Equipment_Management_Information_SystemDataSet1";
+            this.equipment_Management_Information_SystemDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(22, 398);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "添加";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(135, 398);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "修改";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(256, 398);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "删除";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(380, 398);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 5;
+            this.button4.Text = "部门调转";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(522, 398);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 6;
+            this.button5.Text = "返回";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // armsPersonTableAdapter
+            // 
+            this.armsPersonTableAdapter.ClearBeforeFill = true;
+            // 
             // 人员基本信息
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -204,8 +205,8 @@
             this.Text = "人员基本信息";
             this.Load += new System.EventHandler(this.人员基本信息_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.equipment_Management_Information_SystemDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.armsPersonBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.equipment_Management_Information_SystemDataSet1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -12,6 +12,7 @@ namespace Equipment_Management
 {
     public partial class 部门基本信息 : Form
     {
+        
         public 部门基本信息()
         {
             InitializeComponent();
@@ -30,6 +31,17 @@ namespace Equipment_Management
         }
 
         private void 部门基本信息_Load(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
 
         }
