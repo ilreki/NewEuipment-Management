@@ -22,6 +22,10 @@ namespace Equipment_Management
         private void buttonLogIn_Click(object sender, EventArgs e)
         {
             LogInUser.logFlag = true;
+            if(textBoxUserName.Text =="" || textBoxPwd.Text == "")
+            {
+                MessageBox.Show("用户名或密码为空", "提示");
+            }
             try
             {
                 if (DBClass.conn.State != ConnectionState.Open)

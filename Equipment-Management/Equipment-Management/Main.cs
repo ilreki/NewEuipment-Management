@@ -126,6 +126,7 @@ namespace Equipment_Management
         {
             MyPanel.Show(new List<Panel>() { 系统管理, 用户管理, 添加账户 });
             //添加两种用户类型到comboboxusertype
+            comboBoxUserType.Items.Clear();
             comboBoxUserType.Items.AddRange(new List<string>() { "管理员", "普通用户" }.ToArray());
             LogInUser.addFlag = false;
         }
@@ -196,6 +197,7 @@ namespace Equipment_Management
         {
             if (textBoxUserName.Text == "")
             {
+                LogInUser.addFlag = false;
                 return;
             }
             try
@@ -233,6 +235,11 @@ namespace Equipment_Management
         //判断两次密码输入是否一致
         private void textBoxConfirmPwd_Leave(object sender, EventArgs e)
         {
+            if (textBoxPwd.Text == "" || textBoxConfirmPwd.Text == "")
+            {
+                LogInUser.addFlag = false;
+                return;
+            }
             if (textBoxPwd.Text != textBoxConfirmPwd.Text)
             {
                 MessageBox.Show("两次密码输入不一致，请重新输入", "提示");

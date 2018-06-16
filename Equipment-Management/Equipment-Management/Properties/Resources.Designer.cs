@@ -59,15 +59,5 @@ namespace Equipment_Management.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
-        /// </summary>
-        internal static System.Drawing.Bitmap _65387039_p1 {
-            get {
-                object obj = ResourceManager.GetObject("65387039_p1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

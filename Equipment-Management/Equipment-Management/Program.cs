@@ -33,10 +33,8 @@ namespace Equipment_Management
     //连接数据库
     public static class DBClass
     {
-        //public static string strConn = "Server = 25.24.20.180; Initial Catalog = " +
-        //    "Equipment Management Information System; uid = lilang; pwd = 201608";
-        public static string strConn = "Server = localhost; Initial Catalog = " +
-           "E; uid = alex; pwd = 7354";
+        public static string strConn = "Server = 25.24.20.180; Initial Catalog = " +
+            "Equipment Management Information System; uid = lilang; pwd = 201608";
         public static SqlConnection conn = new SqlConnection(strConn);
     }
 
