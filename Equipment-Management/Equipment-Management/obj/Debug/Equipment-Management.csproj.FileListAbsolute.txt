@@ -24,10 +24,10 @@ D:\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\bin\D
 D:\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\bin\Debug\Equipment-Management.exe
 D:\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\bin\Debug\Equipment-Management.pdb
 D:\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment-Management.csprojAssemblyReference.cache
-D:\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.Load.resources
 D:\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.Main.resources
 D:\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.Properties.Resources.resources
 D:\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment-Management.csproj.GenerateResource.cache
 D:\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment-Management.csproj.CoreCompileInputs.cache
 D:\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment-Management.exe
 D:\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment-Management.pdb
+D:\GitHub\NewEuipment-Management\Equipment-Management\Equipment-Management\obj\Debug\Equipment_Management.FormLogIn.resources
